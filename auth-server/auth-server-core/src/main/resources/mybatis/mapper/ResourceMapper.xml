@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.lingchaomin.auth.server.core.role.dao.ResourceDao">
+
+    <sql id="table">resource</sql>
+
+    <sql id="fileds">
+        id
+        ,gmt_create
+        ,gmt_modified
+        ,name
+        ,type
+        ,priority
+        ,parent_id
+        ,parent_ids
+        ,permission
+        ,available
+        ,url
+        ,app_id
+    </sql>
+
+    <resultMap id="resourceRm" type="resource">
+        <id property="id" column="id"/>
+        <result property="gmtCreate" column="gmt_create"/>
+        <result property="gmtModified" column="gmt_modified"/>
+        <result property="name" column="name"/>
+        <result property="type" column="type"/>
+        <result property="priority" column="priority"/>
+        <result property="parentId" column="parent_id"/>
+        <result property="parentIds" column="parent_ids"/>
+        <result property="permission" column="permission"/>
+        <result property="available" column="available"/>
+        <result property="url" column="url"/>
+        <result property="appId" column="app_id"/>
+    </resultMap>
+
+    <resultMap id="resourceListRm" type="resourceListDto">
+        <id property="id" column="id"/>
+        <result property="name" column="name"/>
+        <result property="type" column="type"/>
+        <result property="priority" column="priority"/>
+        <result property="parentId" column="parent_id"/>
+        <result property="parentName" column="parent_name"/>
+        <result property="parentIds" column="parent_ids"/>
+        <result property="permission" column="permission"/>
+        <result property="available" column="available"/>
+        <result property="url" column="url"/>
+        <result property="appId" column="app_id"/>
+        <result property="appName" column="app_name"/>
+    </resultMap>
+
+    <resultMap id="resourceSelectDtoRm" type="resourceSelectDto">
+        <id property="id" column="id"/>
+        <result property="text" column="name"/>
+    </resultMap>
+
+    <select id="countAll" resultType="long">
+        SELECT COUNT(1) FROM
+        <include refid="table"/>
+    </select>
+
+    <select id="count" resultType="long">
+        SELECT COUNT(1) FROM
+        <include refid="table"/>
+        <where>
+            <if test="searchValue!=null">name LIKE CONCAT("%",#{searchValue},"%")</if>
+        </where>
+    </select>
+
+    <select id="selectById" parameterType="long" resultMap="resourceRm">
+        SELECT
+        <include refid="fileds"/>
+        FROM
+        <include refid="table"/>
+        WHERE id = #{id}
+    </select>
+
+
+    <select id="selectPermissionsByResourceIds" resultType="string">
+        SELECT
+        permission
+        FROM
+        <include refid="table"/>
+        <where>
+            <if test="resourceIds!=null">
+                id in
+                <foreach collection="resourceIds" item="resourceId" open="(" close=")" separator=",">
+                    #{resourceId}
+                </foreach>
+            </if>
+        </where>
+    </select>
+
+
+    <select id="selectByAppId"  resultMap="resourceSelectDtoRm">
+        SELECT
+        <include refid="fileds"/>
+        FROM
+        <include refid="table"/>
+        WHERE app_id = #{appId}
+    </select>
+
+
+    <select id="selectAll" resultMap="resourceListRm">
+        SELECT r1.*,r2.name as parent_name,a.name as app_name
+        FROM
+        <include refid="table"/> as r1
+        LEFT JOIN
+        <include refid="table"/> as r2
+        ON
+        r1.parent_id=r2.id
+
+        LEFT JOIN
+        app a
+        ON
+        r1.app_id=a.id
+        <where>
+            <if test="searchValue!=null">r1.name LIKE CONCAT("%",#{searchValue},"%")</if>
+        </where>
+    </select>
+
+    <insert id="insert" parameterType="role" useGeneratedKeys="true" keyProperty="id">
+        INSERT INTO
+        <include refid="table"/>
+        (
+        <include refid="fileds"/>
+        )
+        VALUES
+        (null,#{gmtCreate},#{gmtModified},#{name},#{type},#{priority},#{parentId},#{parentIds},#{permission},#{available},#{url},#{appId})
+    </insert>
+
+    <update id="update" parameterType="resource">
+        UPDATE
+        <include refid="table"/>
+        <set>
+            <if test="name!=null">name=#{name},</if>
+            <if test="type!=null">type=#{type},</if>
+            <if test="priority!=null">priority=#{priority},</if>
+            <if test="parentId!=null">parent_id=#{parentId},</if>
+            <if test="parentIds!=null">parent_ids=#{parentIds},</if>
+            <if test="permission!=null">permission=#{permission},</if>
+            <if test="url!=null">url=#{url}</if>
+        </set>
+        WHERE id=#{id}
+    </update>
+
+    <update id="updateStatus">
+        UPDATE
+        <include refid="table"/>
+        <set>
+            <if test="available!=null">available=#{available}</if>
+        </set>
+        WHERE id=#{id}
+    </update>
+
+    <delete id="deleteById">
+        DELETE FROM
+        <include refid="table"/>
+        WHERE id = #{id}
+    </delete>
+
+    <delete id="deleteByAppId">
+        DELETE FROM
+        <include refid="table"/>
+        WHERE app_id = #{appId}
+    </delete>
+</mapper>

@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.lingchaomin.auth.server.core.app.dao.AppDao">
+
+    <sql id="table">app</sql>
+
+    <sql id="fileds">
+        id
+        ,gmt_create
+        ,gmt_modified
+        ,name
+        ,app_key
+        ,app_secret
+        ,available
+        ,descr
+    </sql>
+
+    <resultMap id="appRm" type="app">
+        <id property="id" column="id"/>
+        <result property="gmtCreate" column="gmt_create"/>
+        <result property="gmtModified" column="gmt_modified"/>
+        <result property="name" column="name"/>
+        <result property="appKey" column="app_key"/>
+        <result property="appSecret" column="app_secret"/>
+        <result property="available" column="available"/>
+        <result property="descr" column="descr"/>
+    </resultMap>
+
+    <resultMap id="appSelectDtoRm" type="appSelectDto">
+        <id property="id" column="id"/>
+        <result property="text" column="name"/>
+    </resultMap>
+
+    <select id="countAll" resultType="long">
+        SELECT COUNT(1) FROM
+        <include refid="table"/>
+    </select>
+
+    <select id="count" resultType="long">
+        SELECT COUNT(1) FROM
+        <include refid="table"/>
+
+        <where>
+            <if test="searchValue!=null">name LIKE CONCAT("%",#{searchValue},"%") OR descr LIKE CONCAT("%",#{searchValue},"%")</if>
+        </where>
+    </select>
+
+    <select id="findAll"  resultMap="appRm">
+        SELECT
+        <include refid="fileds"/>
+        FROM
+        <include refid="table"/>
+
+        <where>
+            <if test="searchValue!=null">name LIKE CONCAT("%",#{searchValue},"%") OR descr LIKE CONCAT("%",#{searchValue},"%")</if>
+        </where>
+    </select>
+
+    <select id="selectAll4Resource"  resultMap="appSelectDtoRm">
+        SELECT
+        <include refid="fileds"/>
+        FROM
+        <include refid="table"/>
+    </select>
+
+    <select id="selectById" parameterType="long" resultMap="appRm">
+        SELECT
+        <include refid="fileds"/>
+        FROM
+        <include refid="table"/>
+        WHERE id = #{id}
+    </select>
+
+    <select id="selectByAppKey" resultMap="appRm">
+        SELECT
+        <include refid="fileds"/>
+        FROM
+        <include refid="table"/>
+        WHERE app_key = #{appKey}
+    </select>
+
+    <insert id="insert" parameterType="app" useGeneratedKeys="true" keyProperty="id">
+        INSERT INTO
+        <include refid="table"/>
+        (
+        <include refid="fileds"/>
+        )
+        VALUES
+        (null,#{gmtCreate},#{gmtModified},#{name},#{appKey},#{appSecret},#{available},#{descr})
+    </insert>
+
+    <update id="update" parameterType="app">
+        UPDATE
+        <include refid="table"/>
+        <set>
+            <if test="name!=null">name=#{name},</if>
+            <if test="descr!=null">descr=#{descr},</if>
+        </set>
+        WHERE id=#{id}
+    </update>
+
+    <update id="updateStatus" parameterType="map">
+        UPDATE
+        <include refid="table"/>
+        <set>
+            <if test="available!=null">available=#{available}</if>
+        </set>
+        WHERE id=#{id}
+    </update>
+
+    <delete id="deleteById">
+        DELETE FROM
+        <include refid="table"/>
+        WHERE id = #{id}
+    </delete>
+
+
+</mapper>

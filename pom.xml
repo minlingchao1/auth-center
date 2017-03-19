@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.lingchaomin.auth</groupId>
+    <artifactId>auth-center</artifactId>
+    <packaging>pom</packaging>
+    <version>1.0-SNAPSHOT</version>
+    <modules>
+        <module>auth-client</module>
+        <module>auth-server</module>
+        <module>auth-core</module>
+    </modules>
+
+    <properties>
+        <!--servlet-->
+        <version.servlet.api>3.1.0</version.servlet.api>
+        <version.servlet.jsp>2.2</version.servlet.jsp>
+        <version.servlet.jstl>1.2</version.servlet.jstl>
+
+        <!--unit-->
+        <version.junit>4.12</version.junit>
+
+        <!--spring-->
+        <version.spring>4.3.3.RELEASE</version.spring>
+        <version.spring.data.redis>1.7.2.RELEASE</version.spring.data.redis>
+
+        <version.jackson.databind>2.8.1</version.jackson.databind>
+
+        <!--db-->
+        <!--<version.mysql.connector.java>6.0.3</version.mysql.connector.java>-->
+        <version.mysql.connector.java>5.1.38</version.mysql.connector.java>
+        <version.commons.dbcp2>2.1.1</version.commons.dbcp2>
+        <version.mybatis>3.4.1</version.mybatis>
+        <version.mybatis.spring>1.3.0</version.mybatis.spring>
+        <version.aspect>1.7.4</version.aspect>
+
+        <!--common-->
+        <version.commons.lang3>3.4</version.commons.lang3>
+        <version.commons.collections4>4.0</version.commons.collections4>
+        <version.commons.codec>1.4</version.commons.codec>
+        <version.commons.httpclient>3.1</version.commons.httpclient>
+        <version.commons.logsing>1.1.3</version.commons.logsing>
+
+        <!--log-->
+        <version.slf4j.log4j12>1.7.21</version.slf4j.log4j12>
+        <!--plugins-->
+        <version.plugin.tomcat7.maven>2.2</version.plugin.tomcat7.maven>
+        <version.plugin.maven.compiler>3.5.1</version.plugin.maven.compiler>
+        <version.plugin.maven.war>2.6</version.plugin.maven.war>
+
+        <!--redis-->
+        <version.jedis>2.9.0</version.jedis>
+
+        <version.shiro.velocity>0.0.6-SNAPSHOT</version.shiro.velocity>
+        <version.velocity>1.7</version.velocity>
+        <version.velocity-tools>2.0</version.velocity-tools>
+        <version.springfox-swagger>2.5.0</version.springfox-swagger>
+
+        <version.shiro>1.2.0</version.shiro>
+
+        <version.spring.session.data.redis>1.2.1.RELEASE</version.spring.session.data.redis>
+
+        <version.shiro>1.2.2</version.shiro>
+        <version.shiro.redis>2.4.2.1-RELEASE</version.shiro.redis>
+        <version.jasperreports>6.3.0</version.jasperreports>
+        <version.itext>2.1.7</version.itext>
+        <version.common.dbcp>2.1.1</version.common.dbcp>
+    </properties>
+
+</project>

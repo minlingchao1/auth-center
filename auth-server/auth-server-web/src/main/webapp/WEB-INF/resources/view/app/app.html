@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>云贝用户权限管理平台</title>
+
+    <!-- 全局css -->
+    <link href="/css/css/icons/icomoon/styles.css" rel="stylesheet" type="text/css">
+    <link href="/css/minified/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="/css/minified/core.min.css" rel="stylesheet" type="text/css">
+    <link href="/css/minified/components.min.css" rel="stylesheet" type="text/css">
+    <link href="/css/minified/colors.min.css" rel="stylesheet" type="text/css">
+    <link href="/css/bootstrap-table.css" rel="stylesheet" type="text/css">
+    <link href="/css/style.css" rel="stylesheet" type="text/css">
+    <title>用户权限管理平台</title>
+    <script src="/js/lib/jquery.min.js"></script>
+    <script src="/js/lib/vue.min.js"></script>
+    <script src="/js/lib/router.js"></script>
+    <script src="/js/lib/bootstrap.min.js"></script>
+    <script src="/js/lib/x-editable.js"></script>
+    <script src="/js/lib/bootstrap-table.min.js"></script>
+    <script src="/js/lib/blockui.min.js"></script>
+    <script src="/js/lib/bootbox.min.js"></script>
+    <script src="/js/lib/sweet_alert.min.js"></script>
+    <script src="/js/lib/select2.min.js"></script>
+    <script src="/js/common.js"></script>
+    <script src="/js/service/app.js"></script>
+</head>
+<body >
+<div class="content">
+    <div class="col-md-12" >
+        <div class="panel panel-flat">
+            <div class="panel-heading">
+                <h6 class="panel-title">应用列表</h6>
+                <div class="heading-elements">
+                    <ul class="icons-list">
+                        <li><a data-action="collapse"></a></li>
+                    </ul>
+                </div>
+                <a class="heading-elements-toggle"><i class="icon-menu"></i></a>
+            </div>
+
+            <div class="panel-body border-top-primary">
+                <div style="padding-bottom: 10px">
+                    <button type="button" class="btn bg-teal" data-toggle="modal" data-target="#add-app-modal">添加应用</button>
+                </div>
+
+
+                <table id="appTable" data-toggle="table" data-id-field="id" data-mobile-responsive="true" data-editable-emptytext="Default empty text." data-editable-url="/user/modifyById">
+
+                    <thead>
+                    <tr>
+                        <th data-field="id" data-visible="false" data-align="center" data-editable="true">id</th>
+                        <th  data-align="center" data-editable="false">应用名称</th>
+                        <th  data-align="center" data-editable="false">应用描述</th>
+                        <th  data-align="center" data-editable="false">appKey</th>
+                        <th  data-align="center" data-editable="false">appSecret</th>
+                        <th  data-align="center" data-editable="false">状态</th>
+
+                        <th class="text-center table-button">操作</th>
+                    </tr>
+                    </thead>
+
+                    <tbody>
+                    #foreach($app in $apps)
+                    <tr>
+                        <td class="text-right">$app.id</span></td>
+                        <td class="text-right">$app.name</td>
+                        #if($app.descr)
+                        <td class="text-right">$app.descr</td>
+                        #else
+                        <td class="text-right">--</td>
+                        #end
+                        <td class="text-right">$app.appKey</td>
+                        <td class="text-right">$app.appSecret</td>
+                        #if(!$app.available)
+                        <td class="text-right"><span class="label label-danger">不可用</span></td>
+                        #else
+                        <td class="text-right"><span class="label label-info">正常</span></td>
+                        #end
+                        <td>
+                            <ul class="icons-list">
+                                <li class="dropdown">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                        <i class="icon-menu9"></i>
+                                    </a>
+
+                                    <ul class="dropdown-menu dropdown-menu-right">
+                                        <li><a  app="$app.id" href="#" class="del"> <i class="icon-bin"></i>删除</a></li>
+                                        <li><a  appName="$app.name" descr="$app.descr" app="$app.id" href="#" class="modify"> <i class="icon-pen"></i>修改</a></li>
+                                        <li><a  app="$app.id" href="#" class="available"> <i class="icon-lock"></i>设置为可用</a></li>
+                                        <li><a  app="$app.id" href="#" class="unAvailable"> <i class="icon-unlocked"></i>设置为不可用</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </td>
+                    </tr>
+                    #end
+                    </tbody>
+                </table>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<div id="modify-app" class="modal fade" style="display: none;">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">×</button>
+                <h5 class="modal-title">修改应用信息</h5>
+            </div>
+            <form action="#" class="form-horizontal">
+                <div class="modal-body">
+                    <div class="form-group">
+                        <label class="control-label col-sm-3">应用名称</label>
+                        <div class="col-sm-9">
+                            <input type="text" style="display: none" id="appId">
+                            <input type="text" id="appName" placeholder="应用名称" class="form-control">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="control-label col-sm-3">应用描述</label>
+                        <div class="col-sm-9">
+                            <input type="text" id="descr" placeholder="应用描述" class="form-control">
+                        </div>
+                    </div>
+
+                </div>
+            </form>
+
+            <div class="modal-footer">
+                <button type="button" class="btn btn-link" data-dismiss="modal">取消</button>
+                <button id="confirmModifyApp" class="btn btn-primary">确定</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div id="add-app-modal" class="modal fade" style="display: none;">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">×</button>
+                <h5 class="modal-title">添加应用信息</h5>
+            </div>
+            <form action="#" class="form-horizontal">
+                <div class="modal-body">
+                    <div class="form-group">
+                        <label class="control-label col-sm-3">应用名称</label>
+                        <div class="col-sm-9">
+                            <input type="text" id="add-appName" placeholder="应用名称" class="form-control">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="control-label col-sm-3">应用描述</label>
+                        <div class="col-sm-9">
+                            <input type="text" id="add-descr" placeholder="应用描述" class="form-control">
+                        </div>
+                    </div>
+                </div>
+            </form>
+
+
+
+            <div class="modal-footer">
+                <button type="button" class="btn btn-link" data-dismiss="modal">取消</button>
+                <button id="confirmAddApp" class="btn btn-primary">确定</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

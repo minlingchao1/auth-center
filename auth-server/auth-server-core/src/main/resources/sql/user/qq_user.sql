@@ -1,0 +1,10 @@
+CREATE TABLE `qq_user`(
+  `id` BIGINT(20) NOT NULL AUTO_INCREMENT COMMENT 'id',
+  `gmt_create` TIMESTAMP NOT NULL  DEFAULT '0000-00-00 00:00:00' COMMENT '创建时间',
+  `gmt_modified` TIMESTAMP NOT NULL DEFAULT now() ON UPDATE now() COMMENT '修改时间',
+  `open_id` VARCHAR (128) NOT NULL COMMENT 'openId',
+  `nick_name` VARCHAR (128)  COMMENT '昵称',
+  `figure_url` VARCHAR (128) COMMENT '头像',
+  PRIMARY KEY (`id`),
+  UNIQUE KEY (`open_id`)
+)ENGINE=InnoDB  DEFAULT CHARSET=utf8 ROW_FORMAT=COMPACT;

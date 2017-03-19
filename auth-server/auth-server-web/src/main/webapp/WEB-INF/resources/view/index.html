@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:v-bind="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>云贝用户权限管理平台</title>
+
+    <!-- 全局css -->
+    <link href="/css/css/icons/icomoon/styles.css" rel="stylesheet" type="text/css">
+    <link href="/css/minified/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="/css/minified/core.min.css" rel="stylesheet" type="text/css">
+    <link href="/css/minified/components.min.css" rel="stylesheet" type="text/css">
+    <link href="/css/minified/colors.min.css" rel="stylesheet" type="text/css">
+    <link href="/css/bootstrap-table.css" rel="stylesheet" type="text/css">
+    <link href="/css/style.css" rel="stylesheet" type="text/css">
+    <title>用户权限管理平台</title>
+</head>
+<body class="navbar-top"  v-cloak>
+   <div id="authCenter">
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="index.html"><img src="/images/logo_light.png" alt=""></a>
+
+            <ul class="nav navbar-nav pull-right visible-xs-block">
+                <li><a data-toggle="collapse" data-target="#navbar-mobile"><i class="icon-tree5"></i></a></li>
+                <li><a class="sidebar-mobile-main-toggle"><i class="icon-paragraph-justify3"></i></a></li>
+            </ul>
+        </div>
+
+        <div class="navbar-collapse collapse" id="navbar-mobile">
+            <ul class="nav navbar-nav">
+                <li><a class="sidebar-control sidebar-main-toggle hidden-xs"><i class="icon-paragraph-justify3"></i></a></li>
+            </ul>
+
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#">Text link</a></li>
+
+                <li>
+                    <a href="#">
+                        <i class="icon-cog3"></i>
+                        <span class="visible-xs-inline-block position-right">Icon link</span>
+                    </a>
+                </li>
+
+                <li class="dropdown dropdown-user">
+                    <a class="dropdown-toggle" data-toggle="dropdown">
+                        <img src="/images/placeholder.jpg" alt="">
+                        <span>Victoria</span>
+                        <i class="caret"></i>
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-right">
+                        <li><a href="#"><i class="icon-user-plus"></i> My profile</a></li>
+                        <li><a href="#"><i class="icon-coins"></i> My balance</a></li>
+                        <li><a href="#"><span class="badge badge-warning pull-right">58</span> <i class="icon-comment-discussion"></i> Messages</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#"><i class="icon-cog5"></i> Account settings</a></li>
+                        <li><a href="#"><i class="icon-switch2"></i> Logout</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Page container -->
+    <div class="page-container" style="min-height:375px">
+
+        <!-- Page content -->
+        <div class="page-content">
+
+            <!-- Main sidebar -->
+            <div class="sidebar sidebar-main">
+                <div class="sidebar-content">
+
+                    <!-- User menu -->
+                    <div class="sidebar-user">
+                        <div class="category-content  dropdown dropdown-user">
+                            <a class="dropdown-toggle" data-toggle="dropdown">
+                                <div class="media">
+                                    <a href="#" class="media-left"><img src="/images/placeholder.jpg" class="img-circle img-sm" alt=""></a>
+                                    <div class="media-body">
+                                        <span class="media-heading text-semibold">测试用户</span>
+                                        <div class="text-size-mini text-muted">
+                                            <i class="icon-user text-size-small"></i> &nbsp;超级管理员
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-right">
+                                <li><a href="#"><i class="icon-user-plus"></i> My profile</a></li>
+                                <li><a href="#"><i class="icon-coins"></i> My balance</a></li>
+                                <li><a href="#"><span class="badge badge-warning pull-right">58</span> <i class="icon-comment-discussion"></i> Messages</a></li>
+                                <li class="divider"></li>
+                                <li><a href="#"><i class="icon-cog5"></i> Account settings</a></li>
+                                <li><a href="#"><i class="icon-switch2"></i> Logout</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- /user menu -->
+
+
+                    <!-- Main navigation -->
+                    <div class="sidebar-category sidebar-category-visible">
+                        <div class="category-content no-padding">
+                            <ul id="menu" class="navigation navigation-main navigation-accordion">
+                                <!--<template :item="item" v-for="item in menuList">-->
+                                    <!--<li class="navigation-header">-->
+                                        <!--<span>{{item.name}}</span>-->
+
+                                    <!--</li>-->
+                                    <!--<template :item="sub" v-for="sub in item.list">-->
+                                        <!--<li class="subMenu"><a :href="'#'+sub.url"><i class="icon-user"></i> <span>{{sub.name}}</span></a></li>-->
+                                    <!--</template>-->
+
+                                <!--</template>-->
+                                <!--<menu-item :item="item" v-for="item in menuList">-->
+                                <!--</menu-item>-->
+
+                                <!--&lt;!&ndash; Main &ndash;&gt;-->
+                                <!--<li class="navigation-header"><span>用户</span> <i class="icon-menu" title="用户"></i></li>-->
+                                <!--<li><a href="/user/list"><i class="icon-user"></i> <span>用户管理</span></a></li>-->
+                                <!--<li><a href="/auth/list"><i class="icon-user"></i> <span>用户权限分配</span></a></li>-->
+                                <!--&lt;!&ndash;<li><a href="#"><i class="icon-user-check"></i> <span>登录用户查看</span></a></li>&ndash;&gt;-->
+                                <!--&lt;!&ndash;<li><a href="#"><i class="icon-user-plus"></i> <span>用户身份切换</span></a></li>&ndash;&gt;-->
+
+                                <!--<li class="navigation-header"><span>权限</span> <i class="icon-menu" title="权限"></i></li>-->
+                                <!--<li><a href="/role/list"><i class="icon-price-tags"></i> <span>角色管理</span></a></li>-->
+                                <!--<li><a href="/resource/list"><i class="icon-menu"></i> <span>资源管理</span></a></li>-->
+                                <!--<li class="navigation-header"><span>应用</span> <i class="icon-menu" title="应用"></i></li>-->
+                                <!--<li><a href="/app/list"><i class="icon-dropbox"></i> <span>应用管理</span></a></li>-->
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="content-wrapper">
+                <iframe id="ifr" scrolling="yes" frameborder="0" style="width:100%;min-height:200px;overflow:visible;background:#fff;" src="main"></iframe>
+            </div>
+        </div>
+    </div>
+       </div>
+</body>
+</html>
+
+<script src="/js/lib/jquery.min.js"></script>
+<script src="/js/lib/bootstrap.min.js"></script>
+<script src="/js/lib/contabs.min.js"></script>
+<script src="/js/lib/router.js"></script>
+<script src="/js/lib/app_new.js"></script>
+<script src="/js/index.js?_44455445522998732334444"></script>
+
+
+

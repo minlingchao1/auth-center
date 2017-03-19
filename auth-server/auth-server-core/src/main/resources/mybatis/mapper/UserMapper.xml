@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.lingchaomin.auth.server.core.user.dao.UserDao">
+
+    <sql id="table">user</sql>
+
+    <sql id="fileds">
+         id
+        ,gmt_create
+        ,gmt_modified
+        ,user_id
+        ,user_nick
+        ,password
+        ,entry_password
+        ,locked
+        ,mobile
+        ,salt
+        ,descr
+    </sql>
+
+    <resultMap id="userAllRm" type="user">
+        <id property="id" column="id"/>
+        <result property="gmtCreate" column="gmt_create"/>
+        <result property="gmtModified" column="gmt_modified"/>
+        <result property="userId" column="user_id"/>
+        <result property="mobile" column="mobile"/>
+        <result property="userNick" column="user_nick"/>
+        <result property="locked" column="locked"/>
+        <result property="descr" column="descr"/>
+    </resultMap>
+
+    <resultMap id="userSelectDtoRm" type="userSelectDto">
+        <id property="id" column="user_id"/>
+        <result property="text" column="user_nick"/>
+    </resultMap>
+
+    <select id="count" resultType="long">
+        SELECT COUNT(1) FROM
+        <include refid="table"/>
+        <where>
+            <if test="searchValue!=null">user_nick LIKE CONCAT("%",#{searchValue},"%") OR descr LIKE CONCAT("%",#{searchValue},"%")</if>
+        </where>
+    </select>
+
+    <select id="selectById" parameterType="long" resultMap="userAllRm">
+        SELECT
+        <include refid="fileds"/>
+        FROM
+        <include refid="table"/>
+        WHERE id = #{id}
+    </select>
+
+    <select id="findByUserIdAndStatus" resultMap="userAllRm">
+        SELECT
+        <include refid="fileds"/>
+        FROM
+        <include refid="table"/>
+        <where>
+            <if test="userId!=null"> user_id=#{userId}</if>
+            <if test="status!=null">AND locked=#{status}</if>
+        </where>
+    </select>
+
+    <select id="findByMobile" resultMap="userAllRm">
+        SELECT
+        <include refid="fileds"/>
+        FROM
+        <include refid="table"/>
+        WHERE mobile=#{mobile} and locked=0
+    </select>
+
+    <select id="selectByUserId" parameterType="long" resultMap="userAllRm">
+        SELECT * FROM
+        <include refid="table"/>
+        WHERE user_id=#{userId}
+    </select>
+
+    <select id="findAll" resultMap="userAllRm">
+        SELECT
+        <include refid="fileds"/>
+        FROM
+        <include refid="table"/>
+        <where>
+            <if test="searchValue!=null">user_nick LIKE CONCAT("%",#{searchValue},"%") OR descr LIKE CONCAT("%",#{searchValue},"%") OR mobile LIKE CONCAT("%",#{searchValue},"%") </if>
+        </where>
+    </select>
+
+    <select id="select4Auth" resultMap="userSelectDtoRm">
+        SELECT
+        <include refid="fileds"/>
+        FROM
+        <include refid="table"/>
+    </select>
+
+
+    <insert id="insert" parameterType="user" useGeneratedKeys="true" keyProperty="id">
+        INSERT INTO
+        <include refid="table"/>
+        (
+         <include refid="fileds"/>
+        )
+        VALUES
+        (null,#{gmtCreate},#{gmtModified},#{userId},#{userNick},#{password},#{entryPassword},#{locked},#{mobile},#{salt},#{descr})
+    </insert>
+
+    <update id="updateByUserId" parameterType="user">
+        UPDATE
+        <include refid="table"/>
+        <set>
+            <if test="userNick != null ">
+                user_nick = #{userNick},
+            </if>
+            <if test="password!=null">
+                password=#{password}
+            </if>
+            <if test="entryPassword!=null">
+                entry_password=#{entryPassword}
+            </if>
+
+        </set>
+        WHERE user_id=#{userId}
+    </update>
+
+    <update id="update">
+        UPDATE
+        <include refid="table"/>
+        <set>
+            <if test="userNick!=null">user_nick=#{userNick},</if>
+            <if test="mobile!=null">mobile=#{mobile},</if>
+            <if test="descr!=null">descr=#{descr}</if>
+        </set>
+        WHERE id=#{id}
+    </update>
+
+    <update id="updateStatus">
+        UPDATE
+        <include refid="table"/>
+        <set>
+            <if test="status!=null">locked=#{status}</if>
+        </set>
+        WHERE id=#{id}
+    </update>
+
+    <update id="updateByParams">
+        UPDATE
+        <include refid="table"/>
+        <set>
+            <if test="value!=null">${name}=#{value}</if>
+        </set>
+        WHERE id=#{id}
+    </update>
+
+    <delete id="deleteById">
+        DELETE FROM
+        <include refid="table"/>
+        WHERE id = #{id}
+    </delete>
+</mapper>

@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>云贝用户权限管理平台</title>
+
+    <!-- 全局css -->
+    <link href="/css/css/icons/icomoon/styles.css" rel="stylesheet" type="text/css">
+    <link href="/css/minified/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="/css/minified/core.min.css" rel="stylesheet" type="text/css">
+    <link href="/css/minified/components.min.css" rel="stylesheet" type="text/css">
+    <link href="/css/minified/colors.min.css" rel="stylesheet" type="text/css">
+    <link href="/css/bootstrap-table.css" rel="stylesheet" type="text/css">
+    <link href="/css/style.css" rel="stylesheet" type="text/css">
+    <title>用户权限管理平台</title>
+    <script src="/js/lib/jquery.min.js"></script>
+    <script src="/js/lib/vue.min.js"></script>
+    <script src="/js/lib/router.js"></script>
+    <script src="/js/lib/bootstrap.min.js"></script>
+    <script src="/js/lib/x-editable.js"></script>
+    <script src="/js/lib/bootstrap-table.min.js"></script>
+    <script src="/js/lib/blockui.min.js"></script>
+    <script src="/js/lib/bootbox.min.js"></script>
+    <script src="/js/lib/sweet_alert.min.js"></script>
+    <script src="/js/lib/select2.min.js"></script>
+    <script src="/js/common.js"></script>
+    <script src="/js/service/auth.js"></script>
+</head>
+<body >
+
+<div class="content">
+    <div class="col-md-12" >
+        <div class="panel panel-flat">
+            <div class="panel-heading">
+                <h6 class="panel-title">用户授权信息列表</h6>
+                <div class="heading-elements">
+                    <ul class="icons-list">
+                        <li><a data-action="collapse"></a></li>
+                    </ul>
+                </div>
+                <a class="heading-elements-toggle"><i class="icon-menu"></i></a>
+            </div>
+
+            <div class="panel-body border-top-primary">
+                <div style="padding-bottom: 10px">
+                    <button type="button" class="btn bg-teal" data-toggle="modal" data-target="#add-auth">添加授权信息</button>
+                </div>
+                <table id="authTable" data-toggle="table" data-id-field="id" data-mobile-responsive="true" data-editable-emptytext="Default empty text." data-editable-url="/user/modifyById">
+                    <thead>
+                    <tr>
+                        <th  data-field="id" data-visible="false" data-align="center" data-editable="true">id</th>
+                        <th  data-align="center" data-editable="false">用户名</th>
+                        <th  data-align="center" data-editable="false">应用名</th>
+                        <th  data-align="center" data-editable="false">角色名</th>
+                        <th class="text-center table-button">操作</th>
+                    </tr>
+
+                    </thead>
+
+                    <tbody>
+                    #foreach($auth in $auths)
+                    <tr>
+                        <td class="text-right">$auth.id</span></td>
+                        <td class="text-right">$auth.userNick</span></td>
+                        <td class="text-right">$auth.appName</td>
+                        <td class="text-right">$auth.roleNames</td>
+                        <td>
+                            <ul class="icons-list">
+                                <li class="dropdown">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                        <i class="icon-menu9"></i>
+                                    </a>
+
+                                    <ul class="dropdown-menu dropdown-menu-right">
+                                        <li><a  auth="$auth.id" href="#" app="$auth.appId" role="$auth.roleId" class="del"> <i class="icon-bin"></i>删除</a></li>
+                                        <li><a  auth="$auth.id" user="$auth.userId" app="$auth.appId" role="$auth.roleIds" href="#" class="modify"> <i class="icon-lock"></i>修改授权信息</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </td>
+                    </tr>
+                    #end
+                    </tbody>
+                </table>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<div id="add-auth" class="modal fade" style="display: none;">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">×</button>
+                <h5 class="modal-title">添加授权信息</h5>
+            </div>
+            <form action="#" class="form-horizontal">
+
+                <div class="modal-body">
+                    <div class="form-group">
+                        <label class="control-label col-sm-3">用户名</label>
+                        <div class="col-sm-9">
+                            <input type="text" id="add-user" placeholder="用户名">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label col-sm-3">所属应用</label>
+                        <div class="col-sm-9">
+                            <input type="text" id="add-appInfo" placeholder="所属应用">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label col-sm-3">选择角色</label>
+                        <div class="col-sm-9">
+                            <input type="text" id="add-role" placeholder="选择角色">
+                        </div>
+                    </div>
+
+                </div>
+            </form>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-link" data-dismiss="modal">取消</button>
+                <button id="confirmAddAuth" class="btn btn-primary">确定</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="modify-auth" class="modal fade" style="display: none;">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">×</button>
+                <h5 class="modal-title">修改授权信息</h5>
+            </div>
+            <form action="#" class="form-horizontal">
+
+                <input type="text" id="modify-authId" placeholder="" style="display: none">
+                <div class="modal-body">
+                    <div class="form-group">
+                        <label class="control-label col-sm-3">用户名</label>
+                        <div class="col-sm-9">
+                            <input type="text" id="modify-user" placeholder="用户名">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label col-sm-3">所属应用</label>
+                        <div class="col-sm-9">
+                            <input type="text" id="modify-appInfo" placeholder="所属应用">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label col-sm-3">选择角色</label>
+                        <div class="col-sm-9">
+                            <input type="text" id="modify-role" placeholder="选择角色">
+                        </div>
+                    </div>
+
+                </div>
+            </form>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-link" data-dismiss="modal">取消</button>
+                <button id="confirmModifyAuth" class="btn btn-primary">确定</button>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

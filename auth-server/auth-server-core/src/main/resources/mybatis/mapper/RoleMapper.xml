@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.lingchaomin.auth.server.core.role.dao.RoleDao">
+
+    <sql id="table">role</sql>
+
+    <sql id="fileds">
+         id
+        ,gmt_create
+        ,gmt_modified
+        ,role_name
+        ,descr
+        ,resource_ids
+        ,available
+        ,app_id
+    </sql>
+
+    <resultMap id="roleRm" type="role">
+        <id property="id" column="id"/>
+        <result property="gmtCreate" column="gmt_create"/>
+        <result property="gmtModified" column="gmt_modified"/>
+        <result property="roleName" column="role_name"/>
+        <result property="descr" column="descr"/>
+        <result property="resourceIds" column="resource_ids"/>
+        <result property="available" column="available"/>
+        <result property="appId" column="app_id"/>
+     </resultMap>
+
+    <resultMap id="roleListDtoRm" type="roleListDto">
+        <id property="id" column="id"/>
+        <result property="roleName" column="role_name"/>
+        <result property="descr" column="descr"/>
+        <result property="resourceIds" column="resource_ids"/>
+        <result property="available" column="available"/>
+        <result property="appId" column="app_id"/>
+        <result property="appName" column="app_name"/>
+    </resultMap>
+
+    <resultMap id="roleSelectDtoRm" type="roleSelectDto">
+        <id property="id" column="id"/>
+        <result property="text" column="role_name"/>
+    </resultMap>
+
+    <select id="countAll" resultType="long">
+        SELECT COUNT(1) FROM
+        <include refid="table"/>
+    </select>
+
+    <select id="count" resultType="long">
+        SELECT COUNT(1) FROM
+        <include refid="table"/>
+
+        <where>
+            <if test="searchValue!=null">role_name LIKE CONCAT("%",#{searchValue},"%") OR  descr LIKE CONCAT("%",#{searchValue},"%")</if>
+        </where>
+    </select>
+
+    <select id="selectAll" resultMap="roleListDtoRm">
+        SELECT r.*,a.name as app_name
+        FROM
+        <include refid="table"/> r
+        LEFT JOIN
+        app as a
+        ON
+        r.app_id=a.id
+        <where>
+            <if test="searchValue!=null">r.role_name LIKE CONCAT("%",#{searchValue},"%") OR  r.descr LIKE CONCAT("%",#{searchValue},"%")</if>
+        </where>
+    </select>
+
+    <select id="select4Auth" resultMap="roleSelectDtoRm">
+        SELECT
+        <include refid="fileds"/>
+        FROM
+        <include refid="table"/>
+        WHERE app_id=#{appId}
+    </select>
+
+    <select id="findRoles"  resultType="String">
+        SELECT role_name
+        FROM
+        <include refid="table"/>
+        <where>
+            <if test="roleIds!=null">
+                id IN
+                <foreach collection="roleIds" open="(" close=")" index="index" item="roleId" separator=",">
+                    #{roleId}
+                </foreach>
+            </if>
+        </where>
+    </select>
+
+    <select id="selectById" parameterType="long" resultMap="roleRm">
+        SELECT
+        <include refid="fileds"/>
+        FROM
+        <include refid="table"/>
+        WHERE id = #{id}
+    </select>
+
+    <select id="selectByRoleIds"  resultMap="roleRm">
+        SELECT
+        role_name
+        FROM
+        <include refid="table"/>
+        <where>
+            <if test="roleIds!=null">
+                id in
+                <foreach collection="roleIds" item="roleId" open="(" close=")" separator=",">
+                    #{roleId}
+                </foreach>
+            </if>
+        </where>
+    </select>
+
+
+    <select id="selectResourceByRoleIds"  resultType="string">
+        SELECT
+        resource_ids
+        FROM
+        <include refid="table"/>
+        <where>
+            <if test="roleIds!=null">
+                id in
+                <foreach collection="roleIds" item="roleId" open="(" close=")" separator=",">
+                    #{roleId}
+                </foreach>
+            </if>
+        </where>
+    </select>
+
+    <insert id="insert" parameterType="role" useGeneratedKeys="true" keyProperty="id">
+        INSERT INTO
+        <include refid="table"/>
+        (
+        <include refid="fileds"/>
+        )
+        VALUES
+        (null,#{gmtCreate},#{gmtModified},#{roleName},#{descr},#{resourceIds},#{available},#{appId})
+    </insert>
+
+    <update id="update">
+        UPDATE
+        <include refid="table"/>
+        <set>
+            <if test="roleName!=null">role_name=#{roleName},</if>
+            <if test="descr!=null">descr=#{descr},</if>
+            <if test="resourceIds!=null">resource_ids=#{resourceIds},</if>
+            <if test="appId!=null">app_id=#{appId}</if>
+        </set>
+        WHERE id=#{id}
+    </update>
+
+    <update id="updateStatus">
+        UPDATE
+        <include refid="table"/>
+        <set>
+            <if test="available!=null">available=#{available}</if>
+        </set>
+        WHERE id=#{id}
+    </update>
+
+    <delete id="deleteById">
+        DELETE FROM
+        <include refid="table"/>
+        WHERE id = #{id}
+    </delete>
+
+    <delete id="deleteByAppId">
+        DELETE FROM
+        <include refid="table"/>
+        WHERE app_id = #{appId}
+    </delete>
+
+
+</mapper>

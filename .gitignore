@@ -1,0 +1,21 @@
+# Mac #
+.DS_Store
+
+# Maven #
+target/
+
+# IDEA #
+.idea/
+*.iml
+
+# Eclipse #
+.settings/
+.metadata/
+.classpath
+.project
+Servers/
+**/node_modules
+overlays
+overlays/
+**/**/target
+**/target

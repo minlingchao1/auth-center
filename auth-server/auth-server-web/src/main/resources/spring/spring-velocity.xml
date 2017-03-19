@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean class="org.springframework.web.servlet.view.ContentNegotiatingViewResolver">
+        <!-- 设置为true以忽略对Accept Header的支持 -->
+        <property name="viewResolvers">
+            <list>
+                <bean class="org.springframework.web.servlet.view.BeanNameViewResolver" />
+                <!-- velocity解析器,替换掉原来的jsp -->
+                <bean id="viewResolver" class="org.springframework.web.servlet.view.velocity.VelocityViewResolver">
+                    <property name="contentType" value="text/html;charset=UTF-8" />
+                    <property name="suffix" value=".html" />
+                    <property name="exposeSpringMacroHelpers" value="true" /><!--是否使用spring对宏定义的支持-->
+                    <property name="exposeRequestAttributes" value="true"/>
+                    <property name="exposeSessionAttributes" value="true"/>
+                    <property name="requestContextAttribute" value="rc"/>
+                    <property name="cache" value="false"/>
+                    <property name="toolboxConfigLocation" value="/WEB-INF/resources/tool-box.xml"/>
+                </bean>
+            </list>
+        </property>
+    </bean>
+
+    <bean id="velocityConfigurer" class="org.springframework.web.servlet.view.velocity.VelocityConfigurer">
+        <property name="resourceLoaderPath">
+            <value>WEB-INF/resources/view</value>
+        </property>
+        <property name="configLocation" value="classpath:velocity.properties"/>
+    </bean>
+    <!---->
+
+</beans>

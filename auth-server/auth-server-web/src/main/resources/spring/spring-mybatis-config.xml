@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:tx="http://www.springframework.org/schema/tx"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+         http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx.xsd http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop.xsd http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+
+    <context:property-placeholder location="classpath*:*.properties"/>
+
+    <bean id="dataSource" class="org.apache.commons.dbcp2.BasicDataSource"
+          destroy-method="close">
+        <property name="driverClassName" value="${jdbc.driver}"/>
+        <property name="url" value="${jdbc.url}"/>
+        <property name="username" value="${jdbc.username}"/>
+        <property name="password" value="${jdbc.password}"/>
+        <!-- 初始化连接大小 -->
+        <property name="initialSize" value="${jdbc.initialSize}"></property>
+        <!-- 连接池最大数量 -->
+        <property name="maxTotal" value="${jdbc.maxTotal}"></property>
+        <!-- 连接池最大空闲 -->
+        <property name="maxIdle" value="${jdbc.maxIdle}"></property>
+        <!-- 连接池最小空闲 -->
+        <property name="minIdle" value="${jdbc.minIdle}"></property>
+        <!-- 获取连接最大等待时间 -->
+        <property name="maxWaitMillis" value="${jdbc.maxWaitMillis}"></property>
+    </bean>
+
+    <!--指定dataSource创建sqlSessionFactory-->
+    <bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
+        <property name="dataSource" ref="dataSource"/>
+
+        <!--别名 不支持模糊匹配-->
+        <property name="typeAliasesPackage"
+                  value="com.lingchaomin.auth.server.core"/>
+
+        <!--mapper 文件扫描-->
+        <property name="mapperLocations" value="classpath*:mybatis/mapper/*Mapper.xml"/>
+        <!--mybatis config-->
+        <property name="configLocation" value="classpath:mybatis/config.xml"/>
+    </bean>
+
+    <bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
+        <!--扫描dao-->
+        <!--<property name="basePackage" value="com.yunbeitech.dingdongyun.*.*.dao"/>-->
+        <property name="basePackage" value="com.lingchaomin.auth.server.core.*.dao"/>
+        <property name="markerInterface" value="com.lingchaomin.auth.server.core.base.dao.IDao"/>
+    </bean>
+
+
+    <!--定义一个事物管理器-->
+    <bean id="transactionManager" class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
+        <property name="dataSource" ref="dataSource"/>
+    </bean>
+
+    <tx:advice id="daoTxAdvice" transaction-manager="transactionManager">
+        <tx:attributes>
+            <!--write 操作保持事物-->
+            <tx:method name="add*" propagation="REQUIRED" read-only="false"
+                       rollback-for="Exception"/>
+            <tx:method name="register*" propagation="REQUIRED" read-only="false"
+                       rollback-for="Exception"/>
+            <tx:method name="modify*" propagation="REQUIRED" read-only="false"
+                       rollback-for="java.lang.Exception"/>
+            <tx:method name="remove*" propagation="REQUIRED" read-only="false"
+                       rollback-for="java.lang.Exception"/>
+
+            <!--read-->
+            <tx:method name="find*" read-only="true" propagation="SUPPORTS"/>
+            <tx:method name="get*" read-only="true" propagation="SUPPORTS"/>
+            <tx:method name="*" read-only="true" propagation="SUPPORTS"/>
+        </tx:attributes>
+    </tx:advice>
+
+    <aop:config>
+        <!--事物控制在service层-->
+        <aop:pointcut id="servicePointcut"
+                      expression="execution(public * com.lingchaomin.auth.server.core.*.service.*.*.*(..))"/>
+        <aop:advisor advice-ref="daoTxAdvice" pointcut-ref="servicePointcut"/>
+    </aop:config>
+
+</beans>

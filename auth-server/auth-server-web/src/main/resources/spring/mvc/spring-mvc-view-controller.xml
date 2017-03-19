@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:mvc="http://www.springframework.org/schema/mvc"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc.xsd">
+
+    <!--首页-->
+
+    <mvc:view-controller path="/" view-name="/index"/>
+
+    <mvc:view-controller path="/main" view-name="/main"/>
+
+    <mvc:view-controller path="/index" view-name="/index"/>
+    <mvc:view-controller path="/user" view-name="/user/user"/>
+
+    <mvc:view-controller path="/role" view-name="/role/role"/>
+    <mvc:view-controller path="/resource" view-name="/role/resource"/>
+    <mvc:view-controller path="/app" view-name="/app/app"/>
+    <mvc:view-controller path="/auth" view-name="/user/auth"/>
+    <mvc:view-controller path="/error/account_unknown" view-name="/error/account_unknown"/>
+    <mvc:view-controller path="/error/locked_account" view-name="/error/locked_account"/>
+</beans>

@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>云贝用户权限管理平台</title>
+
+    <!-- 全局css -->
+    <link href="/css/css/icons/icomoon/styles.css" rel="stylesheet" type="text/css">
+    <link href="/css/minified/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="/css/minified/core.min.css" rel="stylesheet" type="text/css">
+    <link href="/css/minified/components.min.css" rel="stylesheet" type="text/css">
+    <link href="/css/minified/colors.min.css" rel="stylesheet" type="text/css">
+    <link href="/css/bootstrap-table.css" rel="stylesheet" type="text/css">
+    <link href="/css/style.css" rel="stylesheet" type="text/css">
+    <title>用户权限管理平台</title>
+    <script src="/js/lib/jquery.min.js"></script>
+    <script src="/js/lib/vue.min.js"></script>
+    <script src="/js/lib/router.js"></script>
+    <script src="/js/lib/bootstrap.min.js"></script>
+    <script src="/js/lib/x-editable.js"></script>
+    <script src="/js/lib/bootstrap-table.min.js"></script>
+    <script src="/js/lib/blockui.min.js"></script>
+    <script src="/js/lib/bootbox.min.js"></script>
+    <script src="/js/lib/sweet_alert.min.js"></script>
+    <script src="/js/lib/select2.min.js"></script>
+    <script src="/js/common.js"></script>
+    <script src="/js/service/resource.js"></script>
+</head>
+<body >
+<div class="content">
+    <div class="col-md-12" >
+        <div class="panel panel-flat">
+            <div class="panel-heading">
+                <h6 class="panel-title">资源列表</h6>
+                <div class="heading-elements">
+                    <ul class="icons-list">
+                        <li><a data-action="collapse"></a></li>
+                    </ul>
+                </div>
+                <a class="heading-elements-toggle"><i class="icon-menu"></i></a>
+            </div>
+
+            <div class="panel-body border-top-primary">
+                <div style="padding-bottom: 10px">
+                    <button type="button" class="btn bg-teal" data-toggle="modal" data-target="#add-resource-modal">添加资源</button>
+                </div>
+
+                <table id="resourceTable" data-toggle="table" data-id-field="id" data-mobile-responsive="true">
+
+                    <thead>
+                    <tr>
+                        <th data-field="id" data-visible="false" data-align="center" data-editable="true">id</th>
+                        <th data-align="center" data-editable="false">资源名称</th>
+                        <th data-align="center" data-editable="false">资源类型</th>
+                        <th data-align="center" data-editable="false">所属应用</th>
+                        <th data-align="center" data-editable="false">优先级</th>
+                        <th data-align="center" data-editable="false">父资源</th>
+                        <th data-align="center" data-editable="false">URL路径</th>
+                        <th data-align="center" data-editable="false">所需权限</th>
+                        <th data-align="center" data-editable="false">状态</th>
+
+                        <th class="text-center table-button">操作</th>
+                    </tr>
+                    </thead>
+
+                    <tbody>
+                    #foreach($resource in $resources)
+                    <tr>
+                        <td class="text-right">$resource.id</span></td>
+                        <td class="text-right">$resource.name</td>
+                        #if($resource.type==1)
+                        <td class="text-right">导航头部</span></td>
+                        #elseif($resource.type==2)
+                        <td class="text-right">菜单</span></td>
+                        #else
+                        <td class="text-right">按钮</span></td>
+                        #end
+
+                        <td class="text-right">$resource.appName</td>
+
+                        #if($resource.priority)
+                        <td class="text-right">$resource.priority</td>
+                        #else
+                        <td class="text-right">--</td>
+                        #end
+
+                        #if($resource.parentId!=0)
+                        <td class="text-right">$resource.parentName</td>
+                        #else
+                        <td class="text-right">--</td>
+                        #end
+
+                        <td class="text-right">$resource.url</td>
+                        <td class="text-right">$resource.permission</td>
+
+                        #if(!$resource.available)
+                        <td class="text-right"><span class="label label-danger">不可用</span></td>
+                        #else
+                        <td class="text-right"><span class="label label-info">正常</span></td>
+                        #end
+                        <td>
+                            <ul class="icons-list">
+                                <li class="dropdown">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                        <i class="icon-menu9"></i>
+                                    </a>
+
+                                    <ul class="dropdown-menu dropdown-menu-right">
+                                        <li><a  resource="$resource.id" href="#" class="del"> <i class="icon-bin"></i>删除</a></li>
+                                        <li><a  resource="$resource.id" resourceType="$resource.type" appInfo="$resource.appId" parenrId="$resource.parentId" url="$resource.url" permission="$resource.permission" resourceName="$resource.name" resource="$resource.id" href="#" class="modify"> <i class="icon-pen"></i>修改</a></li>
+                                        <li><a  resource="$resource.id" href="#" class="available"> <i class="icon-lock"></i>设置为可用</a></li>
+                                        <li><a  resource="$resource.id" href="#" class="unAvailable"> <i class="icon-unlocked"></i>设置为不可用</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </td>
+                    </tr>
+                    #end
+                    </tbody>
+                </table>
+            </div>
+
+        </div>
+    </div>
+
+</div>
+
+<div id="modify-resource" class="modal fade" style="display: none;">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">×</button>
+                <h5 class="modal-title">修改资源信息</h5>
+            </div>
+            <form action="#" class="form-horizontal">
+                <div class="modal-body">
+                    <div class="form-group">
+                        <label class="control-label col-sm-3">资源名称</label>
+                        <div class="col-sm-9">
+                            <input type="text" style="display: none" id="resourceId">
+                            <input type="text" id="resourceName" placeholder="资源名称" class="form-control">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="control-label col-sm-3">资源类型</label>
+                        <div class="col-sm-9">
+                            <select class="select" id="type">
+                                <option value="1">导航头部</option>
+                                <option value="2">菜单</option>
+                                <option value="3">按钮</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="control-label col-sm-3">所属应用</label>
+                        <div class="col-lg-9">
+                            <input type="text" id="appInfo" placeholder="所属应用">
+                            <!--<select id="add-appInfo">-->
+                            <!--<option value="" selected="selected">请选择</option>-->
+                            <!--</select>-->
+                        </div>
+                    </div>
+
+
+                    <div class="form-group">
+                        <label class="control-label col-sm-3">父资源名称</label>
+                        <div class="col-sm-9">
+                            <input type="text" id="parentResource" placeholder="父资源名称">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="control-label col-sm-3">URL路径</label>
+                        <div class="col-sm-9">
+                            <input type="text" id="url" placeholder="URL路径(资源类型为菜单时填写)" class="form-control">
+                        </div>
+                    </div>
+
+
+                    <div class="form-group">
+                        <label class="control-label col-sm-3">所需权限</label>
+                        <div class="col-sm-9">
+                            <input type="text" id="permission" placeholder="所需权限" class="form-control">
+                        </div>
+                    </div>
+
+                </div>
+            </form>
+
+            <div class="modal-footer">
+                <button type="button" class="btn btn-link" data-dismiss="modal">取消</button>
+                <button id="confirmModifyResource" class="btn btn-primary">确定</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="add-resource-modal" class="modal fade" style="display: none;">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">×</button>
+                <h5 class="modal-title">添加资源信息</h5>
+            </div>
+            <form action="#" class="form-horizontal">
+                <div class="modal-body">
+                    <div class="form-group">
+                        <label class="control-label col-sm-3">资源名称</label>
+                        <div class="col-sm-9">
+                            <input type="text" id="add-resourceName" placeholder="资源名称" class="form-control">
+                        </div>
+                    </div>
+
+
+                    <div class="form-group">
+                        <label class="control-label col-sm-3">资源类型</label>
+                        <div class="col-sm-9">
+                            <select class="select" id="add-resourceType">
+                                <option value="1">导航头部</option>
+                                <option value="2">菜单</option>
+                                <option value="3">按钮</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="control-label col-sm-3">所属应用</label>
+                        <div class="col-lg-9">
+                            <input type="text" id="add-appInfo" placeholder="所属应用">
+                            <!--<select id="add-appInfo">-->
+                            <!--<option value="" selected="selected">请选择</option>-->
+                            <!--</select>-->
+                        </div>
+                    </div>
+
+
+                    <div class="form-group">
+                        <label class="control-label col-sm-3">父资源名称</label>
+                        <div class="col-sm-9">
+                            <input type="text" id="add-parentResource" placeholder="父资源名称">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="control-label col-sm-3">URL路径</label>
+                        <div class="col-sm-9">
+                            <input type="text" id="add-url" placeholder="URL路径(资源类型为菜单时填写)" class="form-control">
+                        </div>
+                    </div>
+
+
+                    <div class="form-group">
+                        <label class="control-label col-sm-3">所需权限</label>
+                        <div class="col-sm-9">
+                            <input type="text" id="add-permission" placeholder="所需权限" class="form-control">
+                        </div>
+                    </div>
+
+                </div>
+            </form>
+
+
+
+            <div class="modal-footer">
+                <button type="button" class="btn btn-link" data-dismiss="modal">取消</button>
+                <button id="confirmAddResource" class="btn btn-primary">确定</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.lingchaomin.auth.server.core.verify.dao.VerifyDao">
+
+    <sql id="table">verify_code</sql>
+
+    <sql id="fileds">
+         id
+        ,gmt_create
+        ,gmt_modified
+        ,mobile
+        ,code
+        ,send_ts
+    </sql>
+
+    <resultMap id="verifyCodeRm" type="verifyCode">
+        <id property="id" column="id"/>
+        <result property="gmtCreate" column="gmt_create"/>
+        <result property="gmtModified" column="gmt_modified"/>
+        <result property="code" column="code"/>
+        <result property="mobile" column="mobile"/>
+        <result property="sendTs" column="send_ts"/>
+    </resultMap>
+
+    <select id="selectByMobileAndSendTs" resultType="long">
+        SELECT count(*)
+        FROM
+        <include refid="table"/>
+        WHERE mobile=#{mobile} and send_ts &gt;=#{beginTs} and send_ts &lt;=#{endTs}
+    </select>
+
+    <select id="selectByMobile" resultType="String">
+        SELECT code
+        FROM
+        <include refid="table"/>
+        WHERE mobile=#{mobile} order by send_ts desc limit 1
+    </select>
+
+
+    <insert id="insert" parameterType="verifyCode" useGeneratedKeys="true" keyProperty="id">
+        INSERT INTO
+        <include refid="table"/>
+        (
+         <include refid="fileds"/>
+        )
+        VALUES
+        (null,#{gmtCreate},#{gmtModified},#{mobile},#{code},#{sendTs})
+    </insert>
+</mapper>

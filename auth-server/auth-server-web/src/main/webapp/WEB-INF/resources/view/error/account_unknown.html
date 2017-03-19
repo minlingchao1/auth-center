@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>云贝用户权限管理平台</title>
+
+    <!-- 全局css -->
+    <link href="/css/css/icons/icomoon/styles.css" rel="stylesheet" type="text/css">
+    <link href="/css/minified/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="/css/minified/core.min.css" rel="stylesheet" type="text/css">
+    <link href="/css/minified/components.min.css" rel="stylesheet" type="text/css">
+    <link href="/css/minified/colors.min.css" rel="stylesheet" type="text/css">
+    <link href="/css/bootstrap-table.css" rel="stylesheet" type="text/css">
+    <link href="/css/style.css" rel="stylesheet" type="text/css">
+    <title>用户权限管理平台</title>
+    <script src="/js/lib/jquery.min.js"></script>
+    <script src="/js/lib/bootstrap.min.js"></script>
+    <script src="/js/lib/blockui.min.js"></script>
+    <script src="/js/lib/bootbox.min.js"></script>
+    <script src="/js/lib/sweet_alert.min.js"></script>
+    <script src="/js/lib/select2.min.js"></script>
+    <script src="/js/lib/validate.min.js"></script>
+    <script src="/js/common.js"></script>
+    <script src="/js/service/account.js"></script>
+</head>
+<body>
+<!-- Page container -->
+<div class="page-container login-container">
+
+    <!-- Page content -->
+    <div class="page-content">
+
+        <!-- Main content -->
+        <div class="content-wrapper">
+
+            <!-- Content area -->
+            <div class="content">
+
+                <!-- Advanced login -->
+
+                <input id="openId" style="display: none" value="$openId">
+
+                <div class="panel panel-body login-form">
+                    <div class="text-center">
+                        <div class="icon-object border-success text-success"><i
+                                class="icon-plus3"></i></div>
+                        <h5 class="content-group">创建账户</h5>
+                    </div>
+                    <form class="account-validate" id="register">
+                        <div class="content-divider text-muted form-group"><span>用户信息</span></div>
+
+                        <div class="form-group">
+                            <input id="userName" name="userName" type="text" class="form-control"
+                                   required="required" placeholder="用户名">
+                        </div>
+
+
+                        <div class="form-group">
+                            <input id="mobile" name="mobile" type="text" class="form-control"
+                                   required="required" placeholder="手机号">
+                        </div>
+
+                        <div class="form-group">
+                            <div class="input-group">
+                                <input id="verify" name="verify" type="text" class="form-control"
+                                       required="required" placeholder="验证码">
+                                <span class="input-group-btn">
+                                        <button id="btnSendCode" class="btn bg-teal" type="button">发送验证码</button>
+                                    </span>
+                            </div>
+                        </div>
+
+
+                        <div class="form-group">
+                            <input id="password" name="password" type="password"
+                                   class="form-control" required="required" placeholder="密码">
+                        </div>
+
+                        <div class="form-group">
+                            <input id="repeat_password" name="repeat_password" type="password"
+                                   class="form-control" required="required" placeholder="再次确认密码">
+                        </div>
+                        <button type="submit" class="btn bg-teal btn-block btn-lg">注册</button>
+                    </form>
+                    <div class="form-group">
+                        <div class="checkbox">
+                            <label>
+                                已有账户?<a href="#" data-toggle="modal" data-target="#bind-qq-modal">点击绑定</a>
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- /advanced login -->
+                </div>
+                <!-- /content area -->
+            </div>
+            <!-- /main content -->
+        </div>
+        <!-- /page content -->
+
+    </div>
+    <!-- /page container -->
+
+    <div id="bind-qq-modal" class="modal fade" style="display: none;">
+        <div class="modal-dialog modal-sm">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">×</button>
+                    <h5 class="modal-title">绑定用户</h5>
+                </div>
+                <form action="" class="form-horizontal" id="bind-qq">
+                    <div class="modal-body">
+                        <div class="form-group">
+                            <input id="bind-mobile" name="mobile" type="text" class="form-control"
+                                   required="required" placeholder="手机号">
+                        </div>
+
+                        <div class="form-group">
+                            <div class="input-group">
+                                <input id="bind-verify" name="verify" type="text"
+                                       class="form-control" required="required" placeholder="验证码">
+                                <span class="input-group-btn">
+                                <button id="bind-btnSendCode" class="btn bg-teal" type="button">发送验证码</button>
+                            </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-link" data-dismiss="modal">取消</button>
+                        <button type="submit" class="btn bg-teal">确定</button>
+                    </div>
+                </form>
+            </div>
+
+
+        </div>
+    </div>
+</div>
+</body>
+</html>

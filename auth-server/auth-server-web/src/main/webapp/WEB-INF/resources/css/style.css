@@ -1,0 +1,24 @@
+.datatable-scroll-wrap {
+    z-index: 10000;
+    overflow-x: inherit;
+}
+
+.toolbar {
+    position: relative;
+    display: block;
+    float: left;
+    margin: 0 0 20px 20px;
+}
+
+.page-container{
+    min-height:671px
+}
+
+.card-view .icons-list{
+    text-align: center;
+    display: inline;
+}
+
+.fixed-table-body .card-view .title{
+    min-width: 50%;
+}

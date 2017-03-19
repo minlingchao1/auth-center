@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.lingchaomin.auth.server.core.user.dao.QQUserDao">
+
+    <sql id="table">qq_user</sql>
+
+    <sql id="refTable">qq_user_ref</sql>
+
+    <sql id="fileds">
+        id
+        ,gmt_create
+        ,gmt_modified
+        ,open_id
+        ,nick_name
+        ,figure_url
+    </sql>
+
+    <resultMap id="qqUserRm" type="qqUser">
+        <id property="id" column="id"/>
+        <result property="gmtCreate" column="gmt_create"/>
+        <result property="gmtModified" column="gmt_modified"/>
+        <result property="openId" column="open_id"/>
+        <result property="nickName" column="nick_name"/>
+        <result property="figureUrl" column="figure_url"/>
+    </resultMap>
+
+    <select id="countAll" resultType="long">
+        SELECT COUNT(1) FROM
+        <include refid="table"/>
+    </select>
+
+    <select id="selectById" parameterType="long" resultMap="qqUserRm">
+        SELECT
+        <include refid="fileds"/>
+        FROM
+        <include refid="table"/>
+        WHERE id = #{id}
+    </select>
+
+    <select id="findByUserId" resultMap="qqUserRm">
+        SELECT
+        <include refid="fileds"/>
+        FROM
+        <include refid="table"/> AS q
+        LEFT JOIN
+        <include refid="refTable"/> AS qu
+        ON q.open_id=qu.open_id
+        WHERE qu.user_id=#{userId}
+    </select>
+
+    <insert id="insert" parameterType="role" useGeneratedKeys="true" keyProperty="id">
+        INSERT INTO
+        <include refid="table"/>
+        (
+        <include refid="fileds"/>
+        )
+        VALUES
+        (null,#{gmtCreate},#{gmtModified},#{openId},#{nickName},#{figureUrl})
+    </insert>
+
+    <delete id="deleteById">
+        DELETE FROM
+        <include refid="table"/>
+        WHERE id = #{id}
+    </delete>
+</mapper>
