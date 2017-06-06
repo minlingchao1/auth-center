@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>云贝用户权限管理平台</title>
+
+    <!-- 全局css -->
+    <link href="/css/css/icons/icomoon/styles.css" rel="stylesheet" type="text/css">
+    <link href="/css/minified/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="/css/minified/core.min.css" rel="stylesheet" type="text/css">
+    <link href="/css/minified/components.min.css" rel="stylesheet" type="text/css">
+    <link href="/css/minified/colors.min.css" rel="stylesheet" type="text/css">
+    <link href="/css/bootstrap-table.css" rel="stylesheet" type="text/css">
+    <link href="/css/style.css" rel="stylesheet" type="text/css">
+    <title>用户权限管理平台</title>
+    <script src="/js/lib/jquery.min.js"></script>
+    <script src="/js/lib/vue.min.js"></script>
+    <script src="/js/lib/router.js"></script>
+    <script src="/js/lib/bootstrap.min.js"></script>
+    <script src="/js/lib/x-editable.js"></script>
+    <script src="/js/lib/bootstrap-table.min.js"></script>
+    <script src="/js/lib/bootstrap-table-mobile.js"></script>
+    <script src="/js/lib/blockui.min.js"></script>
+    <script src="/js/lib/bootbox.min.js"></script>
+    <script src="/js/lib/sweet_alert.min.js"></script>
+    <script src="/js/common.js"></script>
+    <script src="/js/service/session.js"></script>
+</head>
+<body >
+<div class="content">
+
+    <div class="col-md-12">
+        <div class="panel panel-flat">
+            <div class="panel-heading">
+                <h6 class="panel-title">在线用户列表</h6>
+                <div class="heading-elements">
+                    <ul class="icons-list">
+                        <li><a data-action="collapse"></a></li>
+                    </ul>
+                </div>
+                <a class="heading-elements-toggle"><i class="icon-menu"></i></a>
+            </div>
+
+            <table id="sessionUserTable" data-toggle="table" data-id-field="id" data-mobile-responsive="true" data-editable-emptytext="Default empty text." data-editable-url="/user/modifyById">
+
+                <thead>
+                <tr>
+                    <th data-field="id" data-visible="false" data-align="center" data-editable="true">id</th>
+                    <th data-field="user"  data-align="center" data-editable="true">用户名</th>
+                    <th data-field="ip" data-align="center" data-editable="false">主机地址</th>
+                    <th data-field="startTime" data-align="center" data-editable="false">登录时间</th>
+                    <th data-field="lastTime" data-align="center" data-editable="false">最后访问时间</th>
+                    <th data-field="status" data-align="center" data-editable="false">状态</th>
+                    <th class="text-center table-button">操作</th>
+                </tr>
+                </thead>
+
+                <tbody>
+                #foreach($session in $sessions)
+                <tr>
+                    <td class="text-right">$session.sessionId</span></td>
+                    <td class="text-right">$session.nick</span></td>
+                    <td class="text-right">$session.ip</span></td>
+                    <td class="text-right">$session.startTime</td>
+                    <td class="text-right">$session.lastLoginTime</td>
+                    #if($session.status==1)
+                    <td class="text-right"><span class="label label-info">正常</span></td>
+                    #else
+                    <td class="text-right"><span class="label label-danger">已强制退出</span></td>
+                    #end
+                    <td>
+                        <ul class="icons-list">
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                    <i class="icon-menu9"></i>
+                                </a>
+
+                                <ul class="dropdown-menu dropdown-menu-right">
+                                    #if($session.status==1)
+                                    <li><a session="$session.sessionId"   href="javascript:;" class="forceLogOut"> <i class="icon-bin"></i>强制退出</a></li>
+                                    #end
+                                </ul>
+                            </li>
+                        </ul>
+                    </td>
+
+                </tr>
+                #end
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+</body>
+</html>

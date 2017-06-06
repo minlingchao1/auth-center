@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>云贝用户权限管理平台</title>
+
+    <!-- 全局css -->
+    <link href="/css/css/icons/icomoon/styles.css" rel="stylesheet" type="text/css">
+    <link href="/css/minified/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="/css/minified/core.min.css" rel="stylesheet" type="text/css">
+    <link href="/css/minified/components.min.css" rel="stylesheet" type="text/css">
+    <link href="/css/minified/colors.min.css" rel="stylesheet" type="text/css">
+    <link href="/css/bootstrap-table.css" rel="stylesheet" type="text/css">
+    <link href="/css/jstree.min.css" rel="stylesheet" type="text/css">
+    <link href="/css/style.css" rel="stylesheet" type="text/css">
+    <title>用户权限管理平台</title>
+    <script src="/js/lib/jquery.min.js"></script>
+    <script src="/js/lib/vue.min.js"></script>
+    <script src="/js/lib/router.js"></script>
+    <script src="/js/lib/bootstrap.min.js"></script>
+    <script src="/js/lib/x-editable.js"></script>
+    <script src="/js/lib/bootstrap-table.min.js"></script>
+    <script src="/js/lib/bootstrap-table-mobile.js"></script>
+    <script src="/js/lib/blockui.min.js"></script>
+    <script src="/js/lib/bootbox.min.js"></script>
+    <script src="/js/lib/sweet_alert.min.js"></script>
+    <script src="/js/lib/select2.min.js"></script>
+    <script src="/js/lib/jstree.js"></script>
+    <script src="/js/common.js"></script>
+    <script src="/js/service/resource_distri.js"></script>
+</head>
+<body >
+
+<div class="content">
+    #foreach($app in $apps)
+
+    <div class="col-md-12" >
+
+        <div class="panel panel-flat">
+            <div class="panel-heading">
+                <h6 class="panel-title">$app.name</h6>
+                <input style="display: none" id="appId-$app.id" value="$app.id">
+                <div class="heading-elements">
+                    <ul class="icons-list">
+                        <li><a data-action="collapse"></a></li>
+                    </ul>
+                </div>
+                <a class="heading-elements-toggle"><i class="icon-menu"></i></a>
+            </div>
+
+            <div class="panel-body border-top-primary">
+                <div style="padding-bottom: 10px">
+                    <button appid="$app.id" type="button" class="btn bg-teal distri" data-toggle="modal" data-target="#add-resource-modal">角色资源分配</button>
+                </div>
+
+                <div class="row">
+                       <div class="col-md-6">
+                           <div id="roletree-$app.id"></div>
+                       </div>
+                      <div class="col-md-6">
+                          <div id="tree-$app.id"></div>
+                      </div>
+                </div>
+
+
+            </div>
+
+        </div>
+    </div>
+    #end
+</div>
+</body>
+</html>
