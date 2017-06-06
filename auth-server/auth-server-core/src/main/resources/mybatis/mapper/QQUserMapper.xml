@@ -39,7 +39,7 @@
 
     <select id="findByUserId" resultMap="qqUserRm">
         SELECT
-        <include refid="fileds"/>
+        q.*
         FROM
         <include refid="table"/> AS q
         LEFT JOIN
@@ -49,7 +49,7 @@
     </select>
 
     <insert id="insert" parameterType="role" useGeneratedKeys="true" keyProperty="id">
-        INSERT INTO
+        INSERT IGNORE INTO
         <include refid="table"/>
         (
         <include refid="fileds"/>

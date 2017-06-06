@@ -1,5 +1,8 @@
 package com.lingchaomin.auth.server.core.role.service.impl;
 
+import com.lingchaomin.auth.server.common.dto.OperErrorCode;
+import com.lingchaomin.auth.server.common.dto.OperateResultDto;
+import com.lingchaomin.auth.server.common.handler.ReqResultFormatter;
 import com.lingchaomin.auth.server.core.role.dao.AuthorizationDao;
 import com.lingchaomin.auth.server.core.role.dao.ResourceDao;
 import com.lingchaomin.auth.server.core.role.dao.RoleDao;
@@ -8,9 +11,6 @@ import com.lingchaomin.auth.server.core.role.entity.Resource;
 import com.lingchaomin.auth.server.core.role.entity.Role;
 import com.lingchaomin.auth.server.core.role.service.IAuthorizationService;
 import com.lingchaomin.auth.server.core.user.dto.AuthorizationListDto;
-import com.yunbeitech.auth.common.dto.OperErrorCode;
-import com.yunbeitech.auth.common.dto.OperateResultDto;
-import com.yunbeitech.auth.common.handler.ReqResultFormatter;
 
 import org.apache.commons.collections4.CollectionUtils;
 import org.apache.commons.lang3.StringUtils;

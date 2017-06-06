@@ -1,13 +1,15 @@
 package com.lingchaomin.auth.server.web.controller;
 
+
+import com.lingchaomin.auth.core.dto.UserDto;
+import com.lingchaomin.auth.server.common.dto.OperateResultDto;
+import com.lingchaomin.auth.server.common.handler.ReqResultFormatter;
 import com.lingchaomin.auth.server.core.user.dto.UserSelectDto;
 import com.lingchaomin.auth.server.core.user.entity.User;
 import com.lingchaomin.auth.server.core.user.service.IUserService;
 import com.lingchaomin.auth.server.web.base.swagger.response.dto.impl.UserListResultDto;
-import com.yunbeitech.auth.common.dto.OperateResultDto;
-import com.yunbeitech.auth.common.handler.ReqResultFormatter;
-
-import org.apache.shiro.authz.annotation.RequiresPermissions;
+import org.apache.commons.lang3.StringUtils;
+import org.apache.shiro.SecurityUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -17,7 +19,6 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
 
-import java.util.ArrayList;
 import java.util.List;
 
 import io.swagger.annotations.Api;
@@ -124,7 +125,20 @@ public class UserCtrl {
         return ReqResultFormatter.formatOperSuccessDto(userSelectDtos);
     }
 
-   // @RequiresPermissions("user:modify")
+    @RequestMapping(value = "getUserInfo",method = {RequestMethod.POST,RequestMethod.GET})
+    @ResponseBody
+    public Object getUserInfo(){
+        String key = (String) SecurityUtils.getSubject().getPrincipal();
+
+        UserDto userDto=null;
+        if(StringUtils.isNotBlank(key)){
+            LOG.warn("userName:{}",key);
+            userDto= userService.findByPrincipal(key);
+        }
+
+        return ReqResultFormatter.formatOperSuccessDto(userDto);
+    }
+
     @RequestMapping("modifyById")
     @ResponseBody
     @ApiOperation(value = "修改用户信息",notes = "修改用户信息")
@@ -144,5 +158,6 @@ public class UserCtrl {
         model.addAttribute("users",users);
         return "/user/user";
     }
+
 
 }

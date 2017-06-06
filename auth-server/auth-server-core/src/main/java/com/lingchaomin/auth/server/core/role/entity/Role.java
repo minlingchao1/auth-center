@@ -1,9 +1,13 @@
 package com.lingchaomin.auth.server.core.role.entity;
 
+import java.io.Serializable;
 import java.util.Date;
 
+import lombok.AllArgsConstructor;
 import lombok.Builder;
-import lombok.Data;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
 
 /**
  * @author minlingchao
@@ -11,9 +15,12 @@ import lombok.Data;
  * @date 2017/2/17 下午5:59
  * @description 角色表
  */
-@Data
+@Getter
+@Setter
+@NoArgsConstructor
+@AllArgsConstructor
 @Builder
-public class Role  {
+public class Role  implements Serializable {
 
     private Long id;
 
@@ -45,5 +52,7 @@ public class Role  {
      * 是否可以使用
      */
     private Boolean available;
+
+    private String resourceIdsTree;
 
 }

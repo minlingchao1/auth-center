@@ -1,14 +1,19 @@
 package com.lingchaomin.auth.server.core.role.service.impl;
 
+
+import com.lingchaomin.auth.server.common.dto.OperErrorCode;
+import com.lingchaomin.auth.server.common.dto.OperateResultDto;
+import com.lingchaomin.auth.server.common.handler.ReqResultFormatter;
+import com.lingchaomin.auth.server.core.app.dao.AppDao;
+import com.lingchaomin.auth.server.core.app.entity.App;
 import com.lingchaomin.auth.server.core.role.constant.ResourceStatus;
 import com.lingchaomin.auth.server.core.role.dao.ResourceDao;
 import com.lingchaomin.auth.server.core.role.dto.ResourceListDto;
 import com.lingchaomin.auth.server.core.role.dto.ResourceSelectDto;
+import com.lingchaomin.auth.server.core.role.dto.ResourceTreeDto;
+import com.lingchaomin.auth.server.core.role.dto.TreeNodeDto;
 import com.lingchaomin.auth.server.core.role.entity.Resource;
 import com.lingchaomin.auth.server.core.role.service.IResourceService;
-import com.yunbeitech.auth.common.dto.OperErrorCode;
-import com.yunbeitech.auth.common.dto.OperateResultDto;
-import com.yunbeitech.auth.common.handler.ReqResultFormatter;
 
 import org.apache.commons.lang3.StringUtils;
 import org.slf4j.Logger;
@@ -16,9 +21,14 @@ import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Date;
+import java.util.HashMap;
+import java.util.Iterator;
 import java.util.List;
+import java.util.Map;
+import java.util.Set;
 
 import lombok.NonNull;
 
@@ -35,6 +45,9 @@ public class ResourceService implements IResourceService {
 
     @Autowired
     private ResourceDao resourceDao;
+
+    @Autowired
+    private AppDao appDao;
 
 
     /**
@@ -81,6 +94,7 @@ public class ResourceService implements IResourceService {
                 .parentId(parentId)
                 .parentIds(parentIds.toString())
                 .permission(permission)
+                .available(ResourceStatus.AVAILABLE)
                 .url(url)
                 .build();
 
@@ -189,5 +203,77 @@ public class ResourceService implements IResourceService {
 
     public List<ResourceSelectDto> findByAppId(Long appId) {
         return resourceDao.selectByAppId(appId);
+    }
+
+    /**
+     * 获取jstreedto
+     */
+    public List<ResourceTreeDto> getResourceTreeDto() {
+
+        List<App> apps=appDao.selectAll(null);
+
+        List<ResourceTreeDto> resourceTreeDtos=new ArrayList<ResourceTreeDto>();
+
+        for(App app:apps){
+
+            List<TreeNodeDto> treeNodeDtos=getResourceTreeByApp(app.getId());
+            ResourceTreeDto resourceTreeDto=ResourceTreeDto
+                    .builder()
+                    .appId(app.getId())
+                    .treeNodeDtos(treeNodeDtos)
+                    .appName(app.getName())
+                    .build();
+            resourceTreeDtos.add(resourceTreeDto);
+
+        }
+        return resourceTreeDtos;
+    }
+
+
+
+
+    private List<TreeNodeDto> getResourceTreeByApp(Long appId){
+
+        List<Resource> resources=resourceDao.selectAllByAppId(appId);
+
+        HashMap treeNodeMap=new HashMap();
+
+        List<TreeNodeDto> root=new ArrayList<TreeNodeDto>();
+
+
+        // 根据结果集构造节点列表（存入哈希表）
+        for(Iterator it = resources.iterator(); it.hasNext();){
+            Resource resource=(Resource)it.next();
+            TreeNodeDto treeNodeDto=TreeNodeDto
+                    .builder()
+                    .id(resource.getId())
+                    .parentId(resource.getParentId())
+                    .text(resource.getName())
+                    .children(new ArrayList<TreeNodeDto>())
+                    .icon("none")
+                    .build();
+
+            treeNodeMap.put(resource.getId(),treeNodeDto);
+
+        }
+
+        // 构造无序的内存多叉树
+        Set entrySet=treeNodeMap.entrySet();
+        for(Iterator it=entrySet.iterator();it.hasNext();){
+            TreeNodeDto node=(TreeNodeDto)((Map.Entry)it.next()).getValue();
+
+            if(node.getParentId()==0){
+                root.add(node);
+            }else {
+                ((TreeNodeDto)treeNodeMap.get(node.getParentId())).getChildren().add(node);
+            }
+        }
+
+        //按照id排序
+        for(TreeNodeDto r:root){
+            r.sortChildren();
+        }
+
+        return root;
     }
 }

@@ -24,9 +24,9 @@ public class LoginCtrl {
 
 
     @RequestMapping("/error/account_unknown")
-    public String accountUnKnown(String openId,Model model){
+    public String accountUnKnown(String openId,String callBackUrl,Model model){
         model.addAttribute("openId",openId);
-        LOG.warn("openId:{}",request.getParameterValues("openId"));
+        model.addAttribute("callBackUrl", callBackUrl);
         return "/error/account_unknown";
     }
 }

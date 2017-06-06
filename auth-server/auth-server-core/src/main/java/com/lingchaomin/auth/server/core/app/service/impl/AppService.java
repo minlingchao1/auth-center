@@ -1,19 +1,20 @@
 package com.lingchaomin.auth.server.core.app.service.impl;
 
+import com.lingchaomin.auth.server.common.dto.OperErrorCode;
+import com.lingchaomin.auth.server.common.dto.OperateResultDto;
+import com.lingchaomin.auth.server.common.handler.ReqResultFormatter;
 import com.lingchaomin.auth.server.core.app.constant.AppStatus;
 import com.lingchaomin.auth.server.core.app.dao.AppDao;
 import com.lingchaomin.auth.server.core.app.dto.AppSelectDto;
 import com.lingchaomin.auth.server.core.app.entity.App;
 import com.lingchaomin.auth.server.core.app.service.IAppService;
-import com.yunbeitech.auth.common.dto.OperErrorCode;
-import com.yunbeitech.auth.common.dto.OperateResultDto;
-import com.yunbeitech.auth.common.handler.ReqResultFormatter;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.Date;
 import java.util.List;
+import java.util.UUID;
 
 import lombok.NonNull;
 
@@ -41,7 +42,7 @@ public class AppService implements IAppService {
      * 列表
      */
     public List<App> list(String searchValue) {
-        return appDao.findAll(null);
+        return appDao.selectAll(null);
     }
 
     /**
@@ -53,6 +54,9 @@ public class AppService implements IAppService {
                 .gmtModified(new Date())
                 .name(name)
                 .descr(desc)
+                .appKey(UUID.randomUUID().toString())
+                .appSecret(UUID.randomUUID().toString())
+                .available(AppStatus.AVAILABLE)
                 .build();
 
         long ret=appDao.insert(app);

@@ -1,7 +1,6 @@
 package com.lingchaomin.auth.server.core.user.dao;
 
 
-
 import com.lingchaomin.auth.server.core.base.dao.IDao;
 import com.lingchaomin.auth.server.core.user.entity.QQUserRef;
 

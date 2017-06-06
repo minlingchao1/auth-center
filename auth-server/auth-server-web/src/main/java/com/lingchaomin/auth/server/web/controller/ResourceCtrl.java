@@ -1,15 +1,17 @@
 package com.lingchaomin.auth.server.web.controller;
 
+import com.lingchaomin.auth.server.common.dto.OperateResultDto;
+import com.lingchaomin.auth.server.common.handler.ReqResultFormatter;
+import com.lingchaomin.auth.server.core.app.entity.App;
+import com.lingchaomin.auth.server.core.app.service.IAppService;
 import com.lingchaomin.auth.server.core.role.dto.MenuListDto;
 import com.lingchaomin.auth.server.core.role.dto.ResourceListDto;
 import com.lingchaomin.auth.server.core.role.dto.ResourceSelectDto;
+import com.lingchaomin.auth.server.core.role.dto.ResourceTreeDto;
 import com.lingchaomin.auth.server.core.role.entity.Resource;
 import com.lingchaomin.auth.server.core.role.service.IResourceService;
 import com.lingchaomin.auth.server.web.base.swagger.response.dto.impl.ResourceListResultDto;
-import com.yunbeitech.auth.common.dto.OperateResultDto;
-import com.yunbeitech.auth.common.handler.ReqResultFormatter;
 
-import org.apache.shiro.authz.annotation.RequiresPermissions;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -38,6 +40,11 @@ public class ResourceCtrl {
 
     @Autowired
     private IResourceService resourceService;
+
+    @Autowired
+    private IAppService appService;
+
+
 
 
     //@RequiresPermissions("resource:getById")
@@ -102,7 +109,6 @@ public class ResourceCtrl {
         return ReqResultFormatter.formatOperSuccessDto(resources);
     }
 
-
     //@RequiresPermissions("resource:setAvailable")
     @RequestMapping(value = "setAvailable",method = {RequestMethod.POST,RequestMethod.GET})
     @ResponseBody
@@ -130,8 +136,6 @@ public class ResourceCtrl {
     @ResponseBody
     public Object getMenuList(){
         List<MenuListDto> menuList=new ArrayList<>();
-
-
 
 
         MenuListDto userList=MenuListDto.builder().type(2).name("用户管理").id(4l).url("/user/list").build();
@@ -172,10 +176,28 @@ public class ResourceCtrl {
     public Object list(Model model){
 
         List<ResourceListDto> resources=resourceService.findAll();
-
         model.addAttribute("resources",resources);
-
         return "/role/resource";
     }
+
+    @RequestMapping(value = "resourceDistri",method = {RequestMethod.POST,RequestMethod.GET})
+    @ApiOperation(value = "资源分配",notes = "资源分配",response = ResourceListResultDto.class)
+    public Object resourceDistri(Model model){
+
+        List<App> apps=appService.list(null);
+
+        model.addAttribute("apps",apps);
+
+        return "/role/role_resource_distri";
+    }
+
+    @RequestMapping(value = "/getResourceApp",method = RequestMethod.GET)
+    @ResponseBody
+    public Object getReourceByApp(){
+        List<ResourceTreeDto> resourceTreeDtos=resourceService.getResourceTreeDto();
+        return ReqResultFormatter.formatOperSuccessDto(resourceTreeDtos);
+    }
+
+
 
 }

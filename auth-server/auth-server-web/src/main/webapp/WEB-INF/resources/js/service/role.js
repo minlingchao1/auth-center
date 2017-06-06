@@ -16,26 +16,24 @@ function add() {
     var roleName=$("#add-roleName").val();
     var descr=$("#add-descr").val();
     var appId=$("#add-appId").val();
-    var resourceIds=$("#add-resourceIds").val();
 
     if(!checkHasApp()){
         swalFail("没有创建应用",null);
         return;
     }
 
-    if(data == "" || data == undefined || data == null){
+    if(roleName == "" || roleName == undefined || roleName == null){
         swalFail("角色名称不能为空",null)
         return;
     }
 
-    ajaxSetup("post","/role/add","role="+roleName+"&descr="+descr+"&appId="+appId+"&resourceIds="+resourceIds,ajaxCallBack)
+    ajaxSetup("post","/role/add","role="+roleName+"&descr="+descr+"&appId="+appId,ajaxCallBack)
 }
 function modify() {
     var id=$(this).attr("role");
     var roleName=$(this).attr("roleName");
     var descr=$(this).attr("descr");
     var appId=$(this).attr("app");
-    var resourceIds=$(this).attr("resourceIds")
 
     $("#roleName").val(roleName);
 
@@ -44,7 +42,6 @@ function modify() {
     }
 
     $("#appId").val(appId).trigger("change");
-    $("#resourceIds").val(resourceIds).trigger("change")
 
     $("#modify-role").modal("show");
     $("#roleId").val(id);
@@ -54,7 +51,6 @@ function confirmModify () {
     var roleName=$("#roleName").val();
     var descr=$("#descr").val();
     var roleId=$("#roleId").val();
-    var resourceIds=$("#resourceIds").val();
     var appId=$("#appId").val();
 
     $.ajax({
@@ -66,7 +62,6 @@ function confirmModify () {
                    role:roleName,
                    descr:descr,
                    appId:appId,
-                   resourceIds:resourceIds
                },
                success:function (data) {
                    if(data.success){
@@ -218,66 +213,8 @@ function getAppInfo() {
                    }
                }
            })
-    $("#add-resourceIds").select2({
-                                      placeholder: "请选择父资源名称",
-                                      data:[{id: 0, text: '请选择父资源名称'}],
-                                      tags: true,
-                                  });
-    $("#resourceIds").select2({
-                                  placeholder: "请选择父资源名称",
-                                  data:[{id: 0, text: '请选择父资源名称'}],
-                                  tags: true,
-                              });
-    $("#add-appId").on("change",getAddAllResourceByAppId)
-    $("#appId").on("change",getModiifyAllResourceByAppId)
 }
 
-function  getAddAllResourceByAppId() {
-    var appId=$("#add-appId").val();
-    $("#add-resourceIds").select2({
-                                      tags: true,
-                                      ajax: {
-                                          url: "/resource/getResourceByAppId",
-                                          dataType: 'json',
-                                          data:function(params){
-                                              return {
-                                                  appId:appId
-                                              };
-                                          },
-                                          results: function (data, params) {
-                                              return{
-                                                  results: data.result
-                                              }
-                                          },
-                                          cache: true
-                                      },
-                                  })
-}
-
-function getModiifyAllResourceByAppId() {
-    var appId=$("#appId").val();
-
-    $.ajax({
-               async:false,
-               type:"post",
-               url:"/resource/getResourceByAppId",
-               data:{
-                   appId:appId
-               },
-               dataType:"json",
-               success:function (data) {
-                   if(data.success) {
-                       $("#resourceIds").select2({
-                                                     tags: true,
-                                                     language: 'zh-CN',
-                                                     data: data.result,
-                                                     placeholder:'请选择应用',
-                                                 })
-
-                   }
-               }
-           })
-}
 
 function checkHasApp () {
     var hasApp=false;

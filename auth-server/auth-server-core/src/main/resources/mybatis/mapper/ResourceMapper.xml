@@ -75,10 +75,34 @@
         WHERE id = #{id}
     </select>
 
+    <select id="selectAllByAppId" parameterType="long" resultMap="resourceRm">
+        SELECT
+        <include refid="fileds"/>
+        FROM
+        <include refid="table"/>
+        WHERE app_id = #{appId}
+    </select>
+
+
 
     <select id="selectPermissionsByResourceIds" resultType="string">
         SELECT
         permission
+        FROM
+        <include refid="table"/>
+        <where>
+            <if test="resourceIds!=null">
+                id in
+                <foreach collection="resourceIds" item="resourceId" open="(" close=")" separator=",">
+                    #{resourceId}
+                </foreach>
+            </if>
+        </where>
+    </select>
+
+    <select id="selectByResourceIds" resultMap="resourceRm">
+        SELECT
+        <include refid="fileds"/>
         FROM
         <include refid="table"/>
         <where>

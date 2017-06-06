@@ -1,8 +1,8 @@
 package com.lingchaomin.auth.server.core.user.service;
 
 
+import com.lingchaomin.auth.server.common.dto.OperateResultDto;
 import com.lingchaomin.auth.server.core.user.entity.QQUserRef;
-import com.yunbeitech.auth.common.dto.OperateResultDto;
 
 /**
  * @author minlingchao

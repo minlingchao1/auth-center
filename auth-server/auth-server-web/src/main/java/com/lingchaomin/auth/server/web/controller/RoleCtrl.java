@@ -1,12 +1,15 @@
 package com.lingchaomin.auth.server.web.controller;
 
+
+
+import com.lingchaomin.auth.server.common.dto.OperateResultDto;
+import com.lingchaomin.auth.server.common.handler.ReqResultFormatter;
 import com.lingchaomin.auth.server.core.role.dto.RoleListDto;
 import com.lingchaomin.auth.server.core.role.dto.RoleSelectDto;
+import com.lingchaomin.auth.server.core.role.dto.RoleTreeDto;
 import com.lingchaomin.auth.server.core.role.service.IRoleService;
 import com.lingchaomin.auth.server.web.base.swagger.response.dto.impl.RoleResultListDto;
-import com.yunbeitech.auth.common.dto.OperateResultDto;
 
-import org.apache.shiro.authz.annotation.RequiresPermissions;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -57,8 +60,8 @@ public class RoleCtrl {
             @ApiImplicitParam(name ="descr",value = "角色描述",paramType ="query",required = true),
             @ApiImplicitParam(name ="resourceIds",value = "资源id",paramType ="query",required = true),
     })
-    public Object modify(Long id,Long appId,String role,String descr,String resourceIds){
-        return roleService.modify(id,appId,role,descr,resourceIds);
+    public Object modify(Long id,Long appId,String role,String descr,String resourceIds,String resourcesTree){
+        return roleService.modify(id,appId,role,descr,resourceIds,resourcesTree);
     }
 
     //@RequiresPermissions("role:remove")
@@ -113,5 +116,20 @@ public class RoleCtrl {
         model.addAttribute("roles",roles);
 
         return "/role/role";
+    }
+
+    @RequestMapping(value = "getRoleTree",method = RequestMethod.GET)
+    @ResponseBody
+    public Object getRoleTree(){
+        List<RoleTreeDto> roleTreeDtos=roleService.getRoleTreeDto();
+        return ReqResultFormatter.formatOperSuccessDto(roleTreeDtos);
+    }
+
+    @RequestMapping(value = "getResourceTree",method = RequestMethod.GET)
+    @ResponseBody
+    public Object getResourceTree(Long id){
+        String resourceTrees=roleService.getResourceTreeStr(id);
+
+        return ReqResultFormatter.formatOperSuccessDto(resourceTrees);
     }
 }

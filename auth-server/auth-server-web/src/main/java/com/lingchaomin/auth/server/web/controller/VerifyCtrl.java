@@ -1,8 +1,8 @@
 package com.lingchaomin.auth.server.web.controller;
 
+import com.lingchaomin.auth.server.common.dto.OperateResultDto;
 import com.lingchaomin.auth.server.core.verify.service.IVerifyService;
 import com.lingchaomin.auth.server.web.base.swagger.response.dto.impl.UserListResultDto;
-import com.yunbeitech.auth.common.dto.OperateResultDto;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;

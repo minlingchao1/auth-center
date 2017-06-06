@@ -1,5 +1,6 @@
 package com.lingchaomin.auth.server.core.user.dao;
 
+import com.lingchaomin.auth.core.dto.QQUserDto;
 import com.lingchaomin.auth.server.core.base.dao.IDao;
 import com.lingchaomin.auth.server.core.user.dto.UserSelectDto;
 import com.lingchaomin.auth.server.core.user.entity.User;
@@ -37,7 +38,7 @@ public interface UserDao extends IDao<User> {
      * 查找所有
      * @return
      */
-    List<User> findAll(@Param("searchValue") String searchValue);
+    List<User> selectAll(@Param("searchValue") String searchValue);
 
     /**
      * 更新状态
@@ -75,4 +76,12 @@ public interface UserDao extends IDao<User> {
      * @return
      */
     List<UserSelectDto> select4Auth();
+
+    /**
+     * 获取客服部门人员
+     * @param appId
+     * @param roleIds
+     * @return
+     */
+    List<QQUserDto> selectCustomerService(@Param("appId") Long appId, @Param("roleIds") List<Long> roleIds);
 }

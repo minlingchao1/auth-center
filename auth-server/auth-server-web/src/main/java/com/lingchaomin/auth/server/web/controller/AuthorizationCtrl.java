@@ -1,12 +1,11 @@
 package com.lingchaomin.auth.server.web.controller;
 
-import com.lingchaomin.auth.server.core.role.entity.Authorization;
+
+import com.lingchaomin.auth.server.common.dto.OperateResultDto;
 import com.lingchaomin.auth.server.core.role.service.IAuthorizationService;
 import com.lingchaomin.auth.server.core.user.dto.AuthorizationListDto;
 import com.lingchaomin.auth.server.web.base.swagger.response.dto.impl.AuthorizationListResultDto;
-import com.yunbeitech.auth.common.dto.OperateResultDto;
 
-import org.apache.shiro.authz.annotation.RequiresPermissions;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;

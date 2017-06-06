@@ -1,7 +1,5 @@
 package com.lingchaomin.auth.server.web.base.shiro.velocity.directive;
 
-
-
 import com.lingchaomin.auth.server.web.base.shiro.velocity.utils.VelocityUtils;
 
 import org.apache.velocity.context.InternalContextAdapter;

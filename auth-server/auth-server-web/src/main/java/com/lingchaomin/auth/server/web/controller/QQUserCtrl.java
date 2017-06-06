@@ -1,5 +1,6 @@
 package com.lingchaomin.auth.server.web.controller;
 
+
 import com.lingchaomin.auth.server.core.user.service.IQQUserService;
 import com.lingchaomin.auth.server.web.base.swagger.response.dto.impl.QQUserOperResultDto;
 

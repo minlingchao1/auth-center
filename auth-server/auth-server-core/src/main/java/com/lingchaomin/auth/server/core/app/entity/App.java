@@ -1,12 +1,10 @@
 package com.lingchaomin.auth.server.core.app.entity;
 
-import com.lingchaomin.auth.server.core.base.entity.BaseModel;
-
+import java.io.Serializable;
 import java.util.Date;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
-import lombok.Data;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
@@ -22,7 +20,7 @@ import lombok.Setter;
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder
-public class App {
+public class App implements Serializable{
 
     private Long id;
 

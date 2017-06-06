@@ -1,14 +1,15 @@
 package com.lingchaomin.auth.server.core.user.entity;
 
 
+import java.io.Serializable;
 import java.util.Date;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
-import lombok.Data;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
+import lombok.ToString;
 
 /**
  * @author minlingchao
@@ -20,8 +21,9 @@ import lombok.Setter;
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
+@ToString
 @Builder
-public class User  {
+public class User  implements Serializable {
 
     private Long id;
 

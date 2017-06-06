@@ -1,7 +1,6 @@
 package com.lingchaomin.auth.server.core.role.dao;
 
 
-
 import com.lingchaomin.auth.server.core.base.dao.IDao;
 import com.lingchaomin.auth.server.core.role.dto.RoleListDto;
 import com.lingchaomin.auth.server.core.role.dto.RoleSelectDto;
@@ -81,4 +80,13 @@ public interface RoleDao extends IDao<Role> {
     List<RoleListDto> selectAll();
 
     List<RoleSelectDto> select4Auth(Long appId);
+
+    List<Role> selectByAppId(Long appId);
+
+    /**
+     * 获取资源树字符串
+     * @param id
+     * @return
+     */
+    String selectResourceTrees(Long id);
 }

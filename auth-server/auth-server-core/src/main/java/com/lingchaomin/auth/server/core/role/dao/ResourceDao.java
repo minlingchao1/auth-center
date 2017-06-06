@@ -1,7 +1,6 @@
 package com.lingchaomin.auth.server.core.role.dao;
 
 
-
 import com.lingchaomin.auth.server.core.base.dao.IDao;
 import com.lingchaomin.auth.server.core.role.dto.ResourceListDto;
 import com.lingchaomin.auth.server.core.role.dto.ResourceSelectDto;
@@ -11,6 +10,7 @@ import org.apache.ibatis.annotations.Param;
 import org.springframework.stereotype.Repository;
 
 import java.util.List;
+import java.util.Set;
 
 /**
  * @author minlingchao
@@ -65,7 +65,15 @@ public interface ResourceDao extends IDao<Resource> {
      */
     List<String> selectPermissionsByResourceIds(@Param("resourceIds") List<String> reseources);
 
+    /**
+     * 查找菜单
+     * @return
+     */
+    List<Resource> selectByResourceIds(@Param("resourceIds") Set<String> reseources);
+
     List<ResourceListDto> selectAll();
 
     List<ResourceSelectDto> selectByAppId(Long appId);
+
+    List<Resource> selectAllByAppId(Long appId);
 }

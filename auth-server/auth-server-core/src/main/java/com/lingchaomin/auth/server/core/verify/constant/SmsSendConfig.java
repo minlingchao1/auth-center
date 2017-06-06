@@ -11,15 +11,15 @@ public class SmsSendConfig {
     /**
      * 验证码发送地址
      */
-    public static final String VERIFY_URL="https://api.dingdongcloud.com/v1/sms/sendyzm";
+    public static final String VERIFY_URL="";
 
     /**
      * api key
      */
-    public static final String API_KEY="d0c0642ba453e92e00f57aaa21930ce0";
+    public static final String API_KEY="";
 
     /**
      * 发送短信内容
      */
-    public static final String CONTENT="【叮咚云】您的验证码是：%s";
+    public static final String CONTENT="";
 }

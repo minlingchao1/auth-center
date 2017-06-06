@@ -1,8 +1,8 @@
 package com.lingchaomin.auth.server.core.app.service;
 
+import com.lingchaomin.auth.server.common.dto.OperateResultDto;
 import com.lingchaomin.auth.server.core.app.dto.AppSelectDto;
 import com.lingchaomin.auth.server.core.app.entity.App;
-import com.yunbeitech.auth.common.dto.OperateResultDto;
 
 import java.util.List;
 
@@ -38,7 +38,7 @@ public interface IAppService {
      * @param
      * @return
      */
-    OperateResultDto modify(Long id,String name,String descr);
+    OperateResultDto modify(Long id, String name, String descr);
 
     /**
      * 删除

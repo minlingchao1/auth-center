@@ -33,7 +33,7 @@
 
         <!--别名 不支持模糊匹配-->
         <property name="typeAliasesPackage"
-                  value="com.lingchaomin.auth.server.core"/>
+                  value="com.lingchaomin.auth.server.core,com.lingchaomin.auth.core.dto"/>
 
         <!--mapper 文件扫描-->
         <property name="mapperLocations" value="classpath*:mybatis/mapper/*Mapper.xml"/>

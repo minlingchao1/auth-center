@@ -98,7 +98,15 @@
         WHERE id = #{id}
     </select>
 
-    <select id="selectByRoleIds"  resultMap="roleRm">
+    <select id="selectByAppId" parameterType="long" resultMap="roleRm">
+        SELECT
+        <include refid="fileds"/>
+        FROM
+        <include refid="table"/>
+        WHERE app_id = #{appId}
+    </select>
+
+    <select id="selectByRoleIds"  resultType="string">
         SELECT
         role_name
         FROM
@@ -129,6 +137,14 @@
         </where>
     </select>
 
+    <select id="selectResourceTrees"  parameterType="long" resultType="string">
+        SELECT
+        resource_ids_tree
+        FROM
+        <include refid="table"/>
+        where id=#{id}
+    </select>
+
     <insert id="insert" parameterType="role" useGeneratedKeys="true" keyProperty="id">
         INSERT INTO
         <include refid="table"/>
@@ -146,6 +162,7 @@
             <if test="roleName!=null">role_name=#{roleName},</if>
             <if test="descr!=null">descr=#{descr},</if>
             <if test="resourceIds!=null">resource_ids=#{resourceIds},</if>
+            <if test="resourceIdsTree!=null">resource_ids_tree=#{resourceIdsTree},</if>
             <if test="appId!=null">app_id=#{appId}</if>
         </set>
         WHERE id=#{id}

@@ -1,10 +1,14 @@
 package com.lingchaomin.auth.server.core.role.entity;
 
 
+import java.io.Serializable;
 import java.util.Date;
 
+import lombok.AllArgsConstructor;
 import lombok.Builder;
-import lombok.Data;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
 
 /**
  * @author minlingchao
@@ -12,9 +16,12 @@ import lombok.Data;
  * @date 2017/2/17 下午6:02
  * @description 资源表
  */
-@Data
+@Getter
+@Setter
+@NoArgsConstructor
+@AllArgsConstructor
 @Builder
-public class Resource  {
+public class Resource   implements Serializable {
 
     private Long id;
 

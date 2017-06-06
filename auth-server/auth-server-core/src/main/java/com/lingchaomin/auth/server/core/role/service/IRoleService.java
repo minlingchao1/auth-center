@@ -1,10 +1,9 @@
 package com.lingchaomin.auth.server.core.role.service;
 
-
+import com.lingchaomin.auth.server.common.dto.OperateResultDto;
 import com.lingchaomin.auth.server.core.role.dto.RoleListDto;
 import com.lingchaomin.auth.server.core.role.dto.RoleSelectDto;
-import com.lingchaomin.auth.server.core.role.entity.Role;
-import com.yunbeitech.auth.common.dto.OperateResultDto;
+import com.lingchaomin.auth.server.core.role.dto.RoleTreeDto;
 
 import java.util.List;
 
@@ -35,7 +34,7 @@ public interface IRoleService {
      * @param role
      * @return
      */
-    OperateResultDto modify(Long id,Long appId,String role,String descr,String resourceIds);
+    OperateResultDto modify(Long id, Long appId, String role, String descr, String resourceIds, String resourceIdsTree);
 
     /**
      * 删除
@@ -86,5 +85,19 @@ public interface IRoleService {
      */
     List<RoleListDto> findAll();
 
+
     List<RoleSelectDto> select4Auth(Long appId);
+
+    /**
+     * 获取角色树
+     * @return
+     */
+    List<RoleTreeDto> getRoleTreeDto();
+
+    /**
+     * 获取resource tree 字符串
+     * @param id
+     * @return
+     */
+    String getResourceTreeStr(Long id);
 }

@@ -29,18 +29,22 @@
     <bean id="newGradingRealm"  class="com.lingchaomin.auth.server.web.base.shiro.realm.AuthServerCasRealm">
         <property name="casServerUrlPrefix" value="${cas.server.url.prefix}"/>
         <property name="casService" value="${cas.service}"/>
+        <property name="cacheManager" ref="cacheManager"/>
+        <property name="cachingEnabled" value="true"/>
         <!-- 身份验证和授权缓存的开启可以避免后台多次查询数据库-->
         <property name="authenticationCachingEnabled" value="true"/>
         <property name="authenticationCacheName" value="authenticationCache"/>
         <property name="authorizationCachingEnabled" value="true"/>
         <property name="authorizationCacheName" value="authorizationCache"/>
-        <property name="userService" ref="userService"/>
+        <property name="userCheck" ref="userCheck"/>
+        <property name="appKey" value="${cas.app.key}"/>
     </bean>
 
-    <bean id="casFilter" class="com.lingchaomin.auth.server.web.base.shiro.filters.AuthServerCasFilter">
+    <bean id="casFilter" class="com.lingchaomin.auth.cas.shiro.common.filters.YunbeiCasFilter">
         <property name="failureUrl" value="/casFailure.jsp"/>
         <property name="unknownAccountUrl" value="/error/account_unknown"/>
         <property name="lockeAccountUrl" value="/error/locked_account"/>
+        <property name="bindSuccessRedirectUrl" value="/"/>
     </bean>
 
     <!-- 会话ID生成器 -->
@@ -55,10 +59,16 @@
 
 
     <!-- 会话DAO -->
-    <bean id="sessionDAO" class="com.lingchaomin.auth.server.web.base.shiro.session.AuthServerSessionDao">
+    <!--<bean id="sessionDAO" class="org.apache.shiro.session.mgt.eis.EnterpriseCacheSessionDAO">-->
+        <!--<property name="activeSessionsCacheName" value="com.yunbeitech.auth.shiro-activeSessionCache"/>-->
+        <!--<property name="sessionIdGenerator" ref="sessionIdGenerator"/>-->
+    <!--</bean>-->
+
+    <bean id="sessionDAO" class="com.lingchaomin.auth.cas.shiro.common.session.AuthServerSessionDao">
         <property name="activeSessionsCacheName" value="com.yunbeitech.auth.shiro-activeSessionCache"/>
         <property name="sessionIdGenerator" ref="sessionIdGenerator"/>
         <property name="redisManager" ref="redisManager"/>
+        <property name="cacheManager" ref="cacheManager"/>
      </bean>
 
     <!-- 会话验证调度器 -->
@@ -97,13 +107,19 @@
 
 
     <!--cas单点登出过滤器-->
-    <bean id="logoutFilter" class="org.apache.shiro.web.filter.authc.LogoutFilter">
+    <bean id="logoutFilter" class="com.lingchaomin.auth.cas.shiro.common.filters.LogoutFilter">
         <property name="redirectUrl" value="${cas.logout.redirect.url}"/>
     </bean>
 
-    <bean id="casLogoutFilter" class="com.lingchaomin.auth.server.web.base.shiro.filters.CasLogoutFilter">
+    <bean id="casLogoutFilter" class="com.lingchaomin.auth.cas.shiro.common.filters.CasLogoutFilter">
         <property name="sessionManager" ref="sessionManager"/>
     </bean>
+
+    <bean id="curUserFilter" class="com.lingchaomin.auth.cas.shiro.common.filters.CurUserFilter">
+        <property name="userCheck" ref="userCheck"/>
+    </bean>
+
+    <bean id="forceLogoutFilter" class="com.lingchaomin.auth.cas.shiro.common.filters.ForceLogoutFilter"/>
 
     <!-- Shiro的Web过滤器 bean id 与web.xml中的filterName需要一致-->
     <bean id="shiroFilter" class="org.apache.shiro.spring.web.ShiroFilterFactoryBean">
@@ -116,24 +132,27 @@
                 <entry key="cas" value-ref="casFilter"/>
                 <entry key="logout" value-ref="logoutFilter"/>
                 <entry key="casLogout" value-ref="casLogoutFilter"/>
+                <entry key="curUser" value-ref="curUserFilter"/>
+                <entry key="forceLogout" value-ref="forceLogoutFilter"/>
             </util:map>
         </property>
         <property name="filterChainDefinitions">
             <value>
-                /** = anon
-                <!--/remoteService = anon-->
-                <!--/logout = logout,casLogout-->
-                <!--/authenticated = casLogout,cas-->
-                <!--/casFailure.jsp = anon-->
-                <!--/error/** = anon-->
-                <!--/cas = casLogout,cas-->
-                <!--/verify/** = anon-->
-                <!--/user/register = anon-->
-                <!--/user/bindQQ = anon-->
-                <!--/css/** = anon-->
-                <!--/js/** = anon-->
-                <!--/images/** = anon-->
-                <!--/** = casLogout,user-->
+                <!--/** = anon-->
+                /remoteService = anon
+                /logout = logout
+                /authenticated = casLogout,cas
+                /casFailure.jsp = anon
+                /error/** = anon
+                /cas = casLogout,cas
+                /verify/** = anon
+                /user/register = anon
+                /user/bindQQ = anon
+                /css/** = anon
+                /js/** = anon
+                /images/** = anon
+                /force_logout=anon
+                /**= casLogout,forceLogout,curUser,user
             </value>
         </property>
     </bean>

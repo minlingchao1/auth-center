@@ -45,7 +45,7 @@
         </where>
     </select>
 
-    <select id="findAll"  resultMap="appRm">
+    <select id="selectAll"  resultMap="appRm">
         SELECT
         <include refid="fileds"/>
         FROM
@@ -99,7 +99,7 @@
         WHERE id=#{id}
     </update>
 
-    <update id="updateStatus" parameterType="map">
+    <update id="updateStatus">
         UPDATE
         <include refid="table"/>
         <set>

@@ -1,14 +1,18 @@
 package com.lingchaomin.auth.server.core.role.service.impl;
 
+import com.lingchaomin.auth.server.common.dto.OperErrorCode;
+import com.lingchaomin.auth.server.common.dto.OperateResultDto;
+import com.lingchaomin.auth.server.common.handler.ReqResultFormatter;
+import com.lingchaomin.auth.server.core.app.dao.AppDao;
+import com.lingchaomin.auth.server.core.app.entity.App;
 import com.lingchaomin.auth.server.core.role.constant.RoleStatus;
 import com.lingchaomin.auth.server.core.role.dao.RoleDao;
 import com.lingchaomin.auth.server.core.role.dto.RoleListDto;
 import com.lingchaomin.auth.server.core.role.dto.RoleSelectDto;
+import com.lingchaomin.auth.server.core.role.dto.RoleTreeDto;
+import com.lingchaomin.auth.server.core.role.dto.TreeNodeDto;
 import com.lingchaomin.auth.server.core.role.entity.Role;
 import com.lingchaomin.auth.server.core.role.service.IRoleService;
-import com.yunbeitech.auth.common.dto.OperErrorCode;
-import com.yunbeitech.auth.common.dto.OperateResultDto;
-import com.yunbeitech.auth.common.handler.ReqResultFormatter;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -32,6 +36,8 @@ public class RoleService implements IRoleService {
     @Autowired
     private RoleDao roleDao;
 
+    @Autowired
+    private AppDao appDao;
 
     /**
      * 统计数量
@@ -52,6 +58,7 @@ public class RoleService implements IRoleService {
                 .roleName(role)
                 .descr(descr)
                 .resourceIds(resourceIds)
+                .available(RoleStatus.AVAILABLE)
                 .build();
 
         long ret=roleDao.insert(r);
@@ -65,12 +72,14 @@ public class RoleService implements IRoleService {
     /**
      * 修改
      */
-    public OperateResultDto modify(@NonNull Long id,@NonNull Long appId,@NonNull String role,String descr,String resourceIds) {
+    public OperateResultDto modify(@NonNull Long id,@NonNull Long appId, String role,String descr,String resourceIds,String resourceIdsTree) {
         Role r=Role.builder()
+                .id(id)
                 .appId(appId)
                 .roleName(role)
                 .descr(descr)
                 .resourceIds(resourceIds)
+                .resourceIdsTree(resourceIdsTree)
                 .build();
 
         long ret=roleDao.update(r);
@@ -163,5 +172,48 @@ public class RoleService implements IRoleService {
 
     public List<RoleSelectDto> select4Auth(Long appId) {
         return  roleDao.select4Auth(appId);
+    }
+
+    /**
+     * 获取角色树
+     */
+    public List<RoleTreeDto> getRoleTreeDto() {
+
+        List<App> apps=appDao.selectAll(null);
+
+        List<RoleTreeDto> roleTreeDtos=new ArrayList<RoleTreeDto>();
+
+        for(App app:apps){
+
+            List<Role> roles=roleDao.selectByAppId(app.getId());
+
+            List<TreeNodeDto> treeNodeDtos=new ArrayList<TreeNodeDto>();
+
+            for(Role role:roles){
+                TreeNodeDto treeNodeDto=TreeNodeDto.builder()
+                        .text(role.getRoleName())
+                        .id(role.getId())
+                        .icon("none")
+                        .build();
+                treeNodeDtos.add(treeNodeDto);
+            }
+
+
+            RoleTreeDto roleTreeDto=RoleTreeDto.builder()
+                    .appId(app.getId())
+                    .appName(app.getName())
+                    .treeNodeDtos(treeNodeDtos)
+                    .build();
+            roleTreeDtos.add(roleTreeDto);
+        }
+        return roleTreeDtos;
+    }
+
+    /**
+     * 获取resource tree 字符串
+     */
+    public String getResourceTreeStr(Long id) {
+        String resourceTrees=roleDao.selectResourceTrees(id);
+        return resourceTrees;
     }
 }

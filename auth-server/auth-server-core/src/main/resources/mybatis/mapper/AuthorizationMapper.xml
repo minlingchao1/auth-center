@@ -101,7 +101,7 @@
     </select>
 
     <insert id="insert" parameterType="authorization" useGeneratedKeys="true" keyProperty="id">
-        INSERT INTO
+        INSERT IGNORE INTO
         <include refid="table"/>
         (
         <include refid="fileds"/>
@@ -115,9 +115,8 @@
         <include refid="table"/>
         <set>
             <if test="roleIds">role_ids=#{roleIds},</if>
-            <if test="appId">app_id=#{appId}</if>
         </set>
-        WHERE id=#{id}
+        WHERE id=#{id} and app_id=#{appId}
     </update>
 
     <update id="updateBatch" parameterType="list">

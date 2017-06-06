@@ -1,11 +1,11 @@
 package com.lingchaomin.auth.server.core.user.service.impl;
 
+import com.lingchaomin.auth.server.common.dto.OperErrorCode;
+import com.lingchaomin.auth.server.common.dto.OperateResultDto;
+import com.lingchaomin.auth.server.common.handler.ReqResultFormatter;
 import com.lingchaomin.auth.server.core.user.dao.QQUserRefDao;
 import com.lingchaomin.auth.server.core.user.entity.QQUserRef;
 import com.lingchaomin.auth.server.core.user.service.IQQUserRefService;
-import com.yunbeitech.auth.common.dto.OperErrorCode;
-import com.yunbeitech.auth.common.dto.OperateResultDto;
-import com.yunbeitech.auth.common.handler.ReqResultFormatter;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

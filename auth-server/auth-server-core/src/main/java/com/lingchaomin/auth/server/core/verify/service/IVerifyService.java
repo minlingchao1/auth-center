@@ -1,6 +1,7 @@
 package com.lingchaomin.auth.server.core.verify.service;
 
-import com.yunbeitech.auth.common.dto.OperateResultDto;
+
+import com.lingchaomin.auth.server.common.dto.OperateResultDto;
 
 /**
  * @author minlingchao

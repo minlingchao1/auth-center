@@ -1,9 +1,10 @@
 package com.lingchaomin.auth.server.core.role.service;
 
 
+
+import com.lingchaomin.auth.server.common.dto.OperateResultDto;
 import com.lingchaomin.auth.server.core.role.entity.Authorization;
 import com.lingchaomin.auth.server.core.user.dto.AuthorizationListDto;
-import com.yunbeitech.auth.common.dto.OperateResultDto;
 
 import java.util.List;
 import java.util.Set;
@@ -43,14 +44,14 @@ public interface IAuthorizationService {
      * @param
      * @return
      */
-    OperateResultDto add(Long appId,String userId,String roleIds);
+    OperateResultDto add(Long appId, String userId, String roleIds);
 
     /**
      * 修改
      * @param
      * @return
      */
-    OperateResultDto modify(Long id,Long appId,String roleIds);
+    OperateResultDto modify(Long id, Long appId, String roleIds);
 
 
 

@@ -13,6 +13,7 @@ $(function () {
     bootbox.setDefaults("locale","zh_CN");
     getAppInfo();
 
+
 })
 
 function add() {
@@ -438,3 +439,6 @@ function checkHasApp () {
            })
     return hasApp;
 }
+
+
+

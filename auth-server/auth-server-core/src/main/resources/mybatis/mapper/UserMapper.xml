@@ -29,6 +29,14 @@
         <result property="descr" column="descr"/>
     </resultMap>
 
+
+    <resultMap id="qqUserDtoRm" type="QQUserDto">
+        <result property="openId" column="open_id"/>
+        <result property="userNick" column="user_nick"/>
+        <result property="roleIds" column="role_ids"/>
+        <result property="userId" column="user_id"/>
+    </resultMap>
+
     <resultMap id="userSelectDtoRm" type="userSelectDto">
         <id property="id" column="user_id"/>
         <result property="text" column="user_nick"/>
@@ -48,6 +56,21 @@
         FROM
         <include refid="table"/>
         WHERE id = #{id}
+    </select>
+
+    <select id="selectCustomerService" resultMap="qqUserDtoRm">
+        SELECT qu.open_id,u.*,a.role_ids
+        FROM user u
+        LEFT JOIN qq_user_ref qu
+        ON u.user_id=qu.user_id
+        LEFT JOIN authorization a
+        ON u.user_id=a.user_id
+        WHERE a.app_id=#{appId} and
+        (
+            <foreach collection="roleIds" item="item" index="index"  separator="OR">
+                a.role_ids  LIKE CONCAT('%',#{item},'%')
+            </foreach>
+        )
     </select>
 
     <select id="findByUserIdAndStatus" resultMap="userAllRm">
@@ -75,7 +98,7 @@
         WHERE user_id=#{userId}
     </select>
 
-    <select id="findAll" resultMap="userAllRm">
+    <select id="selectAll" resultMap="userAllRm">
         SELECT
         <include refid="fileds"/>
         FROM

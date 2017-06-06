@@ -1,9 +1,13 @@
 package com.lingchaomin.auth.server.core.user.entity;
 
+import java.io.Serializable;
 import java.util.Date;
 
+import lombok.AllArgsConstructor;
 import lombok.Builder;
-import lombok.Data;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
 
 /**
  * @author minlingchao
@@ -11,9 +15,13 @@ import lombok.Data;
  * @date 2017/2/20 上午9:37
  * @description qq 用户相关
  */
-@Data
+
+@Setter
+@Getter
+@NoArgsConstructor
+@AllArgsConstructor
 @Builder
-public class QQUserRef  {
+public class QQUserRef  implements Serializable {
 
     private Long id;
 

@@ -1,10 +1,10 @@
 package com.lingchaomin.auth.server.core.role.service;
 
-
+import com.lingchaomin.auth.server.common.dto.OperateResultDto;
 import com.lingchaomin.auth.server.core.role.dto.ResourceListDto;
 import com.lingchaomin.auth.server.core.role.dto.ResourceSelectDto;
+import com.lingchaomin.auth.server.core.role.dto.ResourceTreeDto;
 import com.lingchaomin.auth.server.core.role.entity.Resource;
-import com.yunbeitech.auth.common.dto.OperateResultDto;
 
 import java.util.List;
 
@@ -35,7 +35,7 @@ public interface IResourceService {
      * @param
      * @return
      */
-    OperateResultDto modify(Long id,String name,Integer type,Integer priority,Long parentId,String permission,String url);
+    OperateResultDto modify(Long id, String name, Integer type, Integer priority, Long parentId, String permission, String url);
 
     /**
      * 删除
@@ -76,5 +76,18 @@ public interface IResourceService {
      */
     List<ResourceListDto> findAll();
 
+    /**
+     * 根据appId查找
+     * @param appId
+     * @return
+     */
     List<ResourceSelectDto> findByAppId(Long appId);
+
+    /**
+     * 获取jstreedto
+     * @return
+     */
+    List<ResourceTreeDto> getResourceTreeDto();
+
+
 }

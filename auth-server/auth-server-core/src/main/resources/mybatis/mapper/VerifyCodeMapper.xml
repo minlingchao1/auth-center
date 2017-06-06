@@ -22,6 +22,8 @@
         <result property="sendTs" column="send_ts"/>
     </resultMap>
 
+
+
     <select id="selectByMobileAndSendTs" resultType="long">
         SELECT count(*)
         FROM

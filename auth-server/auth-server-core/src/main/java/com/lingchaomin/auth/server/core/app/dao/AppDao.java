@@ -5,8 +5,7 @@ import com.lingchaomin.auth.server.core.app.dto.AppSelectDto;
 import com.lingchaomin.auth.server.core.app.entity.App;
 import com.lingchaomin.auth.server.core.base.dao.IDao;
 
-
-import org.springframework.data.repository.query.Param;
+import org.apache.ibatis.annotations.Param;
 import org.springframework.stereotype.Repository;
 
 import java.util.List;
@@ -25,7 +24,7 @@ public interface AppDao extends IDao<App> {
      * 查找全部
      * @return
      */
-    List<App> findAll(@Param("searchValue") String searchValue);
+    List<App> selectAll(@Param("searchValue") String searchValue);
 
     long count(@Param("searchValue") String searchValue);
 
@@ -56,5 +55,6 @@ public interface AppDao extends IDao<App> {
      * @return
      */
     List<AppSelectDto> selectAll4Resource();
+
 }
 
