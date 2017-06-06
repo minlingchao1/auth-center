@@ -12,6 +12,7 @@
         <module>auth-server</module>
         <module>auth-core</module>
         <module>auth-cas-shiro-common</module>
+        <module>auth-cas</module>
     </modules>
 
     <properties>
