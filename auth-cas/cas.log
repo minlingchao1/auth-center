@@ -109,3 +109,60 @@ Caused by: java.lang.ClassNotFoundException: com.yunbeitech.cas.server.registry.
 2017-06-06 17:02:49,261 DEBUG [org.jasig.cas.web.flow.GenerateLoginTicketAction] - Generated login ticket LT-2-olcUKl4yLCfvfrPnmAnzb7CgW5jDl0-cas01.example.org
 2017-06-06 17:02:49,261 DEBUG [org.jasig.cas.web.flow.GenerateLoginTicketAction] - Generated login ticket LT-2-olcUKl4yLCfvfrPnmAnzb7CgW5jDl0-cas01.example.org
 2017-06-06 17:02:49,271 DEBUG [org.jasig.cas.web.support.CasArgumentExtractor] - Extractor did not generate service.
+2017-06-06 17:04:27,677 INFO [org.jasig.cas.services.DefaultServicesManagerImpl] - Reloading registered services.
+2017-06-06 17:04:27,683 DEBUG [org.jasig.cas.services.DefaultServicesManagerImpl] - Adding registered service http://**
+2017-06-06 17:04:27,684 INFO [org.jasig.cas.services.DefaultServicesManagerImpl] - Loaded 1 services.
+2017-06-06 17:06:27,675 INFO [org.jasig.cas.services.DefaultServicesManagerImpl] - Reloading registered services.
+2017-06-06 17:06:27,681 DEBUG [org.jasig.cas.services.DefaultServicesManagerImpl] - Adding registered service http://**
+2017-06-06 17:06:27,681 INFO [org.jasig.cas.services.DefaultServicesManagerImpl] - Loaded 1 services.
+2017-06-06 17:08:27,678 INFO [org.jasig.cas.services.DefaultServicesManagerImpl] - Reloading registered services.
+2017-06-06 17:08:27,679 DEBUG [org.jasig.cas.services.DefaultServicesManagerImpl] - Adding registered service http://**
+2017-06-06 17:08:27,679 INFO [org.jasig.cas.services.DefaultServicesManagerImpl] - Loaded 1 services.
+2017-06-06 17:10:27,678 INFO [org.jasig.cas.services.DefaultServicesManagerImpl] - Reloading registered services.
+2017-06-06 17:10:27,678 DEBUG [org.jasig.cas.services.DefaultServicesManagerImpl] - Adding registered service http://**
+2017-06-06 17:10:27,678 INFO [org.jasig.cas.services.DefaultServicesManagerImpl] - Loaded 1 services.
+2017-06-06 17:12:27,678 INFO [org.jasig.cas.services.DefaultServicesManagerImpl] - Reloading registered services.
+2017-06-06 17:12:27,679 DEBUG [org.jasig.cas.services.DefaultServicesManagerImpl] - Adding registered service http://**
+2017-06-06 17:12:27,680 INFO [org.jasig.cas.services.DefaultServicesManagerImpl] - Loaded 1 services.
+2017-06-06 17:14:27,678 INFO [org.jasig.cas.services.DefaultServicesManagerImpl] - Reloading registered services.
+2017-06-06 17:14:27,679 DEBUG [org.jasig.cas.services.DefaultServicesManagerImpl] - Adding registered service http://**
+2017-06-06 17:14:27,679 INFO [org.jasig.cas.services.DefaultServicesManagerImpl] - Loaded 1 services.
+2017-06-06 17:16:27,678 INFO [org.jasig.cas.services.DefaultServicesManagerImpl] - Reloading registered services.
+2017-06-06 17:16:27,678 DEBUG [org.jasig.cas.services.DefaultServicesManagerImpl] - Adding registered service http://**
+2017-06-06 17:16:27,678 INFO [org.jasig.cas.services.DefaultServicesManagerImpl] - Loaded 1 services.
+2017-06-06 17:18:27,678 INFO [org.jasig.cas.services.DefaultServicesManagerImpl] - Reloading registered services.
+2017-06-06 17:18:27,678 DEBUG [org.jasig.cas.services.DefaultServicesManagerImpl] - Adding registered service http://**
+2017-06-06 17:18:27,679 INFO [org.jasig.cas.services.DefaultServicesManagerImpl] - Loaded 1 services.
+2017-06-06 17:20:27,674 INFO [org.jasig.cas.services.DefaultServicesManagerImpl] - Reloading registered services.
+2017-06-06 17:20:27,674 DEBUG [org.jasig.cas.services.DefaultServicesManagerImpl] - Adding registered service http://**
+2017-06-06 17:20:27,674 INFO [org.jasig.cas.services.DefaultServicesManagerImpl] - Loaded 1 services.
+2017-06-06 17:22:27,674 INFO [org.jasig.cas.services.DefaultServicesManagerImpl] - Reloading registered services.
+2017-06-06 17:22:27,675 DEBUG [org.jasig.cas.services.DefaultServicesManagerImpl] - Adding registered service http://**
+2017-06-06 17:22:27,675 INFO [org.jasig.cas.services.DefaultServicesManagerImpl] - Loaded 1 services.
+2017-06-06 17:24:27,680 INFO [org.jasig.cas.services.DefaultServicesManagerImpl] - Reloading registered services.
+2017-06-06 17:24:27,681 DEBUG [org.jasig.cas.services.DefaultServicesManagerImpl] - Adding registered service http://**
+2017-06-06 17:24:27,681 INFO [org.jasig.cas.services.DefaultServicesManagerImpl] - Loaded 1 services.
+2017-06-06 17:26:27,680 INFO [org.jasig.cas.services.DefaultServicesManagerImpl] - Reloading registered services.
+2017-06-06 17:26:27,680 DEBUG [org.jasig.cas.services.DefaultServicesManagerImpl] - Adding registered service http://**
+2017-06-06 17:26:27,681 INFO [org.jasig.cas.services.DefaultServicesManagerImpl] - Loaded 1 services.
+2017-06-06 17:28:27,678 INFO [org.jasig.cas.services.DefaultServicesManagerImpl] - Reloading registered services.
+2017-06-06 17:28:27,678 DEBUG [org.jasig.cas.services.DefaultServicesManagerImpl] - Adding registered service http://**
+2017-06-06 17:28:27,678 INFO [org.jasig.cas.services.DefaultServicesManagerImpl] - Loaded 1 services.
+2017-06-06 17:30:27,682 INFO [org.jasig.cas.services.DefaultServicesManagerImpl] - Reloading registered services.
+2017-06-06 17:30:27,683 DEBUG [org.jasig.cas.services.DefaultServicesManagerImpl] - Adding registered service http://**
+2017-06-06 17:30:27,683 INFO [org.jasig.cas.services.DefaultServicesManagerImpl] - Loaded 1 services.
+2017-06-06 17:32:27,686 INFO [org.jasig.cas.services.DefaultServicesManagerImpl] - Reloading registered services.
+2017-06-06 17:32:27,686 DEBUG [org.jasig.cas.services.DefaultServicesManagerImpl] - Adding registered service http://**
+2017-06-06 17:32:27,687 INFO [org.jasig.cas.services.DefaultServicesManagerImpl] - Loaded 1 services.
+2017-06-06 17:34:27,678 INFO [org.jasig.cas.services.DefaultServicesManagerImpl] - Reloading registered services.
+2017-06-06 17:34:27,678 DEBUG [org.jasig.cas.services.DefaultServicesManagerImpl] - Adding registered service http://**
+2017-06-06 17:34:27,678 INFO [org.jasig.cas.services.DefaultServicesManagerImpl] - Loaded 1 services.
+2017-06-06 17:36:27,678 INFO [org.jasig.cas.services.DefaultServicesManagerImpl] - Reloading registered services.
+2017-06-06 17:36:27,678 DEBUG [org.jasig.cas.services.DefaultServicesManagerImpl] - Adding registered service http://**
+2017-06-06 17:36:27,678 INFO [org.jasig.cas.services.DefaultServicesManagerImpl] - Loaded 1 services.
+2017-06-06 17:38:27,679 INFO [org.jasig.cas.services.DefaultServicesManagerImpl] - Reloading registered services.
+2017-06-06 17:38:27,679 DEBUG [org.jasig.cas.services.DefaultServicesManagerImpl] - Adding registered service http://**
+2017-06-06 17:38:27,680 INFO [org.jasig.cas.services.DefaultServicesManagerImpl] - Loaded 1 services.
+2017-06-06 17:40:27,679 INFO [org.jasig.cas.services.DefaultServicesManagerImpl] - Reloading registered services.
+2017-06-06 17:40:27,680 DEBUG [org.jasig.cas.services.DefaultServicesManagerImpl] - Adding registered service http://**
+2017-06-06 17:40:27,681 INFO [org.jasig.cas.services.DefaultServicesManagerImpl] - Loaded 1 services.
