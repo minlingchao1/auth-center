@@ -926,3 +926,6 @@ Caused by: org.pac4j.core.exception.TechnicalException: key cannot be blank
 2017-07-25 16:17:44,405 DEBUG [org.jasig.cas.web.flow.GenerateLoginTicketAction] - Generated login ticket LT-1-FR1HUfCK1ubGncaVSNkeH7MTAvcxaf-cas01.example.org
 2017-07-25 16:17:44,405 DEBUG [org.jasig.cas.web.flow.GenerateLoginTicketAction] - Generated login ticket LT-1-FR1HUfCK1ubGncaVSNkeH7MTAvcxaf-cas01.example.org
 2017-07-25 16:17:45,716 DEBUG [org.jasig.cas.web.support.CasArgumentExtractor] - Extractor did not generate service.
+2017-07-25 16:19:39,619 INFO [org.jasig.cas.services.DefaultServicesManagerImpl] - Reloading registered services.
+2017-07-25 16:19:39,619 DEBUG [org.jasig.cas.services.DefaultServicesManagerImpl] - Adding registered service http://**
+2017-07-25 16:19:39,619 INFO [org.jasig.cas.services.DefaultServicesManagerImpl] - Loaded 1 services.
