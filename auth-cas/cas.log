@@ -929,3 +929,6 @@ Caused by: org.pac4j.core.exception.TechnicalException: key cannot be blank
 2017-07-25 16:19:39,619 INFO [org.jasig.cas.services.DefaultServicesManagerImpl] - Reloading registered services.
 2017-07-25 16:19:39,619 DEBUG [org.jasig.cas.services.DefaultServicesManagerImpl] - Adding registered service http://**
 2017-07-25 16:19:39,619 INFO [org.jasig.cas.services.DefaultServicesManagerImpl] - Loaded 1 services.
+2017-07-25 16:21:39,610 INFO [org.jasig.cas.services.DefaultServicesManagerImpl] - Reloading registered services.
+2017-07-25 16:21:39,610 DEBUG [org.jasig.cas.services.DefaultServicesManagerImpl] - Adding registered service http://**
+2017-07-25 16:21:39,610 INFO [org.jasig.cas.services.DefaultServicesManagerImpl] - Loaded 1 services.
