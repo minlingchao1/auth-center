@@ -154,3 +154,406 @@ Tag                                                  Avg(ms)         Min        
 Performance Statistics   2017-07-25 16:21:00 - 2017-07-25 16:22:00
 Tag                                                  Avg(ms)         Min         Max     Std Dev       Count
 
+Performance Statistics   2017-07-25 16:22:00 - 2017-07-25 16:23:00
+Tag                                                  Avg(ms)         Min         Max     Std Dev       Count
+
+Performance Statistics   2017-07-25 16:23:00 - 2017-07-25 16:24:00
+Tag                                                  Avg(ms)         Min         Max     Std Dev       Count
+
+Performance Statistics   2017-07-25 16:24:00 - 2017-07-25 16:25:00
+Tag                                                  Avg(ms)         Min         Max     Std Dev       Count
+
+Performance Statistics   2017-07-25 16:25:00 - 2017-07-25 16:26:00
+Tag                                                  Avg(ms)         Min         Max     Std Dev       Count
+
+Performance Statistics   2017-07-25 16:26:00 - 2017-07-25 16:27:00
+Tag                                                  Avg(ms)         Min         Max     Std Dev       Count
+
+Performance Statistics   2017-07-25 16:27:00 - 2017-07-25 16:28:00
+Tag                                                  Avg(ms)         Min         Max     Std Dev       Count
+
+Performance Statistics   2017-07-25 16:28:00 - 2017-07-25 16:29:00
+Tag                                                  Avg(ms)         Min         Max     Std Dev       Count
+
+Performance Statistics   2017-07-25 16:29:00 - 2017-07-25 16:30:00
+Tag                                                  Avg(ms)         Min         Max     Std Dev       Count
+
+Performance Statistics   2017-07-25 16:30:00 - 2017-07-25 16:31:00
+Tag                                                  Avg(ms)         Min         Max     Std Dev       Count
+
+Performance Statistics   2017-07-25 16:31:00 - 2017-07-25 16:32:00
+Tag                                                  Avg(ms)         Min         Max     Std Dev       Count
+
+Performance Statistics   2017-07-25 16:32:00 - 2017-07-25 16:33:00
+Tag                                                  Avg(ms)         Min         Max     Std Dev       Count
+
+Performance Statistics   2017-07-25 16:33:00 - 2017-07-25 16:34:00
+Tag                                                  Avg(ms)         Min         Max     Std Dev       Count
+
+Performance Statistics   2017-07-25 16:34:00 - 2017-07-25 16:35:00
+Tag                                                  Avg(ms)         Min         Max     Std Dev       Count
+
+Performance Statistics   2017-07-25 16:35:00 - 2017-07-25 16:36:00
+Tag                                                  Avg(ms)         Min         Max     Std Dev       Count
+
+Performance Statistics   2017-07-25 16:36:00 - 2017-07-25 16:37:00
+Tag                                                  Avg(ms)         Min         Max     Std Dev       Count
+
+Performance Statistics   2017-07-25 16:37:00 - 2017-07-25 16:38:00
+Tag                                                  Avg(ms)         Min         Max     Std Dev       Count
+
+Performance Statistics   2017-07-25 16:38:00 - 2017-07-25 16:39:00
+Tag                                                  Avg(ms)         Min         Max     Std Dev       Count
+
+Performance Statistics   2017-07-25 16:39:00 - 2017-07-25 16:40:00
+Tag                                                  Avg(ms)         Min         Max     Std Dev       Count
+
+Performance Statistics   2017-07-25 16:40:00 - 2017-07-25 16:41:00
+Tag                                                  Avg(ms)         Min         Max     Std Dev       Count
+
+Performance Statistics   2017-07-25 16:41:00 - 2017-07-25 16:42:00
+Tag                                                  Avg(ms)         Min         Max     Std Dev       Count
+
+Performance Statistics   2017-07-25 16:42:00 - 2017-07-25 16:43:00
+Tag                                                  Avg(ms)         Min         Max     Std Dev       Count
+
+Performance Statistics   2017-07-25 16:43:00 - 2017-07-25 16:44:00
+Tag                                                  Avg(ms)         Min         Max     Std Dev       Count
+
+Performance Statistics   2017-07-25 16:44:00 - 2017-07-25 16:45:00
+Tag                                                  Avg(ms)         Min         Max     Std Dev       Count
+
+Performance Statistics   2017-07-25 16:45:00 - 2017-07-25 16:46:00
+Tag                                                  Avg(ms)         Min         Max     Std Dev       Count
+
+Performance Statistics   2017-07-25 16:46:00 - 2017-07-25 16:47:00
+Tag                                                  Avg(ms)         Min         Max     Std Dev       Count
+
+Performance Statistics   2017-07-25 16:47:00 - 2017-07-25 16:48:00
+Tag                                                  Avg(ms)         Min         Max     Std Dev       Count
+
+Performance Statistics   2017-07-25 16:48:00 - 2017-07-25 16:49:00
+Tag                                                  Avg(ms)         Min         Max     Std Dev       Count
+
+Performance Statistics   2017-07-25 16:49:00 - 2017-07-25 16:50:00
+Tag                                                  Avg(ms)         Min         Max     Std Dev       Count
+
+Performance Statistics   2017-07-25 16:50:00 - 2017-07-25 16:51:00
+Tag                                                  Avg(ms)         Min         Max     Std Dev       Count
+
+Performance Statistics   2017-07-25 16:51:00 - 2017-07-25 16:52:00
+Tag                                                  Avg(ms)         Min         Max     Std Dev       Count
+
+Performance Statistics   2017-07-25 16:52:00 - 2017-07-25 16:53:00
+Tag                                                  Avg(ms)         Min         Max     Std Dev       Count
+
+Performance Statistics   2017-07-25 16:53:00 - 2017-07-25 16:54:00
+Tag                                                  Avg(ms)         Min         Max     Std Dev       Count
+
+Performance Statistics   2017-07-25 16:54:00 - 2017-07-25 16:55:00
+Tag                                                  Avg(ms)         Min         Max     Std Dev       Count
+
+Performance Statistics   2017-07-25 16:58:00 - 2017-07-25 16:59:00
+Tag                                                  Avg(ms)         Min         Max     Std Dev       Count
+AUTHENTICATE                                           306.0         306         306         0.0           1
+CREATE_TICKET_GRANTING_TICKET                          310.0         310         310         0.0           1
+
+Performance Statistics   2017-07-25 16:59:00 - 2017-07-25 17:00:00
+Tag                                                  Avg(ms)         Min         Max     Std Dev       Count
+
+Performance Statistics   2017-07-25 17:00:00 - 2017-07-25 17:01:00
+Tag                                                  Avg(ms)         Min         Max     Std Dev       Count
+
+Performance Statistics   2017-07-25 17:01:00 - 2017-07-25 17:02:00
+Tag                                                  Avg(ms)         Min         Max     Std Dev       Count
+AUTHENTICATE                                             5.0           5           5         0.0           1
+CREATE_TICKET_GRANTING_TICKET                          478.0         478         478         0.0           1
+
+Performance Statistics   2017-07-25 17:02:00 - 2017-07-25 17:03:00
+Tag                                                  Avg(ms)         Min         Max     Std Dev       Count
+AUTHENTICATE                                             2.0           2           2         0.0           2
+CREATE_TICKET_GRANTING_TICKET                            4.0           4           4         0.0           2
+
+Performance Statistics   2017-07-25 17:03:00 - 2017-07-25 17:04:00
+Tag                                                  Avg(ms)         Min         Max     Std Dev       Count
+
+Performance Statistics   2017-07-25 17:04:00 - 2017-07-25 17:05:00
+Tag                                                  Avg(ms)         Min         Max     Std Dev       Count
+
+Performance Statistics   2017-07-25 17:06:00 - 2017-07-25 17:07:00
+Tag                                                  Avg(ms)         Min         Max     Std Dev       Count
+AUTHENTICATE                                           296.0         296         296         0.0           1
+CREATE_TICKET_GRANTING_TICKET                          309.0         309         309         0.0           1
+
+Performance Statistics   2017-07-25 17:07:00 - 2017-07-25 17:08:00
+Tag                                                  Avg(ms)         Min         Max     Std Dev       Count
+AUTHENTICATE                                            11.0          11          11         0.0           1
+CREATE_TICKET_GRANTING_TICKET                          307.0         307         307         0.0           1
+
+Performance Statistics   2017-07-25 17:08:00 - 2017-07-25 17:09:00
+Tag                                                  Avg(ms)         Min         Max     Std Dev       Count
+
+Performance Statistics   2017-07-25 17:09:00 - 2017-07-25 17:10:00
+Tag                                                  Avg(ms)         Min         Max     Std Dev       Count
+
+Performance Statistics   2017-07-25 17:10:00 - 2017-07-25 17:11:00
+Tag                                                  Avg(ms)         Min         Max     Std Dev       Count
+
+Performance Statistics   2017-07-25 17:11:00 - 2017-07-25 17:12:00
+Tag                                                  Avg(ms)         Min         Max     Std Dev       Count
+
+Performance Statistics   2017-07-25 17:12:00 - 2017-07-25 17:13:00
+Tag                                                  Avg(ms)         Min         Max     Std Dev       Count
+
+Performance Statistics   2017-07-25 17:13:00 - 2017-07-25 17:14:00
+Tag                                                  Avg(ms)         Min         Max     Std Dev       Count
+
+Performance Statistics   2017-07-25 17:14:00 - 2017-07-25 17:15:00
+Tag                                                  Avg(ms)         Min         Max     Std Dev       Count
+
+Performance Statistics   2017-07-25 17:15:00 - 2017-07-25 17:16:00
+Tag                                                  Avg(ms)         Min         Max     Std Dev       Count
+AUTHENTICATE                                             9.0           9           9         0.0           1
+CREATE_TICKET_GRANTING_TICKET                          287.0         287         287         0.0           1
+DESTROY_TICKET_GRANTING_TICKET                          45.0          45          45         0.0           1
+GRANT_SERVICE_TICKET                                   390.0         390         390         0.0           1
+
+Performance Statistics   2017-07-25 17:16:00 - 2017-07-25 17:17:00
+Tag                                                  Avg(ms)         Min         Max     Std Dev       Count
+GRANT_SERVICE_TICKET                                   242.0         242         242         0.0           1
+
+Performance Statistics   2017-07-25 17:17:00 - 2017-07-25 17:18:00
+Tag                                                  Avg(ms)         Min         Max     Std Dev       Count
+
+Performance Statistics   2017-07-25 17:18:00 - 2017-07-25 17:19:00
+Tag                                                  Avg(ms)         Min         Max     Std Dev       Count
+
+Performance Statistics   2017-07-25 17:19:00 - 2017-07-25 17:20:00
+Tag                                                  Avg(ms)         Min         Max     Std Dev       Count
+
+Performance Statistics   2017-07-25 17:20:00 - 2017-07-25 17:21:00
+Tag                                                  Avg(ms)         Min         Max     Std Dev       Count
+
+Performance Statistics   2017-07-25 17:21:00 - 2017-07-25 17:22:00
+Tag                                                  Avg(ms)         Min         Max     Std Dev       Count
+AUTHENTICATE                                             8.0           8           8         0.0           1
+CREATE_TICKET_GRANTING_TICKET                           86.0          86          86         0.0           1
+DESTROY_TICKET_GRANTING_TICKET                          66.0          66          66         0.0           1
+GRANT_SERVICE_TICKET                                   277.0         277         277         0.0           1
+
+Performance Statistics   2017-07-25 17:22:00 - 2017-07-25 17:23:00
+Tag                                                  Avg(ms)         Min         Max     Std Dev       Count
+
+Performance Statistics   2017-07-25 17:23:00 - 2017-07-25 17:24:00
+Tag                                                  Avg(ms)         Min         Max     Std Dev       Count
+
+Performance Statistics   2017-07-25 17:24:00 - 2017-07-25 17:25:00
+Tag                                                  Avg(ms)         Min         Max     Std Dev       Count
+
+Performance Statistics   2017-07-25 17:25:00 - 2017-07-25 17:26:00
+Tag                                                  Avg(ms)         Min         Max     Std Dev       Count
+
+Performance Statistics   2017-07-25 17:26:00 - 2017-07-25 17:27:00
+Tag                                                  Avg(ms)         Min         Max     Std Dev       Count
+
+Performance Statistics   2017-07-25 17:27:00 - 2017-07-25 17:28:00
+Tag                                                  Avg(ms)         Min         Max     Std Dev       Count
+
+Performance Statistics   2017-07-25 17:28:00 - 2017-07-25 17:29:00
+Tag                                                  Avg(ms)         Min         Max     Std Dev       Count
+
+Performance Statistics   2017-07-25 17:29:00 - 2017-07-25 17:30:00
+Tag                                                  Avg(ms)         Min         Max     Std Dev       Count
+
+Performance Statistics   2017-07-25 17:30:00 - 2017-07-25 17:31:00
+Tag                                                  Avg(ms)         Min         Max     Std Dev       Count
+
+Performance Statistics   2017-07-25 17:34:00 - 2017-07-25 17:35:00
+Tag                                                  Avg(ms)         Min         Max     Std Dev       Count
+AUTHENTICATE                                           277.0         277         277         0.0           1
+CREATE_TICKET_GRANTING_TICKET                          361.0         361         361         0.0           1
+DESTROY_TICKET_GRANTING_TICKET                          50.0          50          50         0.0           1
+GRANT_SERVICE_TICKET                                   552.0         552         552         0.0           1
+
+Performance Statistics   2017-07-25 17:36:00 - 2017-07-25 17:37:00
+Tag                                                  Avg(ms)         Min         Max     Std Dev       Count
+DESTROY_TICKET_GRANTING_TICKET                          73.0          73          73         0.0           1
+
+Performance Statistics   2017-07-25 17:37:00 - 2017-07-25 17:38:00
+Tag                                                  Avg(ms)         Min         Max     Std Dev       Count
+AUTHENTICATE                                           191.0         191         191         0.0           1
+CREATE_TICKET_GRANTING_TICKET                          293.0         293         293         0.0           1
+GRANT_SERVICE_TICKET                                   395.0         395         395         0.0           1
+
+Performance Statistics   2017-07-25 17:38:00 - 2017-07-25 17:39:00
+Tag                                                  Avg(ms)         Min         Max     Std Dev       Count
+
+Performance Statistics   2017-07-25 17:39:00 - 2017-07-25 17:40:00
+Tag                                                  Avg(ms)         Min         Max     Std Dev       Count
+
+Performance Statistics   2017-07-25 17:40:00 - 2017-07-25 17:41:00
+Tag                                                  Avg(ms)         Min         Max     Std Dev       Count
+
+Performance Statistics   2017-07-25 17:41:00 - 2017-07-25 17:42:00
+Tag                                                  Avg(ms)         Min         Max     Std Dev       Count
+AUTHENTICATE                                            12.0          12          12         0.0           1
+CREATE_TICKET_GRANTING_TICKET                          100.0         100         100         0.0           1
+DESTROY_TICKET_GRANTING_TICKET                          88.0          88          88         0.0           1
+GRANT_SERVICE_TICKET                                   630.0         630         630         0.0           1
+
+Performance Statistics   2017-07-25 17:42:00 - 2017-07-25 17:43:00
+Tag                                                  Avg(ms)         Min         Max     Std Dev       Count
+
+Performance Statistics   2017-07-25 17:43:00 - 2017-07-25 17:44:00
+Tag                                                  Avg(ms)         Min         Max     Std Dev       Count
+
+Performance Statistics   2017-07-25 17:44:00 - 2017-07-25 17:45:00
+Tag                                                  Avg(ms)         Min         Max     Std Dev       Count
+
+Performance Statistics   2017-07-25 17:45:00 - 2017-07-25 17:46:00
+Tag                                                  Avg(ms)         Min         Max     Std Dev       Count
+
+Performance Statistics   2017-07-25 17:46:00 - 2017-07-25 17:47:00
+Tag                                                  Avg(ms)         Min         Max     Std Dev       Count
+
+Performance Statistics   2017-07-25 17:47:00 - 2017-07-25 17:48:00
+Tag                                                  Avg(ms)         Min         Max     Std Dev       Count
+
+Performance Statistics   2017-07-25 17:48:00 - 2017-07-25 17:49:00
+Tag                                                  Avg(ms)         Min         Max     Std Dev       Count
+AUTHENTICATE                                             4.0           4           4         0.0           1
+CREATE_TICKET_GRANTING_TICKET                          119.0         119         119         0.0           1
+DESTROY_TICKET_GRANTING_TICKET                         143.0         143         143         0.0           1
+GRANT_SERVICE_TICKET                                   506.0         506         506         0.0           1
+
+Performance Statistics   2017-07-25 17:49:00 - 2017-07-25 17:50:00
+Tag                                                  Avg(ms)         Min         Max     Std Dev       Count
+GRANT_SERVICE_TICKET                                   360.0         360         360         0.0           1
+
+Performance Statistics   2017-07-25 17:50:00 - 2017-07-25 17:51:00
+Tag                                                  Avg(ms)         Min         Max     Std Dev       Count
+
+Performance Statistics   2017-07-25 17:51:00 - 2017-07-25 17:52:00
+Tag                                                  Avg(ms)         Min         Max     Std Dev       Count
+
+Performance Statistics   2017-07-25 17:52:00 - 2017-07-25 17:53:00
+Tag                                                  Avg(ms)         Min         Max     Std Dev       Count
+
+Performance Statistics   2017-07-25 17:53:00 - 2017-07-25 17:54:00
+Tag                                                  Avg(ms)         Min         Max     Std Dev       Count
+
+Performance Statistics   2017-07-25 17:54:00 - 2017-07-25 17:55:00
+Tag                                                  Avg(ms)         Min         Max     Std Dev       Count
+
+Performance Statistics   2017-07-25 17:55:00 - 2017-07-25 17:56:00
+Tag                                                  Avg(ms)         Min         Max     Std Dev       Count
+
+Performance Statistics   2017-07-25 17:56:00 - 2017-07-25 17:57:00
+Tag                                                  Avg(ms)         Min         Max     Std Dev       Count
+
+Performance Statistics   2017-07-25 17:57:00 - 2017-07-25 17:58:00
+Tag                                                  Avg(ms)         Min         Max     Std Dev       Count
+
+Performance Statistics   2017-07-25 17:58:00 - 2017-07-25 17:59:00
+Tag                                                  Avg(ms)         Min         Max     Std Dev       Count
+
+Performance Statistics   2017-07-25 18:00:00 - 2017-07-25 18:01:00
+Tag                                                  Avg(ms)         Min         Max     Std Dev       Count
+DESTROY_TICKET_GRANTING_TICKET                         376.0         376         376         0.0           1
+
+Performance Statistics   2017-07-25 18:03:00 - 2017-07-25 18:04:00
+Tag                                                  Avg(ms)         Min         Max     Std Dev       Count
+AUTHENTICATE                                           118.5           5         232       113.5           2
+CREATE_TICKET_GRANTING_TICKET                          243.0         235         251         8.0           2
+
+Performance Statistics   2017-07-25 18:04:00 - 2017-07-25 18:05:00
+Tag                                                  Avg(ms)         Min         Max     Std Dev       Count
+
+Performance Statistics   2017-07-25 18:05:00 - 2017-07-25 18:06:00
+Tag                                                  Avg(ms)         Min         Max     Std Dev       Count
+AUTHENTICATE                                             3.0           3           3         0.0           1
+CREATE_TICKET_GRANTING_TICKET                           76.0          76          76         0.0           1
+DESTROY_TICKET_GRANTING_TICKET                          46.0          46          46         0.0           1
+GRANT_SERVICE_TICKET                                   471.0         471         471         0.0           1
+VALIDATE_SERVICE_TICKET                                390.0         390         390         0.0           1
+
+Performance Statistics   2017-07-25 18:06:00 - 2017-07-25 18:07:00
+Tag                                                  Avg(ms)         Min         Max     Std Dev       Count
+
+Performance Statistics   2017-07-25 18:07:00 - 2017-07-25 18:08:00
+Tag                                                  Avg(ms)         Min         Max     Std Dev       Count
+
+Performance Statistics   2017-07-25 18:08:00 - 2017-07-25 18:09:00
+Tag                                                  Avg(ms)         Min         Max     Std Dev       Count
+AUTHENTICATE                                             3.0           3           3         0.0           1
+CREATE_TICKET_GRANTING_TICKET                           95.0          95          95         0.0           1
+DESTROY_TICKET_GRANTING_TICKET                         112.0         112         112         0.0           1
+GRANT_SERVICE_TICKET                                   512.0         512         512         0.0           1
+VALIDATE_SERVICE_TICKET                                421.0         421         421         0.0           1
+
+Performance Statistics   2017-07-25 18:09:00 - 2017-07-25 18:10:00
+Tag                                                  Avg(ms)         Min         Max     Std Dev       Count
+
+Performance Statistics   2017-07-25 18:10:00 - 2017-07-25 18:11:00
+Tag                                                  Avg(ms)         Min         Max     Std Dev       Count
+AUTHENTICATE                                             3.0           3           3         0.0           1
+CREATE_TICKET_GRANTING_TICKET                          298.0         298         298         0.0           1
+DESTROY_TICKET_GRANTING_TICKET                         478.0         478         478         0.0           1
+GRANT_SERVICE_TICKET                                   418.0         418         418         0.0           1
+VALIDATE_SERVICE_TICKET                                302.0         302         302         0.0           1
+
+Performance Statistics   2017-07-25 18:11:00 - 2017-07-25 18:12:00
+Tag                                                  Avg(ms)         Min         Max     Std Dev       Count
+AUTHENTICATE                                             2.0           2           2         0.0           1
+CREATE_TICKET_GRANTING_TICKET                           92.0          92          92         0.0           1
+DESTROY_TICKET_GRANTING_TICKET                         410.0         410         410         0.0           1
+GRANT_SERVICE_TICKET                                   633.0         633         633         0.0           1
+VALIDATE_SERVICE_TICKET                                246.0         246         246         0.0           1
+
+Performance Statistics   2017-07-25 18:12:00 - 2017-07-25 18:13:00
+Tag                                                  Avg(ms)         Min         Max     Std Dev       Count
+
+Performance Statistics   2017-07-25 18:13:00 - 2017-07-25 18:14:00
+Tag                                                  Avg(ms)         Min         Max     Std Dev       Count
+
+Performance Statistics   2017-07-25 18:14:00 - 2017-07-25 18:15:00
+Tag                                                  Avg(ms)         Min         Max     Std Dev       Count
+
+Performance Statistics   2017-07-25 18:15:00 - 2017-07-25 18:16:00
+Tag                                                  Avg(ms)         Min         Max     Std Dev       Count
+
+Performance Statistics   2017-07-25 18:16:00 - 2017-07-25 18:17:00
+Tag                                                  Avg(ms)         Min         Max     Std Dev       Count
+
+Performance Statistics   2017-07-25 18:17:00 - 2017-07-25 18:18:00
+Tag                                                  Avg(ms)         Min         Max     Std Dev       Count
+
+Performance Statistics   2017-07-25 18:18:00 - 2017-07-25 18:19:00
+Tag                                                  Avg(ms)         Min         Max     Std Dev       Count
+
+Performance Statistics   2017-07-25 18:19:00 - 2017-07-25 18:20:00
+Tag                                                  Avg(ms)         Min         Max     Std Dev       Count
+
+Performance Statistics   2017-07-25 18:20:00 - 2017-07-25 18:21:00
+Tag                                                  Avg(ms)         Min         Max     Std Dev       Count
+DESTROY_TICKET_GRANTING_TICKET                         342.0         342         342         0.0           1
+
+Performance Statistics   2017-07-25 18:21:00 - 2017-07-25 18:22:00
+Tag                                                  Avg(ms)         Min         Max     Std Dev       Count
+AUTHENTICATE                                             3.0           3           3         0.0           1
+CREATE_TICKET_GRANTING_TICKET                          189.0         189         189         0.0           1
+GRANT_SERVICE_TICKET                                   309.0         309         309         0.0           1
+VALIDATE_SERVICE_TICKET                                214.0         214         214         0.0           1
+
+Performance Statistics   2017-07-25 18:22:00 - 2017-07-25 18:23:00
+Tag                                                  Avg(ms)         Min         Max     Std Dev       Count
+
+Performance Statistics   2017-07-25 18:23:00 - 2017-07-25 18:24:00
+Tag                                                  Avg(ms)         Min         Max     Std Dev       Count
+
+Performance Statistics   2017-07-25 18:24:00 - 2017-07-25 18:25:00
+Tag                                                  Avg(ms)         Min         Max     Std Dev       Count
+
+Performance Statistics   2017-07-25 18:25:00 - 2017-07-25 18:26:00
+Tag                                                  Avg(ms)         Min         Max     Std Dev       Count
+

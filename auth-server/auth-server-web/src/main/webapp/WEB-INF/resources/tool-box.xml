@@ -41,7 +41,7 @@
     <tool>
         <key>shiro</key>
         <scrope>application</scrope>
-        <class>com.yunbeitech.cas.shiro.common.velocity.ShiroPermission</class>
+        <class>com.lingchaomin.auth.cas.shiro.common.velocity.ShiroPermission</class>
     </tool>
 
 </toolbox>

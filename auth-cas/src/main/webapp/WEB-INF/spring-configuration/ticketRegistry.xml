@@ -48,63 +48,8 @@
         <property name="tgt_time" value="${redis.tgt_time}"/>
     </bean>
 
-    <!-- Ticket Registry -->
-  <!--<bean id="ticketRegistry" class="org.jasig.cas.ticket.registry.DefaultTicketRegistry" />-->
-
-    <!--<bean id="ticketRegistry"-->
-          <!--class="org.jasig.cas.ticket.registry.MemCacheTicketRegistry"-->
-          <!--c:client-ref="memcachedClient"-->
-          <!--c:ticketGrantingTicketTimeOut="${tgt.maxTimeToLiveInSeconds}"-->
-          <!--c:serviceTicketTimeOut="${st.timeToKillInSeconds}" />-->
-
-    <!--<bean id="ticketRegistry" class="com.yunbeitech.cas.server.registry.RedisTicketRegistry">-->
-        <!--<constructor-arg index="0" ref="redisTemplate" />-->
-
-        <!--&lt;!&ndash; TGT timeout in seconds &ndash;&gt;-->
-        <!--<constructor-arg index="1" value="1800" />-->
-
-        <!--&lt;!&ndash; ST timeout in seconds &ndash;&gt;-->
-        <!--<constructor-arg index="2" value="300" />-->
-   <!--</bean>-->
-    <!--&lt;!&ndash; redis连接池 &ndash;&gt;-->
-    <!--<bean id="jedisConnFactory"-->
-          <!--class="org.springframework.data.redis.connection.jedis.JedisConnectionFactory"-->
-          <!--p:hostName="${redis.host}"-->
-          <!--p:database="${redis.database}"-->
-          <!--p:password="${redis.password}"-->
-          <!--p:usePool="true"/>-->
-    <!--<bean id="redisTemplate" class="com.yunbeitech.cas.server.registry.TicketRedisTemplate"-->
-          <!--p:connectionFactory-ref="jedisConnFactory"/>-->
-
-	<!--Quartz -->
-	<!-- TICKET REGISTRY CLEANER -->
-	<!--<bean id="ticketRegistryCleaner" class="org.jasig.cas.ticket.registry.support.DefaultTicketRegistryCleaner"-->
-		<!--p:ticketRegistry-ref="ticketRegistry"-->
-		<!--p:logoutManager-ref="logoutManager" />-->
-	
-	<!--<bean id="jobDetailTicketRegistryCleaner" class="org.springframework.scheduling.quartz.MethodInvokingJobDetailFactoryBean"-->
-		<!--p:targetObject-ref="ticketRegistryCleaner"-->
-		<!--p:targetMethod="clean" />-->
-	
-	<!--<bean id="triggerJobDetailTicketRegistryCleaner" class="org.springframework.scheduling.quartz.SimpleTriggerBean"-->
-		<!--p:jobDetail-ref="jobDetailTicketRegistryCleaner"-->
-		<!--p:startDelay="20000"-->
-		<!--p:repeatInterval="5000000" />-->
-
     <bean id="kryoTranscoder"
           class="org.jasig.cas.ticket.registry.support.kryo.KryoTranscoder"
           init-method="initialize"
           c:initialBufferSize="8192" />
-
-    <!--<bean id="memcachedClient" class="net.spy.memcached.spring.MemcachedClientFactoryBean"-->
-          <!--p:servers="${memcached.servers}"-->
-          <!--p:protocol="${memcached.protocol}"-->
-          <!--p:locatorType="${memcached.locatorType}"-->
-          <!--p:failureMode="${memcached.failureMode}"-->
-          <!--p:transcoder-ref="kryoTranscoder">-->
-        <!--<property name="hashAlg">-->
-            <!--<util:constant static-field="net.spy.memcached.DefaultHashAlgorithm.${memcached.hashAlgorithm}" />-->
-        <!--</property>-->
-    <!--</bean>-->
-
 </beans>

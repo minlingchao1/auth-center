@@ -106,7 +106,7 @@
         <appender-ref ref="cas" />
     </logger>
 
-    <logger name="com.yunbeitech">
+    <logger name="com.lingchaomin">
         <level value="debug" />
         <appender-ref ref="cas" />
     </logger>

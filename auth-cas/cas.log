@@ -932,3 +932,792 @@ Caused by: org.pac4j.core.exception.TechnicalException: key cannot be blank
 2017-07-25 16:21:39,610 INFO [org.jasig.cas.services.DefaultServicesManagerImpl] - Reloading registered services.
 2017-07-25 16:21:39,610 DEBUG [org.jasig.cas.services.DefaultServicesManagerImpl] - Adding registered service http://**
 2017-07-25 16:21:39,610 INFO [org.jasig.cas.services.DefaultServicesManagerImpl] - Loaded 1 services.
+2017-07-25 16:23:39,607 INFO [org.jasig.cas.services.DefaultServicesManagerImpl] - Reloading registered services.
+2017-07-25 16:23:39,607 DEBUG [org.jasig.cas.services.DefaultServicesManagerImpl] - Adding registered service http://**
+2017-07-25 16:23:39,607 INFO [org.jasig.cas.services.DefaultServicesManagerImpl] - Loaded 1 services.
+2017-07-25 16:25:39,611 INFO [org.jasig.cas.services.DefaultServicesManagerImpl] - Reloading registered services.
+2017-07-25 16:25:39,613 DEBUG [org.jasig.cas.services.DefaultServicesManagerImpl] - Adding registered service http://**
+2017-07-25 16:25:39,613 INFO [org.jasig.cas.services.DefaultServicesManagerImpl] - Loaded 1 services.
+2017-07-25 16:27:39,609 INFO [org.jasig.cas.services.DefaultServicesManagerImpl] - Reloading registered services.
+2017-07-25 16:27:39,610 DEBUG [org.jasig.cas.services.DefaultServicesManagerImpl] - Adding registered service http://**
+2017-07-25 16:27:39,611 INFO [org.jasig.cas.services.DefaultServicesManagerImpl] - Loaded 1 services.
+2017-07-25 16:29:39,614 INFO [org.jasig.cas.services.DefaultServicesManagerImpl] - Reloading registered services.
+2017-07-25 16:29:39,614 DEBUG [org.jasig.cas.services.DefaultServicesManagerImpl] - Adding registered service http://**
+2017-07-25 16:29:39,614 INFO [org.jasig.cas.services.DefaultServicesManagerImpl] - Loaded 1 services.
+2017-07-25 16:31:39,611 INFO [org.jasig.cas.services.DefaultServicesManagerImpl] - Reloading registered services.
+2017-07-25 16:31:39,616 DEBUG [org.jasig.cas.services.DefaultServicesManagerImpl] - Adding registered service http://**
+2017-07-25 16:31:39,617 INFO [org.jasig.cas.services.DefaultServicesManagerImpl] - Loaded 1 services.
+2017-07-25 16:33:39,611 INFO [org.jasig.cas.services.DefaultServicesManagerImpl] - Reloading registered services.
+2017-07-25 16:33:39,617 DEBUG [org.jasig.cas.services.DefaultServicesManagerImpl] - Adding registered service http://**
+2017-07-25 16:33:39,617 INFO [org.jasig.cas.services.DefaultServicesManagerImpl] - Loaded 1 services.
+2017-07-25 16:35:39,610 INFO [org.jasig.cas.services.DefaultServicesManagerImpl] - Reloading registered services.
+2017-07-25 16:35:39,611 DEBUG [org.jasig.cas.services.DefaultServicesManagerImpl] - Adding registered service http://**
+2017-07-25 16:35:39,611 INFO [org.jasig.cas.services.DefaultServicesManagerImpl] - Loaded 1 services.
+2017-07-25 16:37:39,607 INFO [org.jasig.cas.services.DefaultServicesManagerImpl] - Reloading registered services.
+2017-07-25 16:37:39,607 DEBUG [org.jasig.cas.services.DefaultServicesManagerImpl] - Adding registered service http://**
+2017-07-25 16:37:39,608 INFO [org.jasig.cas.services.DefaultServicesManagerImpl] - Loaded 1 services.
+2017-07-25 16:39:39,608 INFO [org.jasig.cas.services.DefaultServicesManagerImpl] - Reloading registered services.
+2017-07-25 16:39:39,614 DEBUG [org.jasig.cas.services.DefaultServicesManagerImpl] - Adding registered service http://**
+2017-07-25 16:39:39,614 INFO [org.jasig.cas.services.DefaultServicesManagerImpl] - Loaded 1 services.
+2017-07-25 16:41:39,610 INFO [org.jasig.cas.services.DefaultServicesManagerImpl] - Reloading registered services.
+2017-07-25 16:41:39,615 DEBUG [org.jasig.cas.services.DefaultServicesManagerImpl] - Adding registered service http://**
+2017-07-25 16:41:39,616 INFO [org.jasig.cas.services.DefaultServicesManagerImpl] - Loaded 1 services.
+2017-07-25 16:43:39,610 INFO [org.jasig.cas.services.DefaultServicesManagerImpl] - Reloading registered services.
+2017-07-25 16:43:39,616 DEBUG [org.jasig.cas.services.DefaultServicesManagerImpl] - Adding registered service http://**
+2017-07-25 16:43:39,616 INFO [org.jasig.cas.services.DefaultServicesManagerImpl] - Loaded 1 services.
+2017-07-25 16:45:39,611 INFO [org.jasig.cas.services.DefaultServicesManagerImpl] - Reloading registered services.
+2017-07-25 16:45:39,611 DEBUG [org.jasig.cas.services.DefaultServicesManagerImpl] - Adding registered service http://**
+2017-07-25 16:45:39,611 INFO [org.jasig.cas.services.DefaultServicesManagerImpl] - Loaded 1 services.
+2017-07-25 16:47:39,610 INFO [org.jasig.cas.services.DefaultServicesManagerImpl] - Reloading registered services.
+2017-07-25 16:47:39,611 DEBUG [org.jasig.cas.services.DefaultServicesManagerImpl] - Adding registered service http://**
+2017-07-25 16:47:39,611 INFO [org.jasig.cas.services.DefaultServicesManagerImpl] - Loaded 1 services.
+2017-07-25 16:49:39,609 INFO [org.jasig.cas.services.DefaultServicesManagerImpl] - Reloading registered services.
+2017-07-25 16:49:39,609 DEBUG [org.jasig.cas.services.DefaultServicesManagerImpl] - Adding registered service http://**
+2017-07-25 16:49:39,609 INFO [org.jasig.cas.services.DefaultServicesManagerImpl] - Loaded 1 services.
+2017-07-25 16:51:39,608 INFO [org.jasig.cas.services.DefaultServicesManagerImpl] - Reloading registered services.
+2017-07-25 16:51:39,614 DEBUG [org.jasig.cas.services.DefaultServicesManagerImpl] - Adding registered service http://**
+2017-07-25 16:51:39,614 INFO [org.jasig.cas.services.DefaultServicesManagerImpl] - Loaded 1 services.
+2017-07-25 16:53:39,609 INFO [org.jasig.cas.services.DefaultServicesManagerImpl] - Reloading registered services.
+2017-07-25 16:53:39,615 DEBUG [org.jasig.cas.services.DefaultServicesManagerImpl] - Adding registered service http://**
+2017-07-25 16:53:39,615 INFO [org.jasig.cas.services.DefaultServicesManagerImpl] - Loaded 1 services.
+2017-07-25 16:55:39,607 INFO [org.jasig.cas.services.DefaultServicesManagerImpl] - Reloading registered services.
+2017-07-25 16:55:39,608 DEBUG [org.jasig.cas.services.DefaultServicesManagerImpl] - Adding registered service http://**
+2017-07-25 16:55:39,608 INFO [org.jasig.cas.services.DefaultServicesManagerImpl] - Loaded 1 services.
+2017-07-25 16:56:53,297 DEBUG [org.jasig.cas.services.DefaultServicesManagerImpl] - Adding registered service http://**
+2017-07-25 16:56:53,298 INFO [org.jasig.cas.services.DefaultServicesManagerImpl] - Loaded 1 services.
+2017-07-25 16:56:54,454 DEBUG [org.jasig.cas.util.AutowiringSchedulerFactoryBean] - Autowired the following triggers defined in application context: [periodicServiceRegistryReloaderTrigger]
+2017-07-25 16:56:55,198 INFO [org.jasig.cas.util.AutowiringSchedulerFactoryBean] - Starting Quartz Scheduler now
+2017-07-25 16:57:58,734 DEBUG [org.jasig.cas.services.DefaultServicesManagerImpl] - Adding registered service http://**
+2017-07-25 16:57:58,734 INFO [org.jasig.cas.services.DefaultServicesManagerImpl] - Loaded 1 services.
+2017-07-25 16:58:00,309 DEBUG [org.jasig.cas.util.AutowiringSchedulerFactoryBean] - Autowired the following triggers defined in application context: [periodicServiceRegistryReloaderTrigger]
+2017-07-25 16:58:01,210 INFO [org.jasig.cas.util.AutowiringSchedulerFactoryBean] - Starting Quartz Scheduler now
+2017-07-25 16:58:10,735 INFO [org.jasig.cas.web.flow.InitialFlowSetupAction] - Setting path for cookies to: /cas/
+2017-07-25 16:58:10,735 INFO [org.jasig.cas.web.flow.InitialFlowSetupAction] - Setting path for cookies to: /cas/
+2017-07-25 16:58:10,736 DEBUG [org.jasig.cas.web.support.CasArgumentExtractor] - Extractor did not generate service.
+2017-07-25 16:58:10,739 DEBUG [org.jasig.cas.support.pac4j.web.flow.ClientAction] - clientName : null
+2017-07-25 16:58:10,746 DEBUG [org.jasig.cas.support.pac4j.web.flow.ClientAction] - QQClientUrl -> https://graph.qq.com/oauth2.0/authorize?client_id=123456&redirect_uri=http%3A%2F%2Fwww.example.com%2Fqqlogin%3Fclient_name%3DQQClient&response_type=code&state=qqlogin
+2017-07-25 16:58:10,753 DEBUG [org.jasig.cas.web.flow.GenerateLoginTicketAction] - Generated login ticket LT-1-YWBm5Mu1HKfuGvtBx0JYx273g2V7eS-cas01.example.org
+2017-07-25 16:58:10,753 DEBUG [org.jasig.cas.web.flow.GenerateLoginTicketAction] - Generated login ticket LT-1-YWBm5Mu1HKfuGvtBx0JYx273g2V7eS-cas01.example.org
+2017-07-25 16:58:11,335 DEBUG [org.jasig.cas.web.support.CasArgumentExtractor] - Extractor did not generate service.
+2017-07-25 16:58:16,180 INFO [org.jasig.cas.authentication.PolicyBasedAuthenticationManager] - YBQueryDatabaseAuthenticationHandler failed authenticating demo+password
+2017-07-25 16:58:16,198 DEBUG [org.jasig.cas.web.view.CasReloadableMessageBundle] - Examining language bundle [classpath:custom_messages_zh] for the code [authenticationFailure.AccountNotFoundException]
+2017-07-25 16:58:16,199 DEBUG [org.jasig.cas.web.view.CasReloadableMessageBundle] - No properties file found for [classpath:custom_messages_zh] - neither plain properties nor XML
+2017-07-25 16:58:16,199 DEBUG [org.jasig.cas.web.view.CasReloadableMessageBundle] - Examining language bundle [classpath:messages_zh] for the code [authenticationFailure.AccountNotFoundException]
+2017-07-25 16:58:16,204 DEBUG [org.jasig.cas.web.view.CasReloadableMessageBundle] - No properties file found for [classpath:messages_zh] - neither plain properties nor XML
+2017-07-25 16:58:16,205 WARN [org.jasig.cas.web.view.CasReloadableMessageBundle] - The code [authenticationFailure.AccountNotFoundException] cannot be found in the language bundle for the locale [zh_CN]
+2017-07-25 16:58:16,205 DEBUG [org.jasig.cas.web.view.CasReloadableMessageBundle] - No properties file found for [classpath:custom_messages_zh_CN] - neither plain properties nor XML
+2017-07-25 16:58:16,206 DEBUG [org.jasig.cas.web.view.CasReloadableMessageBundle] - No properties file found for [classpath:custom_messages] - neither plain properties nor XML
+2017-07-25 16:58:16,208 DEBUG [org.jasig.cas.web.view.CasReloadableMessageBundle] - Loading properties [messages_zh_CN.properties] with encoding 'UTF-8'
+2017-07-25 16:58:16,214 DEBUG [org.jasig.cas.web.view.CasReloadableMessageBundle] - Loading properties [messages.properties] with encoding 'UTF-8'
+2017-07-25 16:58:16,218 DEBUG [org.jasig.cas.web.flow.GenerateLoginTicketAction] - Generated login ticket LT-2-6wneN7uhD12lXO6qtqfhdv7sThekfy-cas01.example.org
+2017-07-25 16:58:16,218 DEBUG [org.jasig.cas.web.flow.GenerateLoginTicketAction] - Generated login ticket LT-2-6wneN7uhD12lXO6qtqfhdv7sThekfy-cas01.example.org
+2017-07-25 16:58:16,230 DEBUG [org.jasig.cas.web.support.CasArgumentExtractor] - Extractor did not generate service.
+2017-07-25 16:59:58,881 INFO [org.jasig.cas.services.DefaultServicesManagerImpl] - Reloading registered services.
+2017-07-25 16:59:58,882 DEBUG [org.jasig.cas.services.DefaultServicesManagerImpl] - Adding registered service http://**
+2017-07-25 16:59:58,882 INFO [org.jasig.cas.services.DefaultServicesManagerImpl] - Loaded 1 services.
+2017-07-25 17:01:00,552 INFO [org.jasig.cas.authentication.PolicyBasedAuthenticationManager] - YBQueryDatabaseAuthenticationHandler successfully authenticated 12456786901+password
+2017-07-25 17:01:00,552 DEBUG [org.jasig.cas.authentication.principal.PersonDirectoryPrincipalResolver] - Attempting to resolve a principal...
+2017-07-25 17:01:00,552 DEBUG [org.jasig.cas.authentication.principal.PersonDirectoryPrincipalResolver] - Creating SimplePrincipal for [12456786901]
+2017-07-25 17:01:00,552 DEBUG [org.jasig.cas.authentication.PolicyBasedAuthenticationManager] - org.jasig.cas.authentication.principal.PersonDirectoryPrincipalResolver@181b185d resolved 12456786901 from 12456786901+password
+2017-07-25 17:01:00,552 INFO [org.jasig.cas.authentication.PolicyBasedAuthenticationManager] - Authenticated 12456786901 with credentials [12456786901+password].
+2017-07-25 17:01:00,552 DEBUG [org.jasig.cas.authentication.PolicyBasedAuthenticationManager] - Attribute map for 12456786901: {username=测试username, email=test@163.com, userid=12456786901}
+2017-07-25 17:01:01,026 DEBUG [org.jasig.cas.web.flow.GenerateLoginTicketAction] - Generated login ticket LT-3-rtIVdCzXARGXDgVUQxTXhGFl4VM2gh-cas01.example.org
+2017-07-25 17:01:01,026 DEBUG [org.jasig.cas.web.flow.GenerateLoginTicketAction] - Generated login ticket LT-3-rtIVdCzXARGXDgVUQxTXhGFl4VM2gh-cas01.example.org
+2017-07-25 17:01:01,027 DEBUG [org.jasig.cas.web.support.CasArgumentExtractor] - Extractor did not generate service.
+2017-07-25 17:01:58,870 INFO [org.jasig.cas.services.DefaultServicesManagerImpl] - Reloading registered services.
+2017-07-25 17:01:58,870 DEBUG [org.jasig.cas.services.DefaultServicesManagerImpl] - Adding registered service http://**
+2017-07-25 17:01:58,871 INFO [org.jasig.cas.services.DefaultServicesManagerImpl] - Loaded 1 services.
+2017-07-25 17:02:12,582 INFO [org.jasig.cas.authentication.PolicyBasedAuthenticationManager] - YBQueryDatabaseAuthenticationHandler successfully authenticated 12456786901+password
+2017-07-25 17:02:12,582 DEBUG [org.jasig.cas.authentication.principal.PersonDirectoryPrincipalResolver] - Attempting to resolve a principal...
+2017-07-25 17:02:12,582 DEBUG [org.jasig.cas.authentication.principal.PersonDirectoryPrincipalResolver] - Creating SimplePrincipal for [12456786901]
+2017-07-25 17:02:12,582 DEBUG [org.jasig.cas.authentication.PolicyBasedAuthenticationManager] - org.jasig.cas.authentication.principal.PersonDirectoryPrincipalResolver@181b185d resolved 12456786901 from 12456786901+password
+2017-07-25 17:02:12,582 INFO [org.jasig.cas.authentication.PolicyBasedAuthenticationManager] - Authenticated 12456786901 with credentials [12456786901+password].
+2017-07-25 17:02:12,582 DEBUG [org.jasig.cas.authentication.PolicyBasedAuthenticationManager] - Attribute map for 12456786901: {username=测试username, email=test@163.com, userid=12456786901}
+2017-07-25 17:02:12,584 DEBUG [org.jasig.cas.web.flow.GenerateLoginTicketAction] - Generated login ticket LT-4-tSWFKr9e3G0NybYYhkgFoRyT3K56Xf-cas01.example.org
+2017-07-25 17:02:12,584 DEBUG [org.jasig.cas.web.flow.GenerateLoginTicketAction] - Generated login ticket LT-4-tSWFKr9e3G0NybYYhkgFoRyT3K56Xf-cas01.example.org
+2017-07-25 17:02:12,586 DEBUG [org.jasig.cas.web.support.CasArgumentExtractor] - Extractor did not generate service.
+2017-07-25 17:02:19,482 DEBUG [org.jasig.cas.web.support.CasArgumentExtractor] - Extractor did not generate service.
+2017-07-25 17:02:19,482 DEBUG [org.jasig.cas.support.pac4j.web.flow.ClientAction] - clientName : null
+2017-07-25 17:02:19,483 DEBUG [org.jasig.cas.support.pac4j.web.flow.ClientAction] - QQClientUrl -> https://graph.qq.com/oauth2.0/authorize?client_id=123456&redirect_uri=http%3A%2F%2Fwww.example.com%2Fqqlogin%3Fclient_name%3DQQClient&response_type=code&state=qqlogin
+2017-07-25 17:02:19,483 DEBUG [org.jasig.cas.web.flow.GenerateLoginTicketAction] - Generated login ticket LT-5-n0qmj4icxNcxQKGAbb5AY7a6yJlctX-cas01.example.org
+2017-07-25 17:02:19,483 DEBUG [org.jasig.cas.web.flow.GenerateLoginTicketAction] - Generated login ticket LT-5-n0qmj4icxNcxQKGAbb5AY7a6yJlctX-cas01.example.org
+2017-07-25 17:02:19,484 DEBUG [org.jasig.cas.web.support.CasArgumentExtractor] - Extractor did not generate service.
+2017-07-25 17:02:24,116 INFO [org.jasig.cas.authentication.PolicyBasedAuthenticationManager] - YBQueryDatabaseAuthenticationHandler successfully authenticated 12456786901+password
+2017-07-25 17:02:24,116 DEBUG [org.jasig.cas.authentication.principal.PersonDirectoryPrincipalResolver] - Attempting to resolve a principal...
+2017-07-25 17:02:24,117 DEBUG [org.jasig.cas.authentication.principal.PersonDirectoryPrincipalResolver] - Creating SimplePrincipal for [12456786901]
+2017-07-25 17:02:24,117 DEBUG [org.jasig.cas.authentication.PolicyBasedAuthenticationManager] - org.jasig.cas.authentication.principal.PersonDirectoryPrincipalResolver@181b185d resolved 12456786901 from 12456786901+password
+2017-07-25 17:02:24,117 INFO [org.jasig.cas.authentication.PolicyBasedAuthenticationManager] - Authenticated 12456786901 with credentials [12456786901+password].
+2017-07-25 17:02:24,117 DEBUG [org.jasig.cas.authentication.PolicyBasedAuthenticationManager] - Attribute map for 12456786901: {username=测试username, email=test@163.com, userid=12456786901}
+2017-07-25 17:02:24,119 DEBUG [org.jasig.cas.web.flow.GenerateLoginTicketAction] - Generated login ticket LT-6-YIoUgdllMdAoDCeSdXnYB7Z1QO1HaM-cas01.example.org
+2017-07-25 17:02:24,119 DEBUG [org.jasig.cas.web.flow.GenerateLoginTicketAction] - Generated login ticket LT-6-YIoUgdllMdAoDCeSdXnYB7Z1QO1HaM-cas01.example.org
+2017-07-25 17:02:24,121 DEBUG [org.jasig.cas.web.support.CasArgumentExtractor] - Extractor did not generate service.
+2017-07-25 17:03:58,872 INFO [org.jasig.cas.services.DefaultServicesManagerImpl] - Reloading registered services.
+2017-07-25 17:03:58,878 DEBUG [org.jasig.cas.services.DefaultServicesManagerImpl] - Adding registered service http://**
+2017-07-25 17:03:58,878 INFO [org.jasig.cas.services.DefaultServicesManagerImpl] - Loaded 1 services.
+2017-07-25 17:05:58,868 INFO [org.jasig.cas.services.DefaultServicesManagerImpl] - Reloading registered services.
+2017-07-25 17:05:58,874 DEBUG [org.jasig.cas.services.DefaultServicesManagerImpl] - Adding registered service http://**
+2017-07-25 17:05:58,874 INFO [org.jasig.cas.services.DefaultServicesManagerImpl] - Loaded 1 services.
+2017-07-25 17:06:39,623 DEBUG [org.jasig.cas.services.DefaultServicesManagerImpl] - Adding registered service http://**
+2017-07-25 17:06:39,629 INFO [org.jasig.cas.services.DefaultServicesManagerImpl] - Loaded 1 services.
+2017-07-25 17:06:40,915 DEBUG [org.jasig.cas.util.AutowiringSchedulerFactoryBean] - Autowired the following triggers defined in application context: [periodicServiceRegistryReloaderTrigger]
+2017-07-25 17:06:41,717 INFO [org.jasig.cas.util.AutowiringSchedulerFactoryBean] - Starting Quartz Scheduler now
+2017-07-25 17:06:44,639 INFO [org.jasig.cas.web.flow.InitialFlowSetupAction] - Setting path for cookies to: /cas/
+2017-07-25 17:06:44,639 INFO [org.jasig.cas.web.flow.InitialFlowSetupAction] - Setting path for cookies to: /cas/
+2017-07-25 17:06:44,640 DEBUG [org.jasig.cas.web.support.CasArgumentExtractor] - Extractor did not generate service.
+2017-07-25 17:06:44,642 DEBUG [org.jasig.cas.support.pac4j.web.flow.ClientAction] - clientName : null
+2017-07-25 17:06:44,652 DEBUG [org.jasig.cas.support.pac4j.web.flow.ClientAction] - QQClientUrl -> https://graph.qq.com/oauth2.0/authorize?client_id=123456&redirect_uri=http%3A%2F%2Fwww.example.com%2Fqqlogin%3Fclient_name%3DQQClient&response_type=code&state=qqlogin
+2017-07-25 17:06:44,658 DEBUG [org.jasig.cas.web.flow.GenerateLoginTicketAction] - Generated login ticket LT-1-sIaipXrBGdJEAfq3xWCfn51rAiMEPq-cas01.example.org
+2017-07-25 17:06:44,658 DEBUG [org.jasig.cas.web.flow.GenerateLoginTicketAction] - Generated login ticket LT-1-sIaipXrBGdJEAfq3xWCfn51rAiMEPq-cas01.example.org
+2017-07-25 17:06:46,007 DEBUG [org.jasig.cas.web.support.CasArgumentExtractor] - Extractor did not generate service.
+2017-07-25 17:06:53,697 INFO [org.jasig.cas.authentication.PolicyBasedAuthenticationManager] - YBQueryDatabaseAuthenticationHandler failed authenticating demo+password
+2017-07-25 17:06:53,721 DEBUG [org.jasig.cas.web.view.CasReloadableMessageBundle] - Examining language bundle [classpath:custom_messages_zh] for the code [authenticationFailure.AccountNotFoundException]
+2017-07-25 17:06:53,722 DEBUG [org.jasig.cas.web.view.CasReloadableMessageBundle] - No properties file found for [classpath:custom_messages_zh] - neither plain properties nor XML
+2017-07-25 17:06:53,723 DEBUG [org.jasig.cas.web.view.CasReloadableMessageBundle] - Examining language bundle [classpath:messages_zh] for the code [authenticationFailure.AccountNotFoundException]
+2017-07-25 17:06:53,723 DEBUG [org.jasig.cas.web.view.CasReloadableMessageBundle] - No properties file found for [classpath:messages_zh] - neither plain properties nor XML
+2017-07-25 17:06:53,723 WARN [org.jasig.cas.web.view.CasReloadableMessageBundle] - The code [authenticationFailure.AccountNotFoundException] cannot be found in the language bundle for the locale [zh_CN]
+2017-07-25 17:06:53,724 DEBUG [org.jasig.cas.web.view.CasReloadableMessageBundle] - No properties file found for [classpath:custom_messages_zh_CN] - neither plain properties nor XML
+2017-07-25 17:06:53,725 DEBUG [org.jasig.cas.web.view.CasReloadableMessageBundle] - No properties file found for [classpath:custom_messages] - neither plain properties nor XML
+2017-07-25 17:06:53,725 DEBUG [org.jasig.cas.web.view.CasReloadableMessageBundle] - Loading properties [messages_zh_CN.properties] with encoding 'UTF-8'
+2017-07-25 17:06:53,727 DEBUG [org.jasig.cas.web.view.CasReloadableMessageBundle] - Loading properties [messages.properties] with encoding 'UTF-8'
+2017-07-25 17:06:53,729 DEBUG [org.jasig.cas.web.flow.GenerateLoginTicketAction] - Generated login ticket LT-2-KpYcECgLfsbtfayUG4fIacxKkSDP2n-cas01.example.org
+2017-07-25 17:06:53,729 DEBUG [org.jasig.cas.web.flow.GenerateLoginTicketAction] - Generated login ticket LT-2-KpYcECgLfsbtfayUG4fIacxKkSDP2n-cas01.example.org
+2017-07-25 17:06:53,735 DEBUG [org.jasig.cas.web.support.CasArgumentExtractor] - Extractor did not generate service.
+2017-07-25 17:07:08,956 INFO [org.jasig.cas.authentication.PolicyBasedAuthenticationManager] - YBQueryDatabaseAuthenticationHandler successfully authenticated 12456786901+password
+2017-07-25 17:07:08,962 DEBUG [org.jasig.cas.authentication.principal.PersonDirectoryPrincipalResolver] - Attempting to resolve a principal...
+2017-07-25 17:07:08,962 DEBUG [org.jasig.cas.authentication.principal.PersonDirectoryPrincipalResolver] - Creating SimplePrincipal for [12456786901]
+2017-07-25 17:07:08,962 DEBUG [org.jasig.cas.authentication.PolicyBasedAuthenticationManager] - org.jasig.cas.authentication.principal.PersonDirectoryPrincipalResolver@7b629209 resolved 12456786901 from 12456786901+password
+2017-07-25 17:07:08,962 INFO [org.jasig.cas.authentication.PolicyBasedAuthenticationManager] - Authenticated 12456786901 with credentials [12456786901+password].
+2017-07-25 17:07:08,962 DEBUG [org.jasig.cas.authentication.PolicyBasedAuthenticationManager] - Attribute map for 12456786901: {username=测试username, email=test@163.com, userid=12456786901}
+2017-07-25 17:07:09,258 DEBUG [org.jasig.cas.web.support.CookieRetrievingCookieGenerator] - Removed cookie with name [CASPRIVACY]
+2017-07-25 17:07:09,337 DEBUG [org.jasig.cas.web.support.CookieRetrievingCookieGenerator] - Added cookie with name [CASTGC] and value [TGT-1-3SXIKqb9aejqJhvzWSoBVp7qIfXAW6T5sWMb9yeWXRjQudVlpV-cas01.example.org]
+2017-07-25 17:07:09,557 DEBUG [org.jasig.cas.web.support.CasArgumentExtractor] - Extractor did not generate service.
+2017-07-25 17:07:09,564 DEBUG [org.jasig.cas.web.flow.TerminateWebSessionListener] - Terminate web session 1hm1cywebhdgbgy9t74q3y1xn in 2 seconds
+2017-07-25 17:07:09,564 DEBUG [org.jasig.cas.web.flow.TerminateWebSessionListener] - Terminate web session 1hm1cywebhdgbgy9t74q3y1xn in 2 seconds
+2017-07-25 17:08:39,756 INFO [org.jasig.cas.services.DefaultServicesManagerImpl] - Reloading registered services.
+2017-07-25 17:08:39,756 DEBUG [org.jasig.cas.services.DefaultServicesManagerImpl] - Adding registered service http://**
+2017-07-25 17:08:39,756 INFO [org.jasig.cas.services.DefaultServicesManagerImpl] - Loaded 1 services.
+2017-07-25 17:10:39,747 INFO [org.jasig.cas.services.DefaultServicesManagerImpl] - Reloading registered services.
+2017-07-25 17:10:39,747 DEBUG [org.jasig.cas.services.DefaultServicesManagerImpl] - Adding registered service http://**
+2017-07-25 17:10:39,747 INFO [org.jasig.cas.services.DefaultServicesManagerImpl] - Loaded 1 services.
+2017-07-25 17:12:39,748 INFO [org.jasig.cas.services.DefaultServicesManagerImpl] - Reloading registered services.
+2017-07-25 17:12:39,748 DEBUG [org.jasig.cas.services.DefaultServicesManagerImpl] - Adding registered service http://**
+2017-07-25 17:12:39,748 INFO [org.jasig.cas.services.DefaultServicesManagerImpl] - Loaded 1 services.
+2017-07-25 17:14:39,748 INFO [org.jasig.cas.services.DefaultServicesManagerImpl] - Reloading registered services.
+2017-07-25 17:14:39,748 DEBUG [org.jasig.cas.services.DefaultServicesManagerImpl] - Adding registered service http://**
+2017-07-25 17:14:39,749 INFO [org.jasig.cas.services.DefaultServicesManagerImpl] - Loaded 1 services.
+2017-07-25 17:15:35,124 DEBUG [org.jasig.cas.web.support.CasArgumentExtractor] - Extractor generated service for: http://localhost:8081/cas
+2017-07-25 17:15:35,124 DEBUG [org.jasig.cas.web.flow.InitialFlowSetupAction] - Placing service in FlowScope: http://localhost:8081/cas
+2017-07-25 17:15:35,124 DEBUG [org.jasig.cas.web.flow.InitialFlowSetupAction] - Placing service in FlowScope: http://localhost:8081/cas
+2017-07-25 17:15:35,125 DEBUG [org.jasig.cas.support.pac4j.web.flow.ClientAction] - clientName : null
+2017-07-25 17:15:35,125 DEBUG [org.jasig.cas.support.pac4j.web.flow.ClientAction] - QQClientUrl -> https://graph.qq.com/oauth2.0/authorize?client_id=123456&redirect_uri=http%3A%2F%2Fwww.example.com%2Fqqlogin%3Fclient_name%3DQQClient&response_type=code&state=qqlogin
+2017-07-25 17:15:35,283 DEBUG [org.jasig.cas.CentralAuthenticationServiceImpl] - Removing ticket [TGT-1-3SXIKqb9aejqJhvzWSoBVp7qIfXAW6T5sWMb9yeWXRjQudVlpV-cas01.example.org] from registry.
+2017-07-25 17:15:35,305 DEBUG [org.jasig.cas.CentralAuthenticationServiceImpl] - TicketGrantingTicket [TGT-1-3SXIKqb9aejqJhvzWSoBVp7qIfXAW6T5sWMb9yeWXRjQudVlpV-cas01.example.org] cannot be found in the ticket registry.
+2017-07-25 17:15:35,328 DEBUG [org.jasig.cas.web.support.CookieRetrievingCookieGenerator] - Removed cookie with name [CASTGC]
+2017-07-25 17:15:35,328 DEBUG [org.jasig.cas.web.support.CookieRetrievingCookieGenerator] - Removed cookie with name [CASPRIVACY]
+2017-07-25 17:15:35,329 DEBUG [org.jasig.cas.web.flow.GenerateLoginTicketAction] - Generated login ticket LT-3-3Yg3vaX1KDvdugjEsW6eoIlWA0Kexa-cas01.example.org
+2017-07-25 17:15:35,329 DEBUG [org.jasig.cas.web.flow.GenerateLoginTicketAction] - Generated login ticket LT-3-3Yg3vaX1KDvdugjEsW6eoIlWA0Kexa-cas01.example.org
+2017-07-25 17:15:35,330 DEBUG [org.jasig.cas.web.support.CasArgumentExtractor] - Extractor generated service for: http://localhost:8081/cas
+2017-07-25 17:15:58,650 INFO [org.jasig.cas.authentication.PolicyBasedAuthenticationManager] - YBQueryDatabaseAuthenticationHandler successfully authenticated 12456786901+password
+2017-07-25 17:15:58,656 DEBUG [org.jasig.cas.authentication.principal.PersonDirectoryPrincipalResolver] - Attempting to resolve a principal...
+2017-07-25 17:15:58,656 DEBUG [org.jasig.cas.authentication.principal.PersonDirectoryPrincipalResolver] - Creating SimplePrincipal for [12456786901]
+2017-07-25 17:15:58,656 DEBUG [org.jasig.cas.authentication.PolicyBasedAuthenticationManager] - org.jasig.cas.authentication.principal.PersonDirectoryPrincipalResolver@7b629209 resolved 12456786901 from 12456786901+password
+2017-07-25 17:15:58,656 INFO [org.jasig.cas.authentication.PolicyBasedAuthenticationManager] - Authenticated 12456786901 with credentials [12456786901+password].
+2017-07-25 17:15:58,656 DEBUG [org.jasig.cas.authentication.PolicyBasedAuthenticationManager] - Attribute map for 12456786901: {username=测试username, email=test@163.com, userid=12456786901}
+2017-07-25 17:15:58,935 DEBUG [org.jasig.cas.web.support.CookieRetrievingCookieGenerator] - Removed cookie with name [CASPRIVACY]
+2017-07-25 17:15:58,984 DEBUG [org.jasig.cas.web.support.CookieRetrievingCookieGenerator] - Added cookie with name [CASTGC] and value [TGT-2-6Gg9VRby6b6gWGnr73p9sUTXtgeixKEVJCJ9qfzYBIXX0cd1Dk-cas01.example.org]
+2017-07-25 17:15:59,034 DEBUG [org.jasig.cas.CentralAuthenticationServiceImpl] - Generated service ticket id [ST-1-4Pi7XLWCxclfbILqXlCw-cas01.example.org] for ticket granting ticket [TGT-2-6Gg9VRby6b6gWGnr73p9sUTXtgeixKEVJCJ9qfzYBIXX0cd1Dk-cas01.example.org]
+2017-07-25 17:15:59,328 INFO [org.jasig.cas.CentralAuthenticationServiceImpl] - Granted service ticket [ST-1-4Pi7XLWCxclfbILqXlCw-cas01.example.org] for service [http://localhost:8081/cas] for user [12456786901]
+2017-07-25 17:15:59,380 DEBUG [org.jasig.cas.web.flow.TerminateWebSessionListener] - Terminate web session qmisp8kt7s9pnkx7ehnzxuab in 2 seconds
+2017-07-25 17:15:59,380 DEBUG [org.jasig.cas.web.flow.TerminateWebSessionListener] - Terminate web session qmisp8kt7s9pnkx7ehnzxuab in 2 seconds
+2017-07-25 17:16:01,812 DEBUG [org.jasig.cas.web.support.CasArgumentExtractor] - Extractor generated service for: http://localhost:8081/cas
+2017-07-25 17:16:01,813 DEBUG [org.jasig.cas.web.flow.InitialFlowSetupAction] - Placing service in FlowScope: http://localhost:8081/cas
+2017-07-25 17:16:01,813 DEBUG [org.jasig.cas.web.flow.InitialFlowSetupAction] - Placing service in FlowScope: http://localhost:8081/cas
+2017-07-25 17:16:01,814 DEBUG [org.jasig.cas.support.pac4j.web.flow.ClientAction] - clientName : null
+2017-07-25 17:16:01,814 DEBUG [org.jasig.cas.support.pac4j.web.flow.ClientAction] - QQClientUrl -> https://graph.qq.com/oauth2.0/authorize?client_id=123456&redirect_uri=http%3A%2F%2Fwww.example.com%2Fqqlogin%3Fclient_name%3DQQClient&response_type=code&state=qqlogin
+2017-07-25 17:16:02,130 DEBUG [org.jasig.cas.CentralAuthenticationServiceImpl] - Generated service ticket id [ST-2-Wfcs5ANIqyMqOFkuVf76-cas01.example.org] for ticket granting ticket [TGT-2-6Gg9VRby6b6gWGnr73p9sUTXtgeixKEVJCJ9qfzYBIXX0cd1Dk-cas01.example.org]
+2017-07-25 17:16:02,276 INFO [org.jasig.cas.CentralAuthenticationServiceImpl] - Granted service ticket [ST-2-Wfcs5ANIqyMqOFkuVf76-cas01.example.org] for service [http://localhost:8081/cas] for user [12456786901]
+2017-07-25 17:16:02,327 DEBUG [org.jasig.cas.web.flow.TerminateWebSessionListener] - Terminate web session n0lds7hv1et0186c9tqs6vvjr in 2 seconds
+2017-07-25 17:16:02,327 DEBUG [org.jasig.cas.web.flow.TerminateWebSessionListener] - Terminate web session n0lds7hv1et0186c9tqs6vvjr in 2 seconds
+2017-07-25 17:16:39,748 INFO [org.jasig.cas.services.DefaultServicesManagerImpl] - Reloading registered services.
+2017-07-25 17:16:39,750 DEBUG [org.jasig.cas.services.DefaultServicesManagerImpl] - Adding registered service http://**
+2017-07-25 17:16:39,750 INFO [org.jasig.cas.services.DefaultServicesManagerImpl] - Loaded 1 services.
+2017-07-25 17:18:39,747 INFO [org.jasig.cas.services.DefaultServicesManagerImpl] - Reloading registered services.
+2017-07-25 17:18:39,753 DEBUG [org.jasig.cas.services.DefaultServicesManagerImpl] - Adding registered service http://**
+2017-07-25 17:18:39,753 INFO [org.jasig.cas.services.DefaultServicesManagerImpl] - Loaded 1 services.
+2017-07-25 17:20:39,743 INFO [org.jasig.cas.services.DefaultServicesManagerImpl] - Reloading registered services.
+2017-07-25 17:20:39,749 DEBUG [org.jasig.cas.services.DefaultServicesManagerImpl] - Adding registered service http://**
+2017-07-25 17:20:39,749 INFO [org.jasig.cas.services.DefaultServicesManagerImpl] - Loaded 1 services.
+2017-07-25 17:21:02,669 DEBUG [org.jasig.cas.web.support.CasArgumentExtractor] - Extractor generated service for: http://localhost:8081/cas
+2017-07-25 17:21:02,669 DEBUG [org.jasig.cas.web.flow.InitialFlowSetupAction] - Placing service in FlowScope: http://localhost:8081/cas
+2017-07-25 17:21:02,669 DEBUG [org.jasig.cas.web.flow.InitialFlowSetupAction] - Placing service in FlowScope: http://localhost:8081/cas
+2017-07-25 17:21:02,669 DEBUG [org.jasig.cas.support.pac4j.web.flow.ClientAction] - clientName : null
+2017-07-25 17:21:02,669 DEBUG [org.jasig.cas.support.pac4j.web.flow.ClientAction] - QQClientUrl -> https://graph.qq.com/oauth2.0/authorize?client_id=123456&redirect_uri=http%3A%2F%2Fwww.example.com%2Fqqlogin%3Fclient_name%3DQQClient&response_type=code&state=qqlogin
+2017-07-25 17:21:02,745 DEBUG [org.jasig.cas.CentralAuthenticationServiceImpl] - Removing ticket [TGT-2-6Gg9VRby6b6gWGnr73p9sUTXtgeixKEVJCJ9qfzYBIXX0cd1Dk-cas01.example.org] from registry.
+2017-07-25 17:21:02,770 DEBUG [org.jasig.cas.CentralAuthenticationServiceImpl] - TicketGrantingTicket [TGT-2-6Gg9VRby6b6gWGnr73p9sUTXtgeixKEVJCJ9qfzYBIXX0cd1Dk-cas01.example.org] cannot be found in the ticket registry.
+2017-07-25 17:21:02,811 DEBUG [org.jasig.cas.web.support.CookieRetrievingCookieGenerator] - Removed cookie with name [CASTGC]
+2017-07-25 17:21:02,811 DEBUG [org.jasig.cas.web.support.CookieRetrievingCookieGenerator] - Removed cookie with name [CASPRIVACY]
+2017-07-25 17:21:02,812 DEBUG [org.jasig.cas.web.flow.GenerateLoginTicketAction] - Generated login ticket LT-4-IGxcBIWj65HZI7jGLLZhmhq5rOaIDZ-cas01.example.org
+2017-07-25 17:21:02,812 DEBUG [org.jasig.cas.web.flow.GenerateLoginTicketAction] - Generated login ticket LT-4-IGxcBIWj65HZI7jGLLZhmhq5rOaIDZ-cas01.example.org
+2017-07-25 17:21:02,813 DEBUG [org.jasig.cas.web.support.CasArgumentExtractor] - Extractor generated service for: http://localhost:8081/cas
+2017-07-25 17:21:20,312 INFO [org.jasig.cas.authentication.PolicyBasedAuthenticationManager] - YBQueryDatabaseAuthenticationHandler successfully authenticated 12456786901+password
+2017-07-25 17:21:20,317 DEBUG [org.jasig.cas.authentication.principal.PersonDirectoryPrincipalResolver] - Attempting to resolve a principal...
+2017-07-25 17:21:20,317 DEBUG [org.jasig.cas.authentication.principal.PersonDirectoryPrincipalResolver] - Creating SimplePrincipal for [12456786901]
+2017-07-25 17:21:20,317 DEBUG [org.jasig.cas.authentication.PolicyBasedAuthenticationManager] - org.jasig.cas.authentication.principal.PersonDirectoryPrincipalResolver@7b629209 resolved 12456786901 from 12456786901+password
+2017-07-25 17:21:20,318 INFO [org.jasig.cas.authentication.PolicyBasedAuthenticationManager] - Authenticated 12456786901 with credentials [12456786901+password].
+2017-07-25 17:21:20,318 DEBUG [org.jasig.cas.authentication.PolicyBasedAuthenticationManager] - Attribute map for 12456786901: {username=测试username, email=test@163.com, userid=12456786901}
+2017-07-25 17:21:20,396 DEBUG [org.jasig.cas.web.support.CookieRetrievingCookieGenerator] - Removed cookie with name [CASPRIVACY]
+2017-07-25 17:21:20,533 DEBUG [org.jasig.cas.web.support.CookieRetrievingCookieGenerator] - Added cookie with name [CASTGC] and value [TGT-3-5dP2e4peyHKjJtkZ3wdNd1gLHQWrHXcwKfZwjFmMoxfGJy4rwe-cas01.example.org]
+2017-07-25 17:21:20,585 DEBUG [org.jasig.cas.CentralAuthenticationServiceImpl] - Generated service ticket id [ST-3-I6u4a3Uoczafj3Mrig76-cas01.example.org] for ticket granting ticket [TGT-3-5dP2e4peyHKjJtkZ3wdNd1gLHQWrHXcwKfZwjFmMoxfGJy4rwe-cas01.example.org]
+2017-07-25 17:21:20,759 INFO [org.jasig.cas.CentralAuthenticationServiceImpl] - Granted service ticket [ST-3-I6u4a3Uoczafj3Mrig76-cas01.example.org] for service [http://localhost:8081/cas] for user [12456786901]
+2017-07-25 17:21:20,812 DEBUG [org.jasig.cas.web.flow.TerminateWebSessionListener] - Terminate web session 1smqtq3k37hdf10yx6khakemyb in 2 seconds
+2017-07-25 17:21:20,812 DEBUG [org.jasig.cas.web.flow.TerminateWebSessionListener] - Terminate web session 1smqtq3k37hdf10yx6khakemyb in 2 seconds
+2017-07-25 17:22:39,746 INFO [org.jasig.cas.services.DefaultServicesManagerImpl] - Reloading registered services.
+2017-07-25 17:22:39,752 DEBUG [org.jasig.cas.services.DefaultServicesManagerImpl] - Adding registered service http://**
+2017-07-25 17:22:39,753 INFO [org.jasig.cas.services.DefaultServicesManagerImpl] - Loaded 1 services.
+2017-07-25 17:24:39,748 INFO [org.jasig.cas.services.DefaultServicesManagerImpl] - Reloading registered services.
+2017-07-25 17:24:39,748 DEBUG [org.jasig.cas.services.DefaultServicesManagerImpl] - Adding registered service http://**
+2017-07-25 17:24:39,748 INFO [org.jasig.cas.services.DefaultServicesManagerImpl] - Loaded 1 services.
+2017-07-25 17:26:39,746 INFO [org.jasig.cas.services.DefaultServicesManagerImpl] - Reloading registered services.
+2017-07-25 17:26:39,746 DEBUG [org.jasig.cas.services.DefaultServicesManagerImpl] - Adding registered service http://**
+2017-07-25 17:26:39,746 INFO [org.jasig.cas.services.DefaultServicesManagerImpl] - Loaded 1 services.
+2017-07-25 17:28:39,744 INFO [org.jasig.cas.services.DefaultServicesManagerImpl] - Reloading registered services.
+2017-07-25 17:28:39,744 DEBUG [org.jasig.cas.services.DefaultServicesManagerImpl] - Adding registered service http://**
+2017-07-25 17:28:39,745 INFO [org.jasig.cas.services.DefaultServicesManagerImpl] - Loaded 1 services.
+2017-07-25 17:30:39,744 INFO [org.jasig.cas.services.DefaultServicesManagerImpl] - Reloading registered services.
+2017-07-25 17:30:39,744 DEBUG [org.jasig.cas.services.DefaultServicesManagerImpl] - Adding registered service http://**
+2017-07-25 17:30:39,744 INFO [org.jasig.cas.services.DefaultServicesManagerImpl] - Loaded 1 services.
+2017-07-25 17:33:47,209 DEBUG [org.jasig.cas.services.DefaultServicesManagerImpl] - Adding registered service http://**
+2017-07-25 17:33:47,215 INFO [org.jasig.cas.services.DefaultServicesManagerImpl] - Loaded 1 services.
+2017-07-25 17:33:48,293 DEBUG [org.jasig.cas.util.AutowiringSchedulerFactoryBean] - Autowired the following triggers defined in application context: [periodicServiceRegistryReloaderTrigger]
+2017-07-25 17:33:49,113 INFO [org.jasig.cas.util.AutowiringSchedulerFactoryBean] - Starting Quartz Scheduler now
+2017-07-25 17:34:00,039 INFO [org.jasig.cas.web.flow.InitialFlowSetupAction] - Setting path for cookies to: /cas/
+2017-07-25 17:34:00,039 INFO [org.jasig.cas.web.flow.InitialFlowSetupAction] - Setting path for cookies to: /cas/
+2017-07-25 17:34:00,040 DEBUG [org.jasig.cas.web.support.CasArgumentExtractor] - Extractor generated service for: http://localhost:8081/cas
+2017-07-25 17:34:00,040 DEBUG [org.jasig.cas.web.flow.InitialFlowSetupAction] - Placing service in FlowScope: http://localhost:8081/cas
+2017-07-25 17:34:00,040 DEBUG [org.jasig.cas.web.flow.InitialFlowSetupAction] - Placing service in FlowScope: http://localhost:8081/cas
+2017-07-25 17:34:00,043 DEBUG [org.jasig.cas.support.pac4j.web.flow.ClientAction] - clientName : null
+2017-07-25 17:34:00,052 DEBUG [org.jasig.cas.support.pac4j.web.flow.ClientAction] - QQClientUrl -> https://graph.qq.com/oauth2.0/authorize?client_id=123456&redirect_uri=http%3A%2F%2Fwww.example.com%2Fqqlogin%3Fclient_name%3DQQClient&response_type=code&state=qqlogin
+2017-07-25 17:34:00,181 DEBUG [org.jasig.cas.CentralAuthenticationServiceImpl] - Removing ticket [TGT-3-5dP2e4peyHKjJtkZ3wdNd1gLHQWrHXcwKfZwjFmMoxfGJy4rwe-cas01.example.org] from registry.
+2017-07-25 17:34:00,204 DEBUG [org.jasig.cas.CentralAuthenticationServiceImpl] - TicketGrantingTicket [TGT-3-5dP2e4peyHKjJtkZ3wdNd1gLHQWrHXcwKfZwjFmMoxfGJy4rwe-cas01.example.org] cannot be found in the ticket registry.
+2017-07-25 17:34:00,231 DEBUG [org.jasig.cas.web.support.CookieRetrievingCookieGenerator] - Removed cookie with name [CASTGC]
+2017-07-25 17:34:00,231 DEBUG [org.jasig.cas.web.support.CookieRetrievingCookieGenerator] - Removed cookie with name [CASPRIVACY]
+2017-07-25 17:34:00,232 DEBUG [org.jasig.cas.web.flow.GenerateLoginTicketAction] - Generated login ticket LT-1-yxzTVGaLwYA657edx9PCdtzUOK3b1k-cas01.example.org
+2017-07-25 17:34:00,232 DEBUG [org.jasig.cas.web.flow.GenerateLoginTicketAction] - Generated login ticket LT-1-yxzTVGaLwYA657edx9PCdtzUOK3b1k-cas01.example.org
+2017-07-25 17:34:01,488 DEBUG [org.jasig.cas.web.support.CasArgumentExtractor] - Extractor generated service for: http://localhost:8081/cas
+2017-07-25 17:34:19,035 INFO [org.jasig.cas.authentication.PolicyBasedAuthenticationManager] - YBQueryDatabaseAuthenticationHandler successfully authenticated 12456786901+password
+2017-07-25 17:34:19,037 DEBUG [org.jasig.cas.authentication.principal.PersonDirectoryPrincipalResolver] - Attempting to resolve a principal...
+2017-07-25 17:34:19,037 DEBUG [org.jasig.cas.authentication.principal.PersonDirectoryPrincipalResolver] - Creating SimplePrincipal for [12456786901]
+2017-07-25 17:34:19,037 DEBUG [org.jasig.cas.authentication.PolicyBasedAuthenticationManager] - org.jasig.cas.authentication.principal.PersonDirectoryPrincipalResolver@2e46410d resolved 12456786901 from 12456786901+password
+2017-07-25 17:34:19,038 INFO [org.jasig.cas.authentication.PolicyBasedAuthenticationManager] - Authenticated 12456786901 with credentials [12456786901+password].
+2017-07-25 17:34:19,038 DEBUG [org.jasig.cas.authentication.PolicyBasedAuthenticationManager] - Attribute map for 12456786901: {username=测试username, email=test@163.com, userid=12456786901}
+2017-07-25 17:34:19,123 DEBUG [org.jasig.cas.web.support.CookieRetrievingCookieGenerator] - Removed cookie with name [CASPRIVACY]
+2017-07-25 17:34:19,173 DEBUG [org.jasig.cas.web.support.CookieRetrievingCookieGenerator] - Added cookie with name [CASTGC] and value [TGT-1-WNda1fRLbgFKxUFvjCkNGZGueZcVhSqvy6V1Ba7BaBffBeZqVk-cas01.example.org]
+2017-07-25 17:34:19,258 DEBUG [org.jasig.cas.CentralAuthenticationServiceImpl] - Generated service ticket id [ST-1-mFCAbBjrv2udaaBJl4MU-cas01.example.org] for ticket granting ticket [TGT-1-WNda1fRLbgFKxUFvjCkNGZGueZcVhSqvy6V1Ba7BaBffBeZqVk-cas01.example.org]
+2017-07-25 17:34:19,685 INFO [org.jasig.cas.CentralAuthenticationServiceImpl] - Granted service ticket [ST-1-mFCAbBjrv2udaaBJl4MU-cas01.example.org] for service [http://localhost:8081/cas] for user [12456786901]
+2017-07-25 17:34:19,737 DEBUG [org.jasig.cas.web.flow.TerminateWebSessionListener] - Terminate web session 195be4xbsflz8icq2gwtyt7hw in 2 seconds
+2017-07-25 17:34:19,737 DEBUG [org.jasig.cas.web.flow.TerminateWebSessionListener] - Terminate web session 195be4xbsflz8icq2gwtyt7hw in 2 seconds
+2017-07-25 17:36:22,069 DEBUG [org.jasig.cas.services.DefaultServicesManagerImpl] - Adding registered service http://**
+2017-07-25 17:36:22,069 INFO [org.jasig.cas.services.DefaultServicesManagerImpl] - Loaded 1 services.
+2017-07-25 17:36:23,158 DEBUG [org.jasig.cas.util.AutowiringSchedulerFactoryBean] - Autowired the following triggers defined in application context: [periodicServiceRegistryReloaderTrigger]
+2017-07-25 17:36:23,841 INFO [org.jasig.cas.util.AutowiringSchedulerFactoryBean] - Starting Quartz Scheduler now
+2017-07-25 17:36:29,808 INFO [org.jasig.cas.web.flow.InitialFlowSetupAction] - Setting path for cookies to: /cas/
+2017-07-25 17:36:29,808 INFO [org.jasig.cas.web.flow.InitialFlowSetupAction] - Setting path for cookies to: /cas/
+2017-07-25 17:36:29,809 DEBUG [org.jasig.cas.web.support.CasArgumentExtractor] - Extractor did not generate service.
+2017-07-25 17:36:29,812 DEBUG [org.jasig.cas.support.pac4j.web.flow.ClientAction] - clientName : null
+2017-07-25 17:36:29,819 DEBUG [org.jasig.cas.support.pac4j.web.flow.ClientAction] - QQClientUrl -> https://graph.qq.com/oauth2.0/authorize?client_id=123456&redirect_uri=http%3A%2F%2Fwww.example.com%2Fqqlogin%3Fclient_name%3DQQClient&response_type=code&state=qqlogin
+2017-07-25 17:36:30,056 DEBUG [org.jasig.cas.CentralAuthenticationServiceImpl] - Removing ticket [TGT-1-WNda1fRLbgFKxUFvjCkNGZGueZcVhSqvy6V1Ba7BaBffBeZqVk-cas01.example.org] from registry.
+2017-07-25 17:36:30,096 DEBUG [org.jasig.cas.CentralAuthenticationServiceImpl] - TicketGrantingTicket [TGT-1-WNda1fRLbgFKxUFvjCkNGZGueZcVhSqvy6V1Ba7BaBffBeZqVk-cas01.example.org] cannot be found in the ticket registry.
+2017-07-25 17:36:30,129 DEBUG [org.jasig.cas.web.support.CookieRetrievingCookieGenerator] - Removed cookie with name [CASTGC]
+2017-07-25 17:36:30,130 DEBUG [org.jasig.cas.web.support.CookieRetrievingCookieGenerator] - Removed cookie with name [CASPRIVACY]
+2017-07-25 17:36:30,130 DEBUG [org.jasig.cas.web.flow.GenerateLoginTicketAction] - Generated login ticket LT-1-bsle2CVE5Ws7TeDhDSKejbDDz7WKnw-cas01.example.org
+2017-07-25 17:36:30,130 DEBUG [org.jasig.cas.web.flow.GenerateLoginTicketAction] - Generated login ticket LT-1-bsle2CVE5Ws7TeDhDSKejbDDz7WKnw-cas01.example.org
+2017-07-25 17:36:30,650 DEBUG [org.jasig.cas.web.support.CasArgumentExtractor] - Extractor did not generate service.
+2017-07-25 17:37:13,933 DEBUG [org.jasig.cas.web.support.CasArgumentExtractor] - Extractor generated service for: http://localhost:8081/cas
+2017-07-25 17:37:13,934 DEBUG [org.jasig.cas.web.flow.InitialFlowSetupAction] - Placing service in FlowScope: http://localhost:8081/cas
+2017-07-25 17:37:13,934 DEBUG [org.jasig.cas.web.flow.InitialFlowSetupAction] - Placing service in FlowScope: http://localhost:8081/cas
+2017-07-25 17:37:13,934 DEBUG [org.jasig.cas.support.pac4j.web.flow.ClientAction] - clientName : null
+2017-07-25 17:37:13,934 DEBUG [org.jasig.cas.support.pac4j.web.flow.ClientAction] - QQClientUrl -> https://graph.qq.com/oauth2.0/authorize?client_id=123456&redirect_uri=http%3A%2F%2Fwww.example.com%2Fqqlogin%3Fclient_name%3DQQClient&response_type=code&state=qqlogin
+2017-07-25 17:37:13,937 DEBUG [org.jasig.cas.web.flow.GenerateLoginTicketAction] - Generated login ticket LT-2-ei55103d4IRHiGfVYtden2x1D2L5L0-cas01.example.org
+2017-07-25 17:37:13,937 DEBUG [org.jasig.cas.web.flow.GenerateLoginTicketAction] - Generated login ticket LT-2-ei55103d4IRHiGfVYtden2x1D2L5L0-cas01.example.org
+2017-07-25 17:37:13,940 DEBUG [org.jasig.cas.web.support.CasArgumentExtractor] - Extractor generated service for: http://localhost:8081/cas
+2017-07-25 17:37:22,226 DEBUG [org.jasig.cas.web.support.CasArgumentExtractor] - Extractor generated service for: http://localhost:8081/cas
+2017-07-25 17:37:22,226 DEBUG [org.jasig.cas.web.flow.InitialFlowSetupAction] - Placing service in FlowScope: http://localhost:8081/cas
+2017-07-25 17:37:22,226 DEBUG [org.jasig.cas.web.flow.InitialFlowSetupAction] - Placing service in FlowScope: http://localhost:8081/cas
+2017-07-25 17:37:22,226 DEBUG [org.jasig.cas.support.pac4j.web.flow.ClientAction] - clientName : null
+2017-07-25 17:37:22,226 DEBUG [org.jasig.cas.support.pac4j.web.flow.ClientAction] - QQClientUrl -> https://graph.qq.com/oauth2.0/authorize?client_id=123456&redirect_uri=http%3A%2F%2Fwww.example.com%2Fqqlogin%3Fclient_name%3DQQClient&response_type=code&state=qqlogin
+2017-07-25 17:37:22,227 DEBUG [org.jasig.cas.web.flow.GenerateLoginTicketAction] - Generated login ticket LT-3-V9L26CUqextdYmb6kicZ2NtvvPJMh9-cas01.example.org
+2017-07-25 17:37:22,227 DEBUG [org.jasig.cas.web.flow.GenerateLoginTicketAction] - Generated login ticket LT-3-V9L26CUqextdYmb6kicZ2NtvvPJMh9-cas01.example.org
+2017-07-25 17:37:22,228 DEBUG [org.jasig.cas.web.support.CasArgumentExtractor] - Extractor generated service for: http://localhost:8081/cas
+2017-07-25 17:37:34,709 INFO [org.jasig.cas.authentication.PolicyBasedAuthenticationManager] - YBQueryDatabaseAuthenticationHandler successfully authenticated 12456786901+password
+2017-07-25 17:37:34,709 DEBUG [org.jasig.cas.authentication.principal.PersonDirectoryPrincipalResolver] - Attempting to resolve a principal...
+2017-07-25 17:37:34,709 DEBUG [org.jasig.cas.authentication.principal.PersonDirectoryPrincipalResolver] - Creating SimplePrincipal for [12456786901]
+2017-07-25 17:37:34,709 DEBUG [org.jasig.cas.authentication.PolicyBasedAuthenticationManager] - org.jasig.cas.authentication.principal.PersonDirectoryPrincipalResolver@76b7bcc5 resolved 12456786901 from 12456786901+password
+2017-07-25 17:37:34,709 INFO [org.jasig.cas.authentication.PolicyBasedAuthenticationManager] - Authenticated 12456786901 with credentials [12456786901+password].
+2017-07-25 17:37:34,709 DEBUG [org.jasig.cas.authentication.PolicyBasedAuthenticationManager] - Attribute map for 12456786901: {username=测试username, email=test@163.com, userid=12456786901}
+2017-07-25 17:37:34,812 DEBUG [org.jasig.cas.web.support.CookieRetrievingCookieGenerator] - Removed cookie with name [CASPRIVACY]
+2017-07-25 17:37:34,874 DEBUG [org.jasig.cas.web.support.CookieRetrievingCookieGenerator] - Added cookie with name [CASTGC] and value [TGT-1-cfuSXiJwJYkapiKLJshhCkYslL6cJ9Vpabk91zWdPEMnHfeB7c-cas01.example.org]
+2017-07-25 17:37:35,020 DEBUG [org.jasig.cas.CentralAuthenticationServiceImpl] - Generated service ticket id [ST-1-XkhUpNo1v6xGiRcAYqKB-cas01.example.org] for ticket granting ticket [TGT-1-cfuSXiJwJYkapiKLJshhCkYslL6cJ9Vpabk91zWdPEMnHfeB7c-cas01.example.org]
+2017-07-25 17:37:35,209 INFO [org.jasig.cas.CentralAuthenticationServiceImpl] - Granted service ticket [ST-1-XkhUpNo1v6xGiRcAYqKB-cas01.example.org] for service [http://localhost:8081/cas] for user [12456786901]
+2017-07-25 17:37:35,275 DEBUG [org.jasig.cas.web.flow.TerminateWebSessionListener] - Terminate web session 1fcf0n9q68xa5152x9v5p4wy54 in 2 seconds
+2017-07-25 17:37:35,275 DEBUG [org.jasig.cas.web.flow.TerminateWebSessionListener] - Terminate web session 1fcf0n9q68xa5152x9v5p4wy54 in 2 seconds
+2017-07-25 17:38:22,197 INFO [org.jasig.cas.services.DefaultServicesManagerImpl] - Reloading registered services.
+2017-07-25 17:38:22,203 DEBUG [org.jasig.cas.services.DefaultServicesManagerImpl] - Adding registered service http://**
+2017-07-25 17:38:22,203 INFO [org.jasig.cas.services.DefaultServicesManagerImpl] - Loaded 1 services.
+2017-07-25 17:40:22,194 INFO [org.jasig.cas.services.DefaultServicesManagerImpl] - Reloading registered services.
+2017-07-25 17:40:22,195 DEBUG [org.jasig.cas.services.DefaultServicesManagerImpl] - Adding registered service http://**
+2017-07-25 17:40:22,196 INFO [org.jasig.cas.services.DefaultServicesManagerImpl] - Loaded 1 services.
+2017-07-25 17:41:20,644 DEBUG [org.jasig.cas.web.support.CasArgumentExtractor] - Extractor generated service for: http://localhost:8081/cas
+2017-07-25 17:41:20,650 DEBUG [org.jasig.cas.web.flow.InitialFlowSetupAction] - Placing service in FlowScope: http://localhost:8081/cas
+2017-07-25 17:41:20,650 DEBUG [org.jasig.cas.web.flow.InitialFlowSetupAction] - Placing service in FlowScope: http://localhost:8081/cas
+2017-07-25 17:41:20,650 DEBUG [org.jasig.cas.support.pac4j.web.flow.ClientAction] - clientName : null
+2017-07-25 17:41:20,651 DEBUG [org.jasig.cas.support.pac4j.web.flow.ClientAction] - QQClientUrl -> https://graph.qq.com/oauth2.0/authorize?client_id=123456&redirect_uri=http%3A%2F%2Fwww.example.com%2Fqqlogin%3Fclient_name%3DQQClient&response_type=code&state=qqlogin
+2017-07-25 17:41:20,738 DEBUG [org.jasig.cas.CentralAuthenticationServiceImpl] - Removing ticket [TGT-1-cfuSXiJwJYkapiKLJshhCkYslL6cJ9Vpabk91zWdPEMnHfeB7c-cas01.example.org] from registry.
+2017-07-25 17:41:20,797 DEBUG [org.jasig.cas.CentralAuthenticationServiceImpl] - TicketGrantingTicket [TGT-1-cfuSXiJwJYkapiKLJshhCkYslL6cJ9Vpabk91zWdPEMnHfeB7c-cas01.example.org] cannot be found in the ticket registry.
+2017-07-25 17:41:20,826 DEBUG [org.jasig.cas.web.support.CookieRetrievingCookieGenerator] - Removed cookie with name [CASTGC]
+2017-07-25 17:41:20,826 DEBUG [org.jasig.cas.web.support.CookieRetrievingCookieGenerator] - Removed cookie with name [CASPRIVACY]
+2017-07-25 17:41:20,827 DEBUG [org.jasig.cas.web.flow.GenerateLoginTicketAction] - Generated login ticket LT-4-5RmCvVNfdPDvb2xCbbCCxKYlGZrCPe-cas01.example.org
+2017-07-25 17:41:20,827 DEBUG [org.jasig.cas.web.flow.GenerateLoginTicketAction] - Generated login ticket LT-4-5RmCvVNfdPDvb2xCbbCCxKYlGZrCPe-cas01.example.org
+2017-07-25 17:41:20,829 DEBUG [org.jasig.cas.web.support.CasArgumentExtractor] - Extractor generated service for: http://localhost:8081/cas
+2017-07-25 17:41:30,060 INFO [org.jasig.cas.authentication.PolicyBasedAuthenticationManager] - YBQueryDatabaseAuthenticationHandler successfully authenticated 12456786901+password
+2017-07-25 17:41:30,066 DEBUG [org.jasig.cas.authentication.principal.PersonDirectoryPrincipalResolver] - Attempting to resolve a principal...
+2017-07-25 17:41:30,066 DEBUG [org.jasig.cas.authentication.principal.PersonDirectoryPrincipalResolver] - Creating SimplePrincipal for [12456786901]
+2017-07-25 17:41:30,066 DEBUG [org.jasig.cas.authentication.PolicyBasedAuthenticationManager] - org.jasig.cas.authentication.principal.PersonDirectoryPrincipalResolver@76b7bcc5 resolved 12456786901 from 12456786901+password
+2017-07-25 17:41:30,066 INFO [org.jasig.cas.authentication.PolicyBasedAuthenticationManager] - Authenticated 12456786901 with credentials [12456786901+password].
+2017-07-25 17:41:30,066 DEBUG [org.jasig.cas.authentication.PolicyBasedAuthenticationManager] - Attribute map for 12456786901: {username=测试username, email=test@163.com, userid=12456786901}
+2017-07-25 17:41:30,155 DEBUG [org.jasig.cas.web.support.CookieRetrievingCookieGenerator] - Removed cookie with name [CASPRIVACY]
+2017-07-25 17:41:30,215 DEBUG [org.jasig.cas.web.support.CookieRetrievingCookieGenerator] - Added cookie with name [CASTGC] and value [TGT-2-FUB2IRg0MLWyWheYnQyfuQr954rkfhSeyZlHkfAZKgggcgPIxu-cas01.example.org]
+2017-07-25 17:41:30,322 DEBUG [org.jasig.cas.CentralAuthenticationServiceImpl] - Generated service ticket id [ST-2-dLLRZfnIiRUiKc2Z4UKF-cas01.example.org] for ticket granting ticket [TGT-2-FUB2IRg0MLWyWheYnQyfuQr954rkfhSeyZlHkfAZKgggcgPIxu-cas01.example.org]
+2017-07-25 17:41:30,786 INFO [org.jasig.cas.CentralAuthenticationServiceImpl] - Granted service ticket [ST-2-dLLRZfnIiRUiKc2Z4UKF-cas01.example.org] for service [http://localhost:8081/cas] for user [12456786901]
+2017-07-25 17:41:30,849 DEBUG [org.jasig.cas.web.flow.TerminateWebSessionListener] - Terminate web session d1nc8et78wjf11v2dbqsy8bb6 in 2 seconds
+2017-07-25 17:41:30,849 DEBUG [org.jasig.cas.web.flow.TerminateWebSessionListener] - Terminate web session d1nc8et78wjf11v2dbqsy8bb6 in 2 seconds
+2017-07-25 17:42:22,193 INFO [org.jasig.cas.services.DefaultServicesManagerImpl] - Reloading registered services.
+2017-07-25 17:42:22,200 DEBUG [org.jasig.cas.services.DefaultServicesManagerImpl] - Adding registered service http://**
+2017-07-25 17:42:22,201 INFO [org.jasig.cas.services.DefaultServicesManagerImpl] - Loaded 1 services.
+2017-07-25 17:44:22,191 INFO [org.jasig.cas.services.DefaultServicesManagerImpl] - Reloading registered services.
+2017-07-25 17:44:22,197 DEBUG [org.jasig.cas.services.DefaultServicesManagerImpl] - Adding registered service http://**
+2017-07-25 17:44:22,197 INFO [org.jasig.cas.services.DefaultServicesManagerImpl] - Loaded 1 services.
+2017-07-25 17:46:22,188 INFO [org.jasig.cas.services.DefaultServicesManagerImpl] - Reloading registered services.
+2017-07-25 17:46:22,189 DEBUG [org.jasig.cas.services.DefaultServicesManagerImpl] - Adding registered service http://**
+2017-07-25 17:46:22,189 INFO [org.jasig.cas.services.DefaultServicesManagerImpl] - Loaded 1 services.
+2017-07-25 17:48:22,191 INFO [org.jasig.cas.services.DefaultServicesManagerImpl] - Reloading registered services.
+2017-07-25 17:48:22,197 DEBUG [org.jasig.cas.services.DefaultServicesManagerImpl] - Adding registered service http://**
+2017-07-25 17:48:22,197 INFO [org.jasig.cas.services.DefaultServicesManagerImpl] - Loaded 1 services.
+2017-07-25 17:48:23,013 DEBUG [org.jasig.cas.web.support.CasArgumentExtractor] - Extractor generated service for: http://localhost:8081/cas
+2017-07-25 17:48:23,013 DEBUG [org.jasig.cas.web.flow.InitialFlowSetupAction] - Placing service in FlowScope: http://localhost:8081/cas
+2017-07-25 17:48:23,013 DEBUG [org.jasig.cas.web.flow.InitialFlowSetupAction] - Placing service in FlowScope: http://localhost:8081/cas
+2017-07-25 17:48:23,013 DEBUG [org.jasig.cas.support.pac4j.web.flow.ClientAction] - clientName : null
+2017-07-25 17:48:23,014 DEBUG [org.jasig.cas.support.pac4j.web.flow.ClientAction] - QQClientUrl -> https://graph.qq.com/oauth2.0/authorize?client_id=123456&redirect_uri=http%3A%2F%2Fwww.example.com%2Fqqlogin%3Fclient_name%3DQQClient&response_type=code&state=qqlogin
+2017-07-25 17:48:23,140 DEBUG [org.jasig.cas.CentralAuthenticationServiceImpl] - Removing ticket [TGT-2-FUB2IRg0MLWyWheYnQyfuQr954rkfhSeyZlHkfAZKgggcgPIxu-cas01.example.org] from registry.
+2017-07-25 17:48:23,254 DEBUG [org.jasig.cas.CentralAuthenticationServiceImpl] - TicketGrantingTicket [TGT-2-FUB2IRg0MLWyWheYnQyfuQr954rkfhSeyZlHkfAZKgggcgPIxu-cas01.example.org] cannot be found in the ticket registry.
+2017-07-25 17:48:23,283 DEBUG [org.jasig.cas.web.support.CookieRetrievingCookieGenerator] - Removed cookie with name [CASTGC]
+2017-07-25 17:48:23,284 DEBUG [org.jasig.cas.web.support.CookieRetrievingCookieGenerator] - Removed cookie with name [CASPRIVACY]
+2017-07-25 17:48:23,284 DEBUG [org.jasig.cas.web.flow.GenerateLoginTicketAction] - Generated login ticket LT-5-711FPNfXrDXdPicoOeBuzSfxfv3g49-cas01.example.org
+2017-07-25 17:48:23,284 DEBUG [org.jasig.cas.web.flow.GenerateLoginTicketAction] - Generated login ticket LT-5-711FPNfXrDXdPicoOeBuzSfxfv3g49-cas01.example.org
+2017-07-25 17:48:23,286 DEBUG [org.jasig.cas.web.support.CasArgumentExtractor] - Extractor generated service for: http://localhost:8081/cas
+2017-07-25 17:48:33,980 INFO [org.jasig.cas.authentication.PolicyBasedAuthenticationManager] - YBQueryDatabaseAuthenticationHandler successfully authenticated 12456786901+password
+2017-07-25 17:48:33,981 DEBUG [org.jasig.cas.authentication.principal.PersonDirectoryPrincipalResolver] - Attempting to resolve a principal...
+2017-07-25 17:48:33,981 DEBUG [org.jasig.cas.authentication.principal.PersonDirectoryPrincipalResolver] - Creating SimplePrincipal for [12456786901]
+2017-07-25 17:48:33,981 DEBUG [org.jasig.cas.authentication.PolicyBasedAuthenticationManager] - org.jasig.cas.authentication.principal.PersonDirectoryPrincipalResolver@76b7bcc5 resolved 12456786901 from 12456786901+password
+2017-07-25 17:48:33,981 INFO [org.jasig.cas.authentication.PolicyBasedAuthenticationManager] - Authenticated 12456786901 with credentials [12456786901+password].
+2017-07-25 17:48:33,981 DEBUG [org.jasig.cas.authentication.PolicyBasedAuthenticationManager] - Attribute map for 12456786901: {username=测试username, email=test@163.com, userid=12456786901}
+2017-07-25 17:48:34,097 DEBUG [org.jasig.cas.web.support.CookieRetrievingCookieGenerator] - Removed cookie with name [CASPRIVACY]
+2017-07-25 17:48:34,155 DEBUG [org.jasig.cas.web.support.CookieRetrievingCookieGenerator] - Added cookie with name [CASTGC] and value [TGT-3-sVNJ5wjnyr1RmY2eICnFns7NjjxCGSkN55bIWAjsDfugovOKk1-cas01.example.org]
+2017-07-25 17:48:34,425 DEBUG [org.jasig.cas.CentralAuthenticationServiceImpl] - Generated service ticket id [ST-3-YbfEN1fDyPDnyExa6WeC-cas01.example.org] for ticket granting ticket [TGT-3-sVNJ5wjnyr1RmY2eICnFns7NjjxCGSkN55bIWAjsDfugovOKk1-cas01.example.org]
+2017-07-25 17:48:34,601 INFO [org.jasig.cas.CentralAuthenticationServiceImpl] - Granted service ticket [ST-3-YbfEN1fDyPDnyExa6WeC-cas01.example.org] for service [http://localhost:8081/cas] for user [12456786901]
+2017-07-25 17:48:34,662 DEBUG [org.jasig.cas.web.flow.TerminateWebSessionListener] - Terminate web session 7blip8spzvij1n7pgwogx7exl in 2 seconds
+2017-07-25 17:48:34,662 DEBUG [org.jasig.cas.web.flow.TerminateWebSessionListener] - Terminate web session 7blip8spzvij1n7pgwogx7exl in 2 seconds
+2017-07-25 17:49:02,713 DEBUG [org.jasig.cas.web.support.CasArgumentExtractor] - Extractor generated service for: http://localhost:8081/cas
+2017-07-25 17:49:02,713 DEBUG [org.jasig.cas.web.flow.InitialFlowSetupAction] - Placing service in FlowScope: http://localhost:8081/cas
+2017-07-25 17:49:02,713 DEBUG [org.jasig.cas.web.flow.InitialFlowSetupAction] - Placing service in FlowScope: http://localhost:8081/cas
+2017-07-25 17:49:02,713 DEBUG [org.jasig.cas.support.pac4j.web.flow.ClientAction] - clientName : null
+2017-07-25 17:49:02,714 DEBUG [org.jasig.cas.support.pac4j.web.flow.ClientAction] - QQClientUrl -> https://graph.qq.com/oauth2.0/authorize?client_id=123456&redirect_uri=http%3A%2F%2Fwww.example.com%2Fqqlogin%3Fclient_name%3DQQClient&response_type=code&state=qqlogin
+2017-07-25 17:49:02,832 DEBUG [org.jasig.cas.CentralAuthenticationServiceImpl] - Generated service ticket id [ST-4-gDaXOzKK15jjbblGPxfd-cas01.example.org] for ticket granting ticket [TGT-3-sVNJ5wjnyr1RmY2eICnFns7NjjxCGSkN55bIWAjsDfugovOKk1-cas01.example.org]
+2017-07-25 17:49:03,007 INFO [org.jasig.cas.CentralAuthenticationServiceImpl] - Granted service ticket [ST-4-gDaXOzKK15jjbblGPxfd-cas01.example.org] for service [http://localhost:8081/cas] for user [12456786901]
+2017-07-25 17:49:03,134 DEBUG [org.jasig.cas.web.flow.TerminateWebSessionListener] - Terminate web session 1g0fv4nqbsun1dklm9p2wd32v in 2 seconds
+2017-07-25 17:49:03,134 DEBUG [org.jasig.cas.web.flow.TerminateWebSessionListener] - Terminate web session 1g0fv4nqbsun1dklm9p2wd32v in 2 seconds
+2017-07-25 17:50:22,191 INFO [org.jasig.cas.services.DefaultServicesManagerImpl] - Reloading registered services.
+2017-07-25 17:50:22,196 DEBUG [org.jasig.cas.services.DefaultServicesManagerImpl] - Adding registered service http://**
+2017-07-25 17:50:22,196 INFO [org.jasig.cas.services.DefaultServicesManagerImpl] - Loaded 1 services.
+2017-07-25 17:52:22,187 INFO [org.jasig.cas.services.DefaultServicesManagerImpl] - Reloading registered services.
+2017-07-25 17:52:22,192 DEBUG [org.jasig.cas.services.DefaultServicesManagerImpl] - Adding registered service http://**
+2017-07-25 17:52:22,193 INFO [org.jasig.cas.services.DefaultServicesManagerImpl] - Loaded 1 services.
+2017-07-25 17:54:22,187 INFO [org.jasig.cas.services.DefaultServicesManagerImpl] - Reloading registered services.
+2017-07-25 17:54:22,193 DEBUG [org.jasig.cas.services.DefaultServicesManagerImpl] - Adding registered service http://**
+2017-07-25 17:54:22,193 INFO [org.jasig.cas.services.DefaultServicesManagerImpl] - Loaded 1 services.
+2017-07-25 17:56:22,191 INFO [org.jasig.cas.services.DefaultServicesManagerImpl] - Reloading registered services.
+2017-07-25 17:56:22,197 DEBUG [org.jasig.cas.services.DefaultServicesManagerImpl] - Adding registered service http://**
+2017-07-25 17:56:22,197 INFO [org.jasig.cas.services.DefaultServicesManagerImpl] - Loaded 1 services.
+2017-07-25 17:58:22,189 INFO [org.jasig.cas.services.DefaultServicesManagerImpl] - Reloading registered services.
+2017-07-25 17:58:22,194 DEBUG [org.jasig.cas.services.DefaultServicesManagerImpl] - Adding registered service http://**
+2017-07-25 17:58:22,195 INFO [org.jasig.cas.services.DefaultServicesManagerImpl] - Loaded 1 services.
+2017-07-25 18:00:17,127 DEBUG [org.jasig.cas.services.DefaultServicesManagerImpl] - Adding registered service http://**
+2017-07-25 18:00:17,133 INFO [org.jasig.cas.services.DefaultServicesManagerImpl] - Loaded 1 services.
+2017-07-25 18:00:18,243 DEBUG [org.jasig.cas.util.AutowiringSchedulerFactoryBean] - Autowired the following triggers defined in application context: [periodicServiceRegistryReloaderTrigger]
+2017-07-25 18:00:18,948 INFO [org.jasig.cas.util.AutowiringSchedulerFactoryBean] - Starting Quartz Scheduler now
+2017-07-25 18:00:38,047 DEBUG [org.jasig.cas.CentralAuthenticationServiceImpl] - Removing ticket [TGT-3-sVNJ5wjnyr1RmY2eICnFns7NjjxCGSkN55bIWAjsDfugovOKk1-cas01.example.org] from registry.
+2017-07-25 18:00:38,048 INFO [com.lingchaomin.auth.cas.registry.RedisTicketRegistry] - get ticket:TGT-3-sVNJ5wjnyr1RmY2eICnFns7NjjxCGSkN55bIWAjsDfugovOKk1-cas01.example.org
+2017-07-25 18:00:38,048 INFO [com.lingchaomin.auth.cas.registry.RedisTicketRegistry] - ticketId:TGT-3-sVNJ5wjnyr1RmY2eICnFns7NjjxCGSkN55bIWAjsDfugovOKk1-cas01.example.org
+2017-07-25 18:00:38,392 DEBUG [org.jasig.cas.CentralAuthenticationServiceImpl] - TicketGrantingTicket [TGT-3-sVNJ5wjnyr1RmY2eICnFns7NjjxCGSkN55bIWAjsDfugovOKk1-cas01.example.org] cannot be found in the ticket registry.
+2017-07-25 18:00:38,393 INFO [com.lingchaomin.auth.cas.registry.RedisTicketRegistry] - get ticket:TGT-3-sVNJ5wjnyr1RmY2eICnFns7NjjxCGSkN55bIWAjsDfugovOKk1-cas01.example.org
+2017-07-25 18:00:38,393 INFO [com.lingchaomin.auth.cas.registry.RedisTicketRegistry] - ticketId:TGT-3-sVNJ5wjnyr1RmY2eICnFns7NjjxCGSkN55bIWAjsDfugovOKk1-cas01.example.org
+2017-07-25 18:00:38,424 DEBUG [org.jasig.cas.web.support.CookieRetrievingCookieGenerator] - Removed cookie with name [CASTGC]
+2017-07-25 18:00:38,424 DEBUG [org.jasig.cas.web.support.CookieRetrievingCookieGenerator] - Removed cookie with name [CASPRIVACY]
+2017-07-25 18:00:39,470 DEBUG [org.jasig.cas.web.support.CasArgumentExtractor] - Extractor did not generate service.
+2017-07-25 18:00:39,491 DEBUG [org.jasig.cas.web.view.CasReloadableMessageBundle] - Examining language bundle [classpath:custom_messages_zh] for the code [screen.logout.header]
+2017-07-25 18:00:39,492 DEBUG [org.jasig.cas.web.view.CasReloadableMessageBundle] - No properties file found for [classpath:custom_messages_zh] - neither plain properties nor XML
+2017-07-25 18:00:39,492 DEBUG [org.jasig.cas.web.view.CasReloadableMessageBundle] - Examining language bundle [classpath:messages_zh] for the code [screen.logout.header]
+2017-07-25 18:00:39,493 DEBUG [org.jasig.cas.web.view.CasReloadableMessageBundle] - No properties file found for [classpath:messages_zh] - neither plain properties nor XML
+2017-07-25 18:00:39,493 WARN [org.jasig.cas.web.view.CasReloadableMessageBundle] - The code [screen.logout.header] cannot be found in the language bundle for the locale [zh_CN]
+2017-07-25 18:00:39,493 DEBUG [org.jasig.cas.web.view.CasReloadableMessageBundle] - No properties file found for [classpath:custom_messages_zh_CN] - neither plain properties nor XML
+2017-07-25 18:00:39,493 DEBUG [org.jasig.cas.web.view.CasReloadableMessageBundle] - No properties file found for [classpath:custom_messages] - neither plain properties nor XML
+2017-07-25 18:00:39,494 DEBUG [org.jasig.cas.web.view.CasReloadableMessageBundle] - Loading properties [messages_zh_CN.properties] with encoding 'UTF-8'
+2017-07-25 18:00:39,495 DEBUG [org.jasig.cas.web.view.CasReloadableMessageBundle] - Examining language bundle [classpath:custom_messages_zh] for the code [screen.logout.success]
+2017-07-25 18:00:39,495 DEBUG [org.jasig.cas.web.view.CasReloadableMessageBundle] - Examining language bundle [classpath:messages_zh] for the code [screen.logout.success]
+2017-07-25 18:00:39,495 WARN [org.jasig.cas.web.view.CasReloadableMessageBundle] - The code [screen.logout.success] cannot be found in the language bundle for the locale [zh_CN]
+2017-07-25 18:00:39,495 DEBUG [org.jasig.cas.web.view.CasReloadableMessageBundle] - Examining language bundle [classpath:custom_messages_zh] for the code [screen.logout.security]
+2017-07-25 18:00:39,495 DEBUG [org.jasig.cas.web.view.CasReloadableMessageBundle] - Examining language bundle [classpath:messages_zh] for the code [screen.logout.security]
+2017-07-25 18:00:39,495 WARN [org.jasig.cas.web.view.CasReloadableMessageBundle] - The code [screen.logout.security] cannot be found in the language bundle for the locale [zh_CN]
+2017-07-25 18:03:04,075 DEBUG [org.jasig.cas.services.DefaultServicesManagerImpl] - Adding registered service http://**
+2017-07-25 18:03:04,081 INFO [org.jasig.cas.services.DefaultServicesManagerImpl] - Loaded 1 services.
+2017-07-25 18:03:05,442 DEBUG [org.jasig.cas.util.AutowiringSchedulerFactoryBean] - Autowired the following triggers defined in application context: [periodicServiceRegistryReloaderTrigger]
+2017-07-25 18:03:06,169 INFO [org.jasig.cas.util.AutowiringSchedulerFactoryBean] - Starting Quartz Scheduler now
+2017-07-25 18:03:20,362 INFO [org.jasig.cas.web.flow.InitialFlowSetupAction] - Setting path for cookies to: /
+2017-07-25 18:03:20,362 INFO [org.jasig.cas.web.flow.InitialFlowSetupAction] - Setting path for cookies to: /
+2017-07-25 18:03:20,362 DEBUG [org.jasig.cas.web.support.CasArgumentExtractor] - Extractor did not generate service.
+2017-07-25 18:03:20,365 DEBUG [org.jasig.cas.support.pac4j.web.flow.ClientAction] - clientName : null
+2017-07-25 18:03:20,375 DEBUG [org.jasig.cas.support.pac4j.web.flow.ClientAction] - QQClientUrl -> https://graph.qq.com/oauth2.0/authorize?client_id=123456&redirect_uri=http%3A%2F%2Fwww.example.com%2Fqqlogin%3Fclient_name%3DQQClient&response_type=code&state=qqlogin
+2017-07-25 18:03:20,383 DEBUG [org.jasig.cas.web.flow.GenerateLoginTicketAction] - Generated login ticket LT-1-kLTS2HyOfcFcKk2zvRXPeRfe6Ykqjq-cas01.example.org
+2017-07-25 18:03:20,383 DEBUG [org.jasig.cas.web.flow.GenerateLoginTicketAction] - Generated login ticket LT-1-kLTS2HyOfcFcKk2zvRXPeRfe6Ykqjq-cas01.example.org
+2017-07-25 18:03:20,945 DEBUG [org.jasig.cas.web.support.CasArgumentExtractor] - Extractor did not generate service.
+2017-07-25 18:03:27,408 DEBUG [org.jasig.cas.web.support.CasArgumentExtractor] - Extractor did not generate service.
+2017-07-25 18:03:27,408 DEBUG [org.jasig.cas.support.pac4j.web.flow.ClientAction] - clientName : null
+2017-07-25 18:03:27,408 DEBUG [org.jasig.cas.support.pac4j.web.flow.ClientAction] - QQClientUrl -> https://graph.qq.com/oauth2.0/authorize?client_id=123456&redirect_uri=http%3A%2F%2Fwww.example.com%2Fqqlogin%3Fclient_name%3DQQClient&response_type=code&state=qqlogin
+2017-07-25 18:03:27,409 DEBUG [org.jasig.cas.web.flow.GenerateLoginTicketAction] - Generated login ticket LT-2-y2NqDspoUm9cwV9PeTE5yrcvLAe9og-cas01.example.org
+2017-07-25 18:03:27,409 DEBUG [org.jasig.cas.web.flow.GenerateLoginTicketAction] - Generated login ticket LT-2-y2NqDspoUm9cwV9PeTE5yrcvLAe9og-cas01.example.org
+2017-07-25 18:03:27,415 DEBUG [org.jasig.cas.web.support.CasArgumentExtractor] - Extractor did not generate service.
+2017-07-25 18:03:32,790 INFO [org.jasig.cas.authentication.PolicyBasedAuthenticationManager] - YBQueryDatabaseAuthenticationHandler failed authenticating 18814887640+password
+2017-07-25 18:03:32,798 DEBUG [org.jasig.cas.web.view.CasReloadableMessageBundle] - Examining language bundle [classpath:custom_messages_zh] for the code [authenticationFailure.AccountNotFoundException]
+2017-07-25 18:03:32,799 DEBUG [org.jasig.cas.web.view.CasReloadableMessageBundle] - No properties file found for [classpath:custom_messages_zh] - neither plain properties nor XML
+2017-07-25 18:03:32,800 DEBUG [org.jasig.cas.web.view.CasReloadableMessageBundle] - Examining language bundle [classpath:messages_zh] for the code [authenticationFailure.AccountNotFoundException]
+2017-07-25 18:03:32,800 DEBUG [org.jasig.cas.web.view.CasReloadableMessageBundle] - No properties file found for [classpath:messages_zh] - neither plain properties nor XML
+2017-07-25 18:03:32,800 WARN [org.jasig.cas.web.view.CasReloadableMessageBundle] - The code [authenticationFailure.AccountNotFoundException] cannot be found in the language bundle for the locale [zh_CN]
+2017-07-25 18:03:32,801 DEBUG [org.jasig.cas.web.view.CasReloadableMessageBundle] - No properties file found for [classpath:custom_messages_zh_CN] - neither plain properties nor XML
+2017-07-25 18:03:32,801 DEBUG [org.jasig.cas.web.view.CasReloadableMessageBundle] - No properties file found for [classpath:custom_messages] - neither plain properties nor XML
+2017-07-25 18:03:32,802 DEBUG [org.jasig.cas.web.view.CasReloadableMessageBundle] - Loading properties [messages_zh_CN.properties] with encoding 'UTF-8'
+2017-07-25 18:03:32,804 DEBUG [org.jasig.cas.web.view.CasReloadableMessageBundle] - Loading properties [messages.properties] with encoding 'UTF-8'
+2017-07-25 18:03:32,805 DEBUG [org.jasig.cas.web.flow.GenerateLoginTicketAction] - Generated login ticket LT-3-IXrefcJ3KJcljrPnJbfF6nJ42xQ0dA-cas01.example.org
+2017-07-25 18:03:32,805 DEBUG [org.jasig.cas.web.flow.GenerateLoginTicketAction] - Generated login ticket LT-3-IXrefcJ3KJcljrPnJbfF6nJ42xQ0dA-cas01.example.org
+2017-07-25 18:03:32,807 DEBUG [org.jasig.cas.web.support.CasArgumentExtractor] - Extractor did not generate service.
+2017-07-25 18:03:41,872 INFO [com.lingchaomin.auth.cas.authentication.YBQueryDatabaseAuthenticationHandler] - 密码验证:d4600ba095b4a9829d9247b96e969510,d4600ba095b4a9829d9247b96e969510
+2017-07-25 18:03:41,872 INFO [org.jasig.cas.authentication.PolicyBasedAuthenticationManager] - YBQueryDatabaseAuthenticationHandler successfully authenticated 12456786901+password
+2017-07-25 18:03:41,872 DEBUG [org.jasig.cas.authentication.principal.PersonDirectoryPrincipalResolver] - Attempting to resolve a principal...
+2017-07-25 18:03:41,872 DEBUG [org.jasig.cas.authentication.principal.PersonDirectoryPrincipalResolver] - Creating SimplePrincipal for [12456786901]
+2017-07-25 18:03:41,873 DEBUG [org.jasig.cas.authentication.PolicyBasedAuthenticationManager] - org.jasig.cas.authentication.principal.PersonDirectoryPrincipalResolver@379327bd resolved 12456786901 from 12456786901+password
+2017-07-25 18:03:41,873 INFO [org.jasig.cas.authentication.PolicyBasedAuthenticationManager] - Authenticated 12456786901 with credentials [12456786901+password].
+2017-07-25 18:03:41,873 DEBUG [org.jasig.cas.authentication.PolicyBasedAuthenticationManager] - Attribute map for 12456786901: {username=测试username, email=test@163.com, userid=12456786901}
+2017-07-25 18:03:41,880 INFO [com.lingchaomin.auth.cas.registry.RedisTicketRegistry] - adding ticket:TGT-1-ucchHRHvXyfaFnjUXNHKosDqO4oHxAD2hbSoPJEzYef4fXeQ6u-cas01.example.org to redis success~~~~~~~~~
+2017-07-25 18:03:42,120 DEBUG [org.jasig.cas.web.support.CookieRetrievingCookieGenerator] - Removed cookie with name [CASPRIVACY]
+2017-07-25 18:03:42,120 INFO [com.lingchaomin.auth.cas.registry.RedisTicketRegistry] - get ticket:TGT-1-ucchHRHvXyfaFnjUXNHKosDqO4oHxAD2hbSoPJEzYef4fXeQ6u-cas01.example.org
+2017-07-25 18:03:42,120 INFO [com.lingchaomin.auth.cas.registry.RedisTicketRegistry] - ticketId:TGT-1-ucchHRHvXyfaFnjUXNHKosDqO4oHxAD2hbSoPJEzYef4fXeQ6u-cas01.example.org
+2017-07-25 18:03:42,170 INFO [com.lingchaomin.auth.cas.registry.RedisTicketRegistry] - getRawTicket:TGT-1-ucchHRHvXyfaFnjUXNHKosDqO4oHxAD2hbSoPJEzYef4fXeQ6u-cas01.example.org
+2017-07-25 18:03:42,171 DEBUG [org.jasig.cas.web.support.CookieRetrievingCookieGenerator] - Added cookie with name [CASTGC] and value [TGT-1-ucchHRHvXyfaFnjUXNHKosDqO4oHxAD2hbSoPJEzYef4fXeQ6u-cas01.example.org]
+2017-07-25 18:03:42,385 DEBUG [org.jasig.cas.web.support.CasArgumentExtractor] - Extractor did not generate service.
+2017-07-25 18:03:42,387 DEBUG [org.jasig.cas.web.flow.TerminateWebSessionListener] - Terminate web session fmmfanc64o7ogv1wx9lo5rjx in 2 seconds
+2017-07-25 18:03:42,387 DEBUG [org.jasig.cas.web.flow.TerminateWebSessionListener] - Terminate web session fmmfanc64o7ogv1wx9lo5rjx in 2 seconds
+2017-07-25 18:05:04,209 INFO [org.jasig.cas.services.DefaultServicesManagerImpl] - Reloading registered services.
+2017-07-25 18:05:04,215 DEBUG [org.jasig.cas.services.DefaultServicesManagerImpl] - Adding registered service http://**
+2017-07-25 18:05:04,215 INFO [org.jasig.cas.services.DefaultServicesManagerImpl] - Loaded 1 services.
+2017-07-25 18:05:29,489 DEBUG [org.jasig.cas.web.support.CasArgumentExtractor] - Extractor generated service for: http://localhost:8081/cas
+2017-07-25 18:05:29,490 DEBUG [org.jasig.cas.web.flow.InitialFlowSetupAction] - Placing service in FlowScope: http://localhost:8081/cas
+2017-07-25 18:05:29,490 DEBUG [org.jasig.cas.web.flow.InitialFlowSetupAction] - Placing service in FlowScope: http://localhost:8081/cas
+2017-07-25 18:05:29,490 DEBUG [org.jasig.cas.support.pac4j.web.flow.ClientAction] - clientName : null
+2017-07-25 18:05:29,491 DEBUG [org.jasig.cas.support.pac4j.web.flow.ClientAction] - QQClientUrl -> https://graph.qq.com/oauth2.0/authorize?client_id=123456&redirect_uri=http%3A%2F%2Fwww.example.com%2Fqqlogin%3Fclient_name%3DQQClient&response_type=code&state=qqlogin
+2017-07-25 18:05:29,491 INFO [com.lingchaomin.auth.cas.registry.RedisTicketRegistry] - get ticket:TGT-1-ucchHRHvXyfaFnjUXNHKosDqO4oHxAD2hbSoPJEzYef4fXeQ6u-cas01.example.org
+2017-07-25 18:05:29,491 INFO [com.lingchaomin.auth.cas.registry.RedisTicketRegistry] - ticketId:TGT-1-ucchHRHvXyfaFnjUXNHKosDqO4oHxAD2hbSoPJEzYef4fXeQ6u-cas01.example.org
+2017-07-25 18:05:29,593 DEBUG [org.jasig.cas.CentralAuthenticationServiceImpl] - Removing ticket [TGT-1-ucchHRHvXyfaFnjUXNHKosDqO4oHxAD2hbSoPJEzYef4fXeQ6u-cas01.example.org] from registry.
+2017-07-25 18:05:29,593 INFO [com.lingchaomin.auth.cas.registry.RedisTicketRegistry] - get ticket:TGT-1-ucchHRHvXyfaFnjUXNHKosDqO4oHxAD2hbSoPJEzYef4fXeQ6u-cas01.example.org
+2017-07-25 18:05:29,593 INFO [com.lingchaomin.auth.cas.registry.RedisTicketRegistry] - ticketId:TGT-1-ucchHRHvXyfaFnjUXNHKosDqO4oHxAD2hbSoPJEzYef4fXeQ6u-cas01.example.org
+2017-07-25 18:05:29,615 DEBUG [org.jasig.cas.CentralAuthenticationServiceImpl] - TicketGrantingTicket [TGT-1-ucchHRHvXyfaFnjUXNHKosDqO4oHxAD2hbSoPJEzYef4fXeQ6u-cas01.example.org] cannot be found in the ticket registry.
+2017-07-25 18:05:29,615 INFO [com.lingchaomin.auth.cas.registry.RedisTicketRegistry] - get ticket:TGT-1-ucchHRHvXyfaFnjUXNHKosDqO4oHxAD2hbSoPJEzYef4fXeQ6u-cas01.example.org
+2017-07-25 18:05:29,615 INFO [com.lingchaomin.auth.cas.registry.RedisTicketRegistry] - ticketId:TGT-1-ucchHRHvXyfaFnjUXNHKosDqO4oHxAD2hbSoPJEzYef4fXeQ6u-cas01.example.org
+2017-07-25 18:05:29,639 DEBUG [org.jasig.cas.web.support.CookieRetrievingCookieGenerator] - Removed cookie with name [CASTGC]
+2017-07-25 18:05:29,639 DEBUG [org.jasig.cas.web.support.CookieRetrievingCookieGenerator] - Removed cookie with name [CASPRIVACY]
+2017-07-25 18:05:29,639 DEBUG [org.jasig.cas.web.flow.GenerateLoginTicketAction] - Generated login ticket LT-4-2oxWk7mVcUmb1O4BCyhTN47m9VPlKg-cas01.example.org
+2017-07-25 18:05:29,639 DEBUG [org.jasig.cas.web.flow.GenerateLoginTicketAction] - Generated login ticket LT-4-2oxWk7mVcUmb1O4BCyhTN47m9VPlKg-cas01.example.org
+2017-07-25 18:05:29,641 DEBUG [org.jasig.cas.web.support.CasArgumentExtractor] - Extractor generated service for: http://localhost:8081/cas
+2017-07-25 18:05:33,760 INFO [com.lingchaomin.auth.cas.authentication.YBQueryDatabaseAuthenticationHandler] - 密码验证:d4600ba095b4a9829d9247b96e969510,d4600ba095b4a9829d9247b96e969510
+2017-07-25 18:05:33,760 INFO [org.jasig.cas.authentication.PolicyBasedAuthenticationManager] - YBQueryDatabaseAuthenticationHandler successfully authenticated 12456786901+password
+2017-07-25 18:05:33,760 DEBUG [org.jasig.cas.authentication.principal.PersonDirectoryPrincipalResolver] - Attempting to resolve a principal...
+2017-07-25 18:05:33,761 DEBUG [org.jasig.cas.authentication.principal.PersonDirectoryPrincipalResolver] - Creating SimplePrincipal for [12456786901]
+2017-07-25 18:05:33,761 DEBUG [org.jasig.cas.authentication.PolicyBasedAuthenticationManager] - org.jasig.cas.authentication.principal.PersonDirectoryPrincipalResolver@379327bd resolved 12456786901 from 12456786901+password
+2017-07-25 18:05:33,761 INFO [org.jasig.cas.authentication.PolicyBasedAuthenticationManager] - Authenticated 12456786901 with credentials [12456786901+password].
+2017-07-25 18:05:33,761 DEBUG [org.jasig.cas.authentication.PolicyBasedAuthenticationManager] - Attribute map for 12456786901: {username=测试username, email=test@163.com, userid=12456786901}
+2017-07-25 18:05:33,762 INFO [com.lingchaomin.auth.cas.registry.RedisTicketRegistry] - adding ticket:TGT-2-RHayPXMEx2s29JRr4AB0aw4nFPlapaLLQJ4GUPkabt7NdzfSWW-cas01.example.org to redis success~~~~~~~~~
+2017-07-25 18:05:33,834 DEBUG [org.jasig.cas.web.support.CookieRetrievingCookieGenerator] - Removed cookie with name [CASPRIVACY]
+2017-07-25 18:05:33,834 INFO [com.lingchaomin.auth.cas.registry.RedisTicketRegistry] - get ticket:TGT-2-RHayPXMEx2s29JRr4AB0aw4nFPlapaLLQJ4GUPkabt7NdzfSWW-cas01.example.org
+2017-07-25 18:05:33,834 INFO [com.lingchaomin.auth.cas.registry.RedisTicketRegistry] - ticketId:TGT-2-RHayPXMEx2s29JRr4AB0aw4nFPlapaLLQJ4GUPkabt7NdzfSWW-cas01.example.org
+2017-07-25 18:05:33,882 INFO [com.lingchaomin.auth.cas.registry.RedisTicketRegistry] - getRawTicket:TGT-2-RHayPXMEx2s29JRr4AB0aw4nFPlapaLLQJ4GUPkabt7NdzfSWW-cas01.example.org
+2017-07-25 18:05:33,882 DEBUG [org.jasig.cas.web.support.CookieRetrievingCookieGenerator] - Added cookie with name [CASTGC] and value [TGT-2-RHayPXMEx2s29JRr4AB0aw4nFPlapaLLQJ4GUPkabt7NdzfSWW-cas01.example.org]
+2017-07-25 18:05:33,885 INFO [com.lingchaomin.auth.cas.registry.RedisTicketRegistry] - get ticket:TGT-2-RHayPXMEx2s29JRr4AB0aw4nFPlapaLLQJ4GUPkabt7NdzfSWW-cas01.example.org
+2017-07-25 18:05:33,885 INFO [com.lingchaomin.auth.cas.registry.RedisTicketRegistry] - ticketId:TGT-2-RHayPXMEx2s29JRr4AB0aw4nFPlapaLLQJ4GUPkabt7NdzfSWW-cas01.example.org
+2017-07-25 18:05:33,948 INFO [com.lingchaomin.auth.cas.registry.RedisTicketRegistry] - getRawTicket:TGT-2-RHayPXMEx2s29JRr4AB0aw4nFPlapaLLQJ4GUPkabt7NdzfSWW-cas01.example.org
+2017-07-25 18:05:33,949 DEBUG [org.jasig.cas.CentralAuthenticationServiceImpl] - Generated service ticket id [ST-1-eHJcxfvDsDY59K0ooBog-cas01.example.org] for ticket granting ticket [TGT-2-RHayPXMEx2s29JRr4AB0aw4nFPlapaLLQJ4GUPkabt7NdzfSWW-cas01.example.org]
+2017-07-25 18:05:33,950 INFO [com.lingchaomin.auth.cas.registry.RedisTicketRegistry] - adding ticket:TGT-2-RHayPXMEx2s29JRr4AB0aw4nFPlapaLLQJ4GUPkabt7NdzfSWW-cas01.example.org to redis success~~~~~~~~~
+2017-07-25 18:05:34,235 INFO [com.lingchaomin.auth.cas.registry.RedisTicketRegistry] - adding ticket:ST-1-eHJcxfvDsDY59K0ooBog-cas01.example.org to redis success~~~~~~~~~
+2017-07-25 18:05:34,306 INFO [org.jasig.cas.CentralAuthenticationServiceImpl] - Granted service ticket [ST-1-eHJcxfvDsDY59K0ooBog-cas01.example.org] for service [http://localhost:8081/cas] for user [12456786901]
+2017-07-25 18:05:34,306 INFO [com.lingchaomin.auth.cas.registry.RedisTicketRegistry] - get ticket:TGT-2-RHayPXMEx2s29JRr4AB0aw4nFPlapaLLQJ4GUPkabt7NdzfSWW-cas01.example.org
+2017-07-25 18:05:34,306 INFO [com.lingchaomin.auth.cas.registry.RedisTicketRegistry] - ticketId:TGT-2-RHayPXMEx2s29JRr4AB0aw4nFPlapaLLQJ4GUPkabt7NdzfSWW-cas01.example.org
+2017-07-25 18:05:34,356 INFO [com.lingchaomin.auth.cas.registry.RedisTicketRegistry] - getRawTicket:TGT-2-RHayPXMEx2s29JRr4AB0aw4nFPlapaLLQJ4GUPkabt7NdzfSWW-cas01.example.org
+2017-07-25 18:05:34,359 DEBUG [org.jasig.cas.web.flow.TerminateWebSessionListener] - Terminate web session mpr6wpikwfq31fjq1y55aga21 in 2 seconds
+2017-07-25 18:05:34,359 DEBUG [org.jasig.cas.web.flow.TerminateWebSessionListener] - Terminate web session mpr6wpikwfq31fjq1y55aga21 in 2 seconds
+2017-07-25 18:05:34,959 DEBUG [org.jasig.cas.web.support.CasArgumentExtractor] - Extractor generated service for: http://localhost:8081/cas
+2017-07-25 18:05:34,961 INFO [com.lingchaomin.auth.cas.registry.RedisTicketRegistry] - get ticket:ST-1-eHJcxfvDsDY59K0ooBog-cas01.example.org
+2017-07-25 18:05:34,961 INFO [com.lingchaomin.auth.cas.registry.RedisTicketRegistry] - ticketId:ST-1-eHJcxfvDsDY59K0ooBog-cas01.example.org
+2017-07-25 18:05:35,212 INFO [com.lingchaomin.auth.cas.registry.RedisTicketRegistry] - getRawTicket:ST-1-eHJcxfvDsDY59K0ooBog-cas01.example.org
+2017-07-25 18:05:35,214 INFO [com.lingchaomin.auth.cas.registry.RedisTicketRegistry] - adding ticket:ST-1-eHJcxfvDsDY59K0ooBog-cas01.example.org to redis success~~~~~~~~~
+2017-07-25 18:05:35,304 DEBUG [org.jasig.cas.CentralAuthenticationServiceImpl] - Principal id to return for service [HTTP] is [12456786901]. The default principal id is [12456786901].
+2017-07-25 18:05:35,327 INFO [com.lingchaomin.auth.cas.registry.RedisTicketRegistry] - get ticket:ST-1-eHJcxfvDsDY59K0ooBog-cas01.example.org
+2017-07-25 18:05:35,328 INFO [com.lingchaomin.auth.cas.registry.RedisTicketRegistry] - ticketId:ST-1-eHJcxfvDsDY59K0ooBog-cas01.example.org
+2017-07-25 18:05:35,364 DEBUG [org.jasig.cas.web.ServiceValidateController] - Successfully validated service ticket ST-1-eHJcxfvDsDY59K0ooBog-cas01.example.org for service [http://localhost:8081/cas]
+2017-07-25 18:07:04,201 INFO [org.jasig.cas.services.DefaultServicesManagerImpl] - Reloading registered services.
+2017-07-25 18:07:04,207 DEBUG [org.jasig.cas.services.DefaultServicesManagerImpl] - Adding registered service http://**
+2017-07-25 18:07:04,207 INFO [org.jasig.cas.services.DefaultServicesManagerImpl] - Loaded 1 services.
+2017-07-25 18:08:13,128 DEBUG [org.jasig.cas.CentralAuthenticationServiceImpl] - Removing ticket [TGT-2-RHayPXMEx2s29JRr4AB0aw4nFPlapaLLQJ4GUPkabt7NdzfSWW-cas01.example.org] from registry.
+2017-07-25 18:08:13,129 INFO [com.lingchaomin.auth.cas.registry.RedisTicketRegistry] - get ticket:TGT-2-RHayPXMEx2s29JRr4AB0aw4nFPlapaLLQJ4GUPkabt7NdzfSWW-cas01.example.org
+2017-07-25 18:08:13,130 INFO [com.lingchaomin.auth.cas.registry.RedisTicketRegistry] - ticketId:TGT-2-RHayPXMEx2s29JRr4AB0aw4nFPlapaLLQJ4GUPkabt7NdzfSWW-cas01.example.org
+2017-07-25 18:08:13,213 DEBUG [org.jasig.cas.CentralAuthenticationServiceImpl] - TicketGrantingTicket [TGT-2-RHayPXMEx2s29JRr4AB0aw4nFPlapaLLQJ4GUPkabt7NdzfSWW-cas01.example.org] cannot be found in the ticket registry.
+2017-07-25 18:08:13,213 INFO [com.lingchaomin.auth.cas.registry.RedisTicketRegistry] - get ticket:TGT-2-RHayPXMEx2s29JRr4AB0aw4nFPlapaLLQJ4GUPkabt7NdzfSWW-cas01.example.org
+2017-07-25 18:08:13,213 INFO [com.lingchaomin.auth.cas.registry.RedisTicketRegistry] - ticketId:TGT-2-RHayPXMEx2s29JRr4AB0aw4nFPlapaLLQJ4GUPkabt7NdzfSWW-cas01.example.org
+2017-07-25 18:08:13,241 DEBUG [org.jasig.cas.web.support.CookieRetrievingCookieGenerator] - Removed cookie with name [CASTGC]
+2017-07-25 18:08:13,241 DEBUG [org.jasig.cas.web.support.CookieRetrievingCookieGenerator] - Removed cookie with name [CASPRIVACY]
+2017-07-25 18:08:13,983 DEBUG [org.jasig.cas.web.support.CasArgumentExtractor] - Extractor generated service for: http://localhost:8081/cas
+2017-07-25 18:08:13,983 DEBUG [org.jasig.cas.web.flow.InitialFlowSetupAction] - Placing service in FlowScope: http://localhost:8081/cas
+2017-07-25 18:08:13,983 DEBUG [org.jasig.cas.web.flow.InitialFlowSetupAction] - Placing service in FlowScope: http://localhost:8081/cas
+2017-07-25 18:08:13,983 DEBUG [org.jasig.cas.support.pac4j.web.flow.ClientAction] - clientName : null
+2017-07-25 18:08:13,983 DEBUG [org.jasig.cas.support.pac4j.web.flow.ClientAction] - QQClientUrl -> https://graph.qq.com/oauth2.0/authorize?client_id=123456&redirect_uri=http%3A%2F%2Fwww.example.com%2Fqqlogin%3Fclient_name%3DQQClient&response_type=code&state=qqlogin
+2017-07-25 18:08:13,985 DEBUG [org.jasig.cas.web.flow.GenerateLoginTicketAction] - Generated login ticket LT-5-IOwbp1rQdwRocjBhWCuhLGA9Hr72R7-cas01.example.org
+2017-07-25 18:08:13,985 DEBUG [org.jasig.cas.web.flow.GenerateLoginTicketAction] - Generated login ticket LT-5-IOwbp1rQdwRocjBhWCuhLGA9Hr72R7-cas01.example.org
+2017-07-25 18:08:13,986 DEBUG [org.jasig.cas.web.support.CasArgumentExtractor] - Extractor generated service for: http://localhost:8081/cas
+2017-07-25 18:08:24,478 INFO [com.lingchaomin.auth.cas.authentication.YBQueryDatabaseAuthenticationHandler] - 密码验证:d4600ba095b4a9829d9247b96e969510,d4600ba095b4a9829d9247b96e969510
+2017-07-25 18:08:24,480 INFO [org.jasig.cas.authentication.PolicyBasedAuthenticationManager] - YBQueryDatabaseAuthenticationHandler successfully authenticated 12456786901+password
+2017-07-25 18:08:24,480 DEBUG [org.jasig.cas.authentication.principal.PersonDirectoryPrincipalResolver] - Attempting to resolve a principal...
+2017-07-25 18:08:24,480 DEBUG [org.jasig.cas.authentication.principal.PersonDirectoryPrincipalResolver] - Creating SimplePrincipal for [12456786901]
+2017-07-25 18:08:24,480 DEBUG [org.jasig.cas.authentication.PolicyBasedAuthenticationManager] - org.jasig.cas.authentication.principal.PersonDirectoryPrincipalResolver@379327bd resolved 12456786901 from 12456786901+password
+2017-07-25 18:08:24,480 INFO [org.jasig.cas.authentication.PolicyBasedAuthenticationManager] - Authenticated 12456786901 with credentials [12456786901+password].
+2017-07-25 18:08:24,480 DEBUG [org.jasig.cas.authentication.PolicyBasedAuthenticationManager] - Attribute map for 12456786901: {username=测试username, email=test@163.com, userid=12456786901}
+2017-07-25 18:08:24,481 INFO [com.lingchaomin.auth.cas.registry.RedisTicketRegistry] - adding ticket:TGT-3-EffYGVVOeWNvtEDJcKDnXNzfbTX4GvyOlFU4umibU0Mv3r5o6i-cas01.example.org to redis success~~~~~~~~~
+2017-07-25 18:08:24,572 DEBUG [org.jasig.cas.web.support.CookieRetrievingCookieGenerator] - Removed cookie with name [CASPRIVACY]
+2017-07-25 18:08:24,572 INFO [com.lingchaomin.auth.cas.registry.RedisTicketRegistry] - get ticket:TGT-3-EffYGVVOeWNvtEDJcKDnXNzfbTX4GvyOlFU4umibU0Mv3r5o6i-cas01.example.org
+2017-07-25 18:08:24,572 INFO [com.lingchaomin.auth.cas.registry.RedisTicketRegistry] - ticketId:TGT-3-EffYGVVOeWNvtEDJcKDnXNzfbTX4GvyOlFU4umibU0Mv3r5o6i-cas01.example.org
+2017-07-25 18:08:24,629 INFO [com.lingchaomin.auth.cas.registry.RedisTicketRegistry] - getRawTicket:TGT-3-EffYGVVOeWNvtEDJcKDnXNzfbTX4GvyOlFU4umibU0Mv3r5o6i-cas01.example.org
+2017-07-25 18:08:24,629 DEBUG [org.jasig.cas.web.support.CookieRetrievingCookieGenerator] - Added cookie with name [CASTGC] and value [TGT-3-EffYGVVOeWNvtEDJcKDnXNzfbTX4GvyOlFU4umibU0Mv3r5o6i-cas01.example.org]
+2017-07-25 18:08:24,629 INFO [com.lingchaomin.auth.cas.registry.RedisTicketRegistry] - get ticket:TGT-3-EffYGVVOeWNvtEDJcKDnXNzfbTX4GvyOlFU4umibU0Mv3r5o6i-cas01.example.org
+2017-07-25 18:08:24,629 INFO [com.lingchaomin.auth.cas.registry.RedisTicketRegistry] - ticketId:TGT-3-EffYGVVOeWNvtEDJcKDnXNzfbTX4GvyOlFU4umibU0Mv3r5o6i-cas01.example.org
+2017-07-25 18:08:24,687 INFO [com.lingchaomin.auth.cas.registry.RedisTicketRegistry] - getRawTicket:TGT-3-EffYGVVOeWNvtEDJcKDnXNzfbTX4GvyOlFU4umibU0Mv3r5o6i-cas01.example.org
+2017-07-25 18:08:24,687 DEBUG [org.jasig.cas.CentralAuthenticationServiceImpl] - Generated service ticket id [ST-2-2wG60dJVriqAjdP5OWOH-cas01.example.org] for ticket granting ticket [TGT-3-EffYGVVOeWNvtEDJcKDnXNzfbTX4GvyOlFU4umibU0Mv3r5o6i-cas01.example.org]
+2017-07-25 18:08:24,688 INFO [com.lingchaomin.auth.cas.registry.RedisTicketRegistry] - adding ticket:TGT-3-EffYGVVOeWNvtEDJcKDnXNzfbTX4GvyOlFU4umibU0Mv3r5o6i-cas01.example.org to redis success~~~~~~~~~
+2017-07-25 18:08:24,772 INFO [com.lingchaomin.auth.cas.registry.RedisTicketRegistry] - adding ticket:ST-2-2wG60dJVriqAjdP5OWOH-cas01.example.org to redis success~~~~~~~~~
+2017-07-25 18:08:25,081 INFO [org.jasig.cas.CentralAuthenticationServiceImpl] - Granted service ticket [ST-2-2wG60dJVriqAjdP5OWOH-cas01.example.org] for service [http://localhost:8081/cas] for user [12456786901]
+2017-07-25 18:08:25,081 INFO [com.lingchaomin.auth.cas.registry.RedisTicketRegistry] - get ticket:TGT-3-EffYGVVOeWNvtEDJcKDnXNzfbTX4GvyOlFU4umibU0Mv3r5o6i-cas01.example.org
+2017-07-25 18:08:25,081 INFO [com.lingchaomin.auth.cas.registry.RedisTicketRegistry] - ticketId:TGT-3-EffYGVVOeWNvtEDJcKDnXNzfbTX4GvyOlFU4umibU0Mv3r5o6i-cas01.example.org
+2017-07-25 18:08:25,141 INFO [com.lingchaomin.auth.cas.registry.RedisTicketRegistry] - getRawTicket:TGT-3-EffYGVVOeWNvtEDJcKDnXNzfbTX4GvyOlFU4umibU0Mv3r5o6i-cas01.example.org
+2017-07-25 18:08:25,142 DEBUG [org.jasig.cas.web.flow.TerminateWebSessionListener] - Terminate web session ij0415wtfviuwzj5noeqf6fa in 2 seconds
+2017-07-25 18:08:25,142 DEBUG [org.jasig.cas.web.flow.TerminateWebSessionListener] - Terminate web session ij0415wtfviuwzj5noeqf6fa in 2 seconds
+2017-07-25 18:08:25,737 DEBUG [org.jasig.cas.web.support.CasArgumentExtractor] - Extractor generated service for: http://localhost:8081/cas
+2017-07-25 18:08:25,738 INFO [com.lingchaomin.auth.cas.registry.RedisTicketRegistry] - get ticket:ST-2-2wG60dJVriqAjdP5OWOH-cas01.example.org
+2017-07-25 18:08:25,738 INFO [com.lingchaomin.auth.cas.registry.RedisTicketRegistry] - ticketId:ST-2-2wG60dJVriqAjdP5OWOH-cas01.example.org
+2017-07-25 18:08:25,795 INFO [com.lingchaomin.auth.cas.registry.RedisTicketRegistry] - getRawTicket:ST-2-2wG60dJVriqAjdP5OWOH-cas01.example.org
+2017-07-25 18:08:25,796 INFO [com.lingchaomin.auth.cas.registry.RedisTicketRegistry] - adding ticket:ST-2-2wG60dJVriqAjdP5OWOH-cas01.example.org to redis success~~~~~~~~~
+2017-07-25 18:08:25,881 DEBUG [org.jasig.cas.CentralAuthenticationServiceImpl] - Principal id to return for service [HTTP] is [12456786901]. The default principal id is [12456786901].
+2017-07-25 18:08:26,131 INFO [com.lingchaomin.auth.cas.registry.RedisTicketRegistry] - get ticket:ST-2-2wG60dJVriqAjdP5OWOH-cas01.example.org
+2017-07-25 18:08:26,131 INFO [com.lingchaomin.auth.cas.registry.RedisTicketRegistry] - ticketId:ST-2-2wG60dJVriqAjdP5OWOH-cas01.example.org
+2017-07-25 18:08:26,160 DEBUG [org.jasig.cas.web.ServiceValidateController] - Successfully validated service ticket ST-2-2wG60dJVriqAjdP5OWOH-cas01.example.org for service [http://localhost:8081/cas]
+2017-07-25 18:09:04,201 INFO [org.jasig.cas.services.DefaultServicesManagerImpl] - Reloading registered services.
+2017-07-25 18:09:04,201 DEBUG [org.jasig.cas.services.DefaultServicesManagerImpl] - Adding registered service http://**
+2017-07-25 18:09:04,201 INFO [org.jasig.cas.services.DefaultServicesManagerImpl] - Loaded 1 services.
+2017-07-25 18:10:03,743 DEBUG [org.jasig.cas.CentralAuthenticationServiceImpl] - Removing ticket [TGT-3-EffYGVVOeWNvtEDJcKDnXNzfbTX4GvyOlFU4umibU0Mv3r5o6i-cas01.example.org] from registry.
+2017-07-25 18:10:03,744 INFO [com.lingchaomin.auth.cas.registry.RedisTicketRegistry] - get ticket:TGT-3-EffYGVVOeWNvtEDJcKDnXNzfbTX4GvyOlFU4umibU0Mv3r5o6i-cas01.example.org
+2017-07-25 18:10:03,744 INFO [com.lingchaomin.auth.cas.registry.RedisTicketRegistry] - ticketId:TGT-3-EffYGVVOeWNvtEDJcKDnXNzfbTX4GvyOlFU4umibU0Mv3r5o6i-cas01.example.org
+2017-07-25 18:10:03,893 INFO [com.lingchaomin.auth.cas.registry.RedisTicketRegistry] - getRawTicket:TGT-3-EffYGVVOeWNvtEDJcKDnXNzfbTX4GvyOlFU4umibU0Mv3r5o6i-cas01.example.org
+2017-07-25 18:10:03,893 DEBUG [org.jasig.cas.CentralAuthenticationServiceImpl] - Ticket found. Processing logout requests and then deleting the ticket...
+2017-07-25 18:10:03,894 INFO [com.lingchaomin.auth.cas.registry.RedisTicketRegistry] - adding ticket:TGT-3-EffYGVVOeWNvtEDJcKDnXNzfbTX4GvyOlFU4umibU0Mv3r5o6i-cas01.example.org to redis success~~~~~~~~~
+2017-07-25 18:10:04,162 DEBUG [org.jasig.cas.logout.SamlCompliantLogoutMessageCreator] - Generated logout message: [<samlp:LogoutRequest xmlns:samlp="urn:oasis:names:tc:SAML:2.0:protocol" ID="LR-1-PXkHu9Ql5Tm7rsSrbCpKxZyZkNJXOjJXZEI" Version="2.0" IssueInstant="2017-07-25T18:10:04Z"><saml:NameID xmlns:saml="urn:oasis:names:tc:SAML:2.0:assertion">@NOT_USED@</saml:NameID><samlp:SessionIndex>ST-2-2wG60dJVriqAjdP5OWOH-cas01.example.org</samlp:SessionIndex></samlp:LogoutRequest>]
+2017-07-25 18:10:04,162 DEBUG [org.jasig.cas.logout.LogoutManagerImpl] - Sending logout request for: [http://localhost:8081/cas]
+2017-07-25 18:10:04,164 DEBUG [org.jasig.cas.util.SimpleHttpClient] - Attempting to access http://localhost:8081/cas
+2017-07-25 18:10:04,193 INFO [com.lingchaomin.auth.cas.registry.RedisTicketRegistry] - get ticket:TGT-3-EffYGVVOeWNvtEDJcKDnXNzfbTX4GvyOlFU4umibU0Mv3r5o6i-cas01.example.org
+2017-07-25 18:10:04,193 INFO [com.lingchaomin.auth.cas.registry.RedisTicketRegistry] - ticketId:TGT-3-EffYGVVOeWNvtEDJcKDnXNzfbTX4GvyOlFU4umibU0Mv3r5o6i-cas01.example.org
+2017-07-25 18:10:04,222 DEBUG [org.jasig.cas.web.support.CookieRetrievingCookieGenerator] - Removed cookie with name [CASTGC]
+2017-07-25 18:10:04,222 DEBUG [org.jasig.cas.web.support.CookieRetrievingCookieGenerator] - Removed cookie with name [CASPRIVACY]
+2017-07-25 18:10:04,233 DEBUG [org.jasig.cas.util.SimpleHttpClient] - Finished sending message to http://localhost:8081/cas
+2017-07-25 18:10:04,832 DEBUG [org.jasig.cas.web.support.CasArgumentExtractor] - Extractor generated service for: http://localhost:8081/cas
+2017-07-25 18:10:04,832 DEBUG [org.jasig.cas.web.flow.InitialFlowSetupAction] - Placing service in FlowScope: http://localhost:8081/cas
+2017-07-25 18:10:04,832 DEBUG [org.jasig.cas.web.flow.InitialFlowSetupAction] - Placing service in FlowScope: http://localhost:8081/cas
+2017-07-25 18:10:04,832 DEBUG [org.jasig.cas.support.pac4j.web.flow.ClientAction] - clientName : null
+2017-07-25 18:10:04,832 DEBUG [org.jasig.cas.support.pac4j.web.flow.ClientAction] - QQClientUrl -> https://graph.qq.com/oauth2.0/authorize?client_id=123456&redirect_uri=http%3A%2F%2Fwww.example.com%2Fqqlogin%3Fclient_name%3DQQClient&response_type=code&state=qqlogin
+2017-07-25 18:10:04,833 DEBUG [org.jasig.cas.web.flow.GenerateLoginTicketAction] - Generated login ticket LT-6-5XHJof9vT2a0adkiOAvy2GmAQZfezV-cas01.example.org
+2017-07-25 18:10:04,833 DEBUG [org.jasig.cas.web.flow.GenerateLoginTicketAction] - Generated login ticket LT-6-5XHJof9vT2a0adkiOAvy2GmAQZfezV-cas01.example.org
+2017-07-25 18:10:04,835 DEBUG [org.jasig.cas.web.support.CasArgumentExtractor] - Extractor generated service for: http://localhost:8081/cas
+2017-07-25 18:10:37,035 INFO [com.lingchaomin.auth.cas.authentication.YBQueryDatabaseAuthenticationHandler] - 密码验证:d4600ba095b4a9829d9247b96e969510,d4600ba095b4a9829d9247b96e969510
+2017-07-25 18:10:37,035 INFO [org.jasig.cas.authentication.PolicyBasedAuthenticationManager] - YBQueryDatabaseAuthenticationHandler successfully authenticated 12456786901+password
+2017-07-25 18:10:37,035 DEBUG [org.jasig.cas.authentication.principal.PersonDirectoryPrincipalResolver] - Attempting to resolve a principal...
+2017-07-25 18:10:37,036 DEBUG [org.jasig.cas.authentication.principal.PersonDirectoryPrincipalResolver] - Creating SimplePrincipal for [12456786901]
+2017-07-25 18:10:37,036 DEBUG [org.jasig.cas.authentication.PolicyBasedAuthenticationManager] - org.jasig.cas.authentication.principal.PersonDirectoryPrincipalResolver@379327bd resolved 12456786901 from 12456786901+password
+2017-07-25 18:10:37,036 INFO [org.jasig.cas.authentication.PolicyBasedAuthenticationManager] - Authenticated 12456786901 with credentials [12456786901+password].
+2017-07-25 18:10:37,036 DEBUG [org.jasig.cas.authentication.PolicyBasedAuthenticationManager] - Attribute map for 12456786901: {username=测试username, email=test@163.com, userid=12456786901}
+2017-07-25 18:10:37,037 INFO [com.lingchaomin.auth.cas.registry.RedisTicketRegistry] - adding ticket:TGT-4-3xnN0DksOJcfoGLS3knE0UmaooKKe2mbBAjdvW4Bl5WkWpSRf6-cas01.example.org to redis success~~~~~~~~~
+2017-07-25 18:10:37,331 DEBUG [org.jasig.cas.web.support.CookieRetrievingCookieGenerator] - Removed cookie with name [CASPRIVACY]
+2017-07-25 18:10:37,332 INFO [com.lingchaomin.auth.cas.registry.RedisTicketRegistry] - get ticket:TGT-4-3xnN0DksOJcfoGLS3knE0UmaooKKe2mbBAjdvW4Bl5WkWpSRf6-cas01.example.org
+2017-07-25 18:10:37,332 INFO [com.lingchaomin.auth.cas.registry.RedisTicketRegistry] - ticketId:TGT-4-3xnN0DksOJcfoGLS3knE0UmaooKKe2mbBAjdvW4Bl5WkWpSRf6-cas01.example.org
+2017-07-25 18:10:37,391 INFO [com.lingchaomin.auth.cas.registry.RedisTicketRegistry] - getRawTicket:TGT-4-3xnN0DksOJcfoGLS3knE0UmaooKKe2mbBAjdvW4Bl5WkWpSRf6-cas01.example.org
+2017-07-25 18:10:37,392 DEBUG [org.jasig.cas.web.support.CookieRetrievingCookieGenerator] - Added cookie with name [CASTGC] and value [TGT-4-3xnN0DksOJcfoGLS3knE0UmaooKKe2mbBAjdvW4Bl5WkWpSRf6-cas01.example.org]
+2017-07-25 18:10:37,392 INFO [com.lingchaomin.auth.cas.registry.RedisTicketRegistry] - get ticket:TGT-4-3xnN0DksOJcfoGLS3knE0UmaooKKe2mbBAjdvW4Bl5WkWpSRf6-cas01.example.org
+2017-07-25 18:10:37,392 INFO [com.lingchaomin.auth.cas.registry.RedisTicketRegistry] - ticketId:TGT-4-3xnN0DksOJcfoGLS3knE0UmaooKKe2mbBAjdvW4Bl5WkWpSRf6-cas01.example.org
+2017-07-25 18:10:37,451 INFO [com.lingchaomin.auth.cas.registry.RedisTicketRegistry] - getRawTicket:TGT-4-3xnN0DksOJcfoGLS3knE0UmaooKKe2mbBAjdvW4Bl5WkWpSRf6-cas01.example.org
+2017-07-25 18:10:37,452 DEBUG [org.jasig.cas.CentralAuthenticationServiceImpl] - Generated service ticket id [ST-3-7zriDQegz4o1cPb1T0A1-cas01.example.org] for ticket granting ticket [TGT-4-3xnN0DksOJcfoGLS3knE0UmaooKKe2mbBAjdvW4Bl5WkWpSRf6-cas01.example.org]
+2017-07-25 18:10:37,452 INFO [com.lingchaomin.auth.cas.registry.RedisTicketRegistry] - adding ticket:TGT-4-3xnN0DksOJcfoGLS3knE0UmaooKKe2mbBAjdvW4Bl5WkWpSRf6-cas01.example.org to redis success~~~~~~~~~
+2017-07-25 18:10:37,663 INFO [com.lingchaomin.auth.cas.registry.RedisTicketRegistry] - adding ticket:ST-3-7zriDQegz4o1cPb1T0A1-cas01.example.org to redis success~~~~~~~~~
+2017-07-25 18:10:37,750 INFO [org.jasig.cas.CentralAuthenticationServiceImpl] - Granted service ticket [ST-3-7zriDQegz4o1cPb1T0A1-cas01.example.org] for service [http://localhost:8081/cas] for user [12456786901]
+2017-07-25 18:10:37,750 INFO [com.lingchaomin.auth.cas.registry.RedisTicketRegistry] - get ticket:TGT-4-3xnN0DksOJcfoGLS3knE0UmaooKKe2mbBAjdvW4Bl5WkWpSRf6-cas01.example.org
+2017-07-25 18:10:37,751 INFO [com.lingchaomin.auth.cas.registry.RedisTicketRegistry] - ticketId:TGT-4-3xnN0DksOJcfoGLS3knE0UmaooKKe2mbBAjdvW4Bl5WkWpSRf6-cas01.example.org
+2017-07-25 18:10:37,811 INFO [com.lingchaomin.auth.cas.registry.RedisTicketRegistry] - getRawTicket:TGT-4-3xnN0DksOJcfoGLS3knE0UmaooKKe2mbBAjdvW4Bl5WkWpSRf6-cas01.example.org
+2017-07-25 18:10:37,812 DEBUG [org.jasig.cas.web.flow.TerminateWebSessionListener] - Terminate web session tdvwzce9v79f1hlbyx0ujbswt in 2 seconds
+2017-07-25 18:10:37,812 DEBUG [org.jasig.cas.web.flow.TerminateWebSessionListener] - Terminate web session tdvwzce9v79f1hlbyx0ujbswt in 2 seconds
+2017-07-25 18:10:38,508 DEBUG [org.jasig.cas.web.support.CasArgumentExtractor] - Extractor generated service for: http://localhost:8081/cas
+2017-07-25 18:10:38,508 INFO [com.lingchaomin.auth.cas.registry.RedisTicketRegistry] - get ticket:ST-3-7zriDQegz4o1cPb1T0A1-cas01.example.org
+2017-07-25 18:10:38,509 INFO [com.lingchaomin.auth.cas.registry.RedisTicketRegistry] - ticketId:ST-3-7zriDQegz4o1cPb1T0A1-cas01.example.org
+2017-07-25 18:10:38,569 INFO [com.lingchaomin.auth.cas.registry.RedisTicketRegistry] - getRawTicket:ST-3-7zriDQegz4o1cPb1T0A1-cas01.example.org
+2017-07-25 18:10:38,570 INFO [com.lingchaomin.auth.cas.registry.RedisTicketRegistry] - adding ticket:ST-3-7zriDQegz4o1cPb1T0A1-cas01.example.org to redis success~~~~~~~~~
+2017-07-25 18:10:38,753 DEBUG [org.jasig.cas.CentralAuthenticationServiceImpl] - Principal id to return for service [HTTP] is [12456786901]. The default principal id is [12456786901].
+2017-07-25 18:10:38,782 INFO [com.lingchaomin.auth.cas.registry.RedisTicketRegistry] - get ticket:ST-3-7zriDQegz4o1cPb1T0A1-cas01.example.org
+2017-07-25 18:10:38,783 INFO [com.lingchaomin.auth.cas.registry.RedisTicketRegistry] - ticketId:ST-3-7zriDQegz4o1cPb1T0A1-cas01.example.org
+2017-07-25 18:10:38,812 DEBUG [org.jasig.cas.web.ServiceValidateController] - Successfully validated service ticket ST-3-7zriDQegz4o1cPb1T0A1-cas01.example.org for service [http://localhost:8081/cas]
+2017-07-25 18:11:04,203 INFO [org.jasig.cas.services.DefaultServicesManagerImpl] - Reloading registered services.
+2017-07-25 18:11:04,209 DEBUG [org.jasig.cas.services.DefaultServicesManagerImpl] - Adding registered service http://**
+2017-07-25 18:11:04,209 INFO [org.jasig.cas.services.DefaultServicesManagerImpl] - Loaded 1 services.
+2017-07-25 18:11:14,763 DEBUG [org.jasig.cas.CentralAuthenticationServiceImpl] - Removing ticket [TGT-4-3xnN0DksOJcfoGLS3knE0UmaooKKe2mbBAjdvW4Bl5WkWpSRf6-cas01.example.org] from registry.
+2017-07-25 18:11:14,764 INFO [com.lingchaomin.auth.cas.registry.RedisTicketRegistry] - get ticket:TGT-4-3xnN0DksOJcfoGLS3knE0UmaooKKe2mbBAjdvW4Bl5WkWpSRf6-cas01.example.org
+2017-07-25 18:11:14,764 INFO [com.lingchaomin.auth.cas.registry.RedisTicketRegistry] - ticketId:TGT-4-3xnN0DksOJcfoGLS3knE0UmaooKKe2mbBAjdvW4Bl5WkWpSRf6-cas01.example.org
+2017-07-25 18:11:15,019 INFO [com.lingchaomin.auth.cas.registry.RedisTicketRegistry] - getRawTicket:TGT-4-3xnN0DksOJcfoGLS3knE0UmaooKKe2mbBAjdvW4Bl5WkWpSRf6-cas01.example.org
+2017-07-25 18:11:15,019 DEBUG [org.jasig.cas.CentralAuthenticationServiceImpl] - Ticket found. Processing logout requests and then deleting the ticket...
+2017-07-25 18:11:15,020 INFO [com.lingchaomin.auth.cas.registry.RedisTicketRegistry] - adding ticket:TGT-4-3xnN0DksOJcfoGLS3knE0UmaooKKe2mbBAjdvW4Bl5WkWpSRf6-cas01.example.org to redis success~~~~~~~~~
+2017-07-25 18:11:15,116 DEBUG [org.jasig.cas.logout.SamlCompliantLogoutMessageCreator] - Generated logout message: [<samlp:LogoutRequest xmlns:samlp="urn:oasis:names:tc:SAML:2.0:protocol" ID="LR-2-qbKME4PjKKWnDIwyboejcl7nqFsLu6wAwhY" Version="2.0" IssueInstant="2017-07-25T18:11:15Z"><saml:NameID xmlns:saml="urn:oasis:names:tc:SAML:2.0:assertion">@NOT_USED@</saml:NameID><samlp:SessionIndex>ST-3-7zriDQegz4o1cPb1T0A1-cas01.example.org</samlp:SessionIndex></samlp:LogoutRequest>]
+2017-07-25 18:11:15,117 DEBUG [org.jasig.cas.logout.LogoutManagerImpl] - Sending logout request for: [http://localhost:8081/cas]
+2017-07-25 18:11:15,117 DEBUG [org.jasig.cas.util.SimpleHttpClient] - Attempting to access http://localhost:8081/cas
+2017-07-25 18:11:15,145 INFO [com.lingchaomin.auth.cas.registry.RedisTicketRegistry] - get ticket:TGT-4-3xnN0DksOJcfoGLS3knE0UmaooKKe2mbBAjdvW4Bl5WkWpSRf6-cas01.example.org
+2017-07-25 18:11:15,145 INFO [com.lingchaomin.auth.cas.registry.RedisTicketRegistry] - ticketId:TGT-4-3xnN0DksOJcfoGLS3knE0UmaooKKe2mbBAjdvW4Bl5WkWpSRf6-cas01.example.org
+2017-07-25 18:11:15,174 DEBUG [org.jasig.cas.web.support.CookieRetrievingCookieGenerator] - Removed cookie with name [CASTGC]
+2017-07-25 18:11:15,174 DEBUG [org.jasig.cas.web.support.CookieRetrievingCookieGenerator] - Removed cookie with name [CASPRIVACY]
+2017-07-25 18:11:15,180 DEBUG [org.jasig.cas.util.SimpleHttpClient] - Finished sending message to http://localhost:8081/cas
+2017-07-25 18:11:15,669 DEBUG [org.jasig.cas.web.support.CasArgumentExtractor] - Extractor generated service for: http://localhost:8081/cas
+2017-07-25 18:11:15,669 DEBUG [org.jasig.cas.web.flow.InitialFlowSetupAction] - Placing service in FlowScope: http://localhost:8081/cas
+2017-07-25 18:11:15,669 DEBUG [org.jasig.cas.web.flow.InitialFlowSetupAction] - Placing service in FlowScope: http://localhost:8081/cas
+2017-07-25 18:11:15,669 DEBUG [org.jasig.cas.support.pac4j.web.flow.ClientAction] - clientName : null
+2017-07-25 18:11:15,669 DEBUG [org.jasig.cas.support.pac4j.web.flow.ClientAction] - QQClientUrl -> https://graph.qq.com/oauth2.0/authorize?client_id=123456&redirect_uri=http%3A%2F%2Fwww.example.com%2Fqqlogin%3Fclient_name%3DQQClient&response_type=code&state=qqlogin
+2017-07-25 18:11:15,670 DEBUG [org.jasig.cas.web.flow.GenerateLoginTicketAction] - Generated login ticket LT-7-xvna1pgGIlTfiLyHwGDtLIU3IjYzBX-cas01.example.org
+2017-07-25 18:11:15,670 DEBUG [org.jasig.cas.web.flow.GenerateLoginTicketAction] - Generated login ticket LT-7-xvna1pgGIlTfiLyHwGDtLIU3IjYzBX-cas01.example.org
+2017-07-25 18:11:15,671 DEBUG [org.jasig.cas.web.support.CasArgumentExtractor] - Extractor generated service for: http://localhost:8081/cas
+2017-07-25 18:11:19,872 INFO [com.lingchaomin.auth.cas.authentication.YBQueryDatabaseAuthenticationHandler] - 密码验证:d4600ba095b4a9829d9247b96e969510,d4600ba095b4a9829d9247b96e969510
+2017-07-25 18:11:19,872 INFO [org.jasig.cas.authentication.PolicyBasedAuthenticationManager] - YBQueryDatabaseAuthenticationHandler successfully authenticated 18814887649+password
+2017-07-25 18:11:19,872 DEBUG [org.jasig.cas.authentication.principal.PersonDirectoryPrincipalResolver] - Attempting to resolve a principal...
+2017-07-25 18:11:19,872 DEBUG [org.jasig.cas.authentication.principal.PersonDirectoryPrincipalResolver] - Creating SimplePrincipal for [18814887649]
+2017-07-25 18:11:19,872 DEBUG [org.jasig.cas.authentication.PolicyBasedAuthenticationManager] - org.jasig.cas.authentication.principal.PersonDirectoryPrincipalResolver@379327bd resolved 18814887649 from 18814887649+password
+2017-07-25 18:11:19,872 INFO [org.jasig.cas.authentication.PolicyBasedAuthenticationManager] - Authenticated 18814887649 with credentials [18814887649+password].
+2017-07-25 18:11:19,872 DEBUG [org.jasig.cas.authentication.PolicyBasedAuthenticationManager] - Attribute map for 18814887649: {username=测试username, email=test@163.com, userid=18814887649}
+2017-07-25 18:11:19,873 INFO [com.lingchaomin.auth.cas.registry.RedisTicketRegistry] - adding ticket:TGT-5-Wd5vd9pcnVeiUemzxSQcLPSia7AHl5uVGLqVqYr1K0hRExYYxf-cas01.example.org to redis success~~~~~~~~~
+2017-07-25 18:11:19,962 DEBUG [org.jasig.cas.web.support.CookieRetrievingCookieGenerator] - Removed cookie with name [CASPRIVACY]
+2017-07-25 18:11:19,962 INFO [com.lingchaomin.auth.cas.registry.RedisTicketRegistry] - get ticket:TGT-5-Wd5vd9pcnVeiUemzxSQcLPSia7AHl5uVGLqVqYr1K0hRExYYxf-cas01.example.org
+2017-07-25 18:11:19,962 INFO [com.lingchaomin.auth.cas.registry.RedisTicketRegistry] - ticketId:TGT-5-Wd5vd9pcnVeiUemzxSQcLPSia7AHl5uVGLqVqYr1K0hRExYYxf-cas01.example.org
+2017-07-25 18:11:20,022 INFO [com.lingchaomin.auth.cas.registry.RedisTicketRegistry] - getRawTicket:TGT-5-Wd5vd9pcnVeiUemzxSQcLPSia7AHl5uVGLqVqYr1K0hRExYYxf-cas01.example.org
+2017-07-25 18:11:20,023 DEBUG [org.jasig.cas.web.support.CookieRetrievingCookieGenerator] - Added cookie with name [CASTGC] and value [TGT-5-Wd5vd9pcnVeiUemzxSQcLPSia7AHl5uVGLqVqYr1K0hRExYYxf-cas01.example.org]
+2017-07-25 18:11:20,023 INFO [com.lingchaomin.auth.cas.registry.RedisTicketRegistry] - get ticket:TGT-5-Wd5vd9pcnVeiUemzxSQcLPSia7AHl5uVGLqVqYr1K0hRExYYxf-cas01.example.org
+2017-07-25 18:11:20,023 INFO [com.lingchaomin.auth.cas.registry.RedisTicketRegistry] - ticketId:TGT-5-Wd5vd9pcnVeiUemzxSQcLPSia7AHl5uVGLqVqYr1K0hRExYYxf-cas01.example.org
+2017-07-25 18:11:20,330 INFO [com.lingchaomin.auth.cas.registry.RedisTicketRegistry] - getRawTicket:TGT-5-Wd5vd9pcnVeiUemzxSQcLPSia7AHl5uVGLqVqYr1K0hRExYYxf-cas01.example.org
+2017-07-25 18:11:20,330 DEBUG [org.jasig.cas.CentralAuthenticationServiceImpl] - Generated service ticket id [ST-4-trJDonMoErhfeGK9HxeN-cas01.example.org] for ticket granting ticket [TGT-5-Wd5vd9pcnVeiUemzxSQcLPSia7AHl5uVGLqVqYr1K0hRExYYxf-cas01.example.org]
+2017-07-25 18:11:20,331 INFO [com.lingchaomin.auth.cas.registry.RedisTicketRegistry] - adding ticket:TGT-5-Wd5vd9pcnVeiUemzxSQcLPSia7AHl5uVGLqVqYr1K0hRExYYxf-cas01.example.org to redis success~~~~~~~~~
+2017-07-25 18:11:20,420 INFO [com.lingchaomin.auth.cas.registry.RedisTicketRegistry] - adding ticket:ST-4-trJDonMoErhfeGK9HxeN-cas01.example.org to redis success~~~~~~~~~
+2017-07-25 18:11:20,508 INFO [org.jasig.cas.CentralAuthenticationServiceImpl] - Granted service ticket [ST-4-trJDonMoErhfeGK9HxeN-cas01.example.org] for service [http://localhost:8081/cas] for user [18814887649]
+2017-07-25 18:11:20,508 INFO [com.lingchaomin.auth.cas.registry.RedisTicketRegistry] - get ticket:TGT-5-Wd5vd9pcnVeiUemzxSQcLPSia7AHl5uVGLqVqYr1K0hRExYYxf-cas01.example.org
+2017-07-25 18:11:20,509 INFO [com.lingchaomin.auth.cas.registry.RedisTicketRegistry] - ticketId:TGT-5-Wd5vd9pcnVeiUemzxSQcLPSia7AHl5uVGLqVqYr1K0hRExYYxf-cas01.example.org
+2017-07-25 18:11:20,656 INFO [com.lingchaomin.auth.cas.registry.RedisTicketRegistry] - getRawTicket:TGT-5-Wd5vd9pcnVeiUemzxSQcLPSia7AHl5uVGLqVqYr1K0hRExYYxf-cas01.example.org
+2017-07-25 18:11:20,657 DEBUG [org.jasig.cas.web.flow.TerminateWebSessionListener] - Terminate web session 1df10fopvjpoonryuiyln8mnz in 2 seconds
+2017-07-25 18:11:20,657 DEBUG [org.jasig.cas.web.flow.TerminateWebSessionListener] - Terminate web session 1df10fopvjpoonryuiyln8mnz in 2 seconds
+2017-07-25 18:11:21,342 DEBUG [org.jasig.cas.web.support.CasArgumentExtractor] - Extractor generated service for: http://localhost:8081/cas
+2017-07-25 18:11:21,343 INFO [com.lingchaomin.auth.cas.registry.RedisTicketRegistry] - get ticket:ST-4-trJDonMoErhfeGK9HxeN-cas01.example.org
+2017-07-25 18:11:21,343 INFO [com.lingchaomin.auth.cas.registry.RedisTicketRegistry] - ticketId:ST-4-trJDonMoErhfeGK9HxeN-cas01.example.org
+2017-07-25 18:11:21,421 INFO [com.lingchaomin.auth.cas.registry.RedisTicketRegistry] - getRawTicket:ST-4-trJDonMoErhfeGK9HxeN-cas01.example.org
+2017-07-25 18:11:21,422 INFO [com.lingchaomin.auth.cas.registry.RedisTicketRegistry] - adding ticket:ST-4-trJDonMoErhfeGK9HxeN-cas01.example.org to redis success~~~~~~~~~
+2017-07-25 18:11:21,531 DEBUG [org.jasig.cas.CentralAuthenticationServiceImpl] - Principal id to return for service [HTTP] is [18814887649]. The default principal id is [18814887649].
+2017-07-25 18:11:21,561 INFO [com.lingchaomin.auth.cas.registry.RedisTicketRegistry] - get ticket:ST-4-trJDonMoErhfeGK9HxeN-cas01.example.org
+2017-07-25 18:11:21,561 INFO [com.lingchaomin.auth.cas.registry.RedisTicketRegistry] - ticketId:ST-4-trJDonMoErhfeGK9HxeN-cas01.example.org
+2017-07-25 18:11:21,590 DEBUG [org.jasig.cas.web.ServiceValidateController] - Successfully validated service ticket ST-4-trJDonMoErhfeGK9HxeN-cas01.example.org for service [http://localhost:8081/cas]
+2017-07-25 18:13:04,200 INFO [org.jasig.cas.services.DefaultServicesManagerImpl] - Reloading registered services.
+2017-07-25 18:13:04,202 DEBUG [org.jasig.cas.services.DefaultServicesManagerImpl] - Adding registered service http://**
+2017-07-25 18:13:04,202 INFO [org.jasig.cas.services.DefaultServicesManagerImpl] - Loaded 1 services.
+2017-07-25 18:15:04,202 INFO [org.jasig.cas.services.DefaultServicesManagerImpl] - Reloading registered services.
+2017-07-25 18:15:04,208 DEBUG [org.jasig.cas.services.DefaultServicesManagerImpl] - Adding registered service http://**
+2017-07-25 18:15:04,208 INFO [org.jasig.cas.services.DefaultServicesManagerImpl] - Loaded 1 services.
+2017-07-25 18:17:04,201 INFO [org.jasig.cas.services.DefaultServicesManagerImpl] - Reloading registered services.
+2017-07-25 18:17:04,207 DEBUG [org.jasig.cas.services.DefaultServicesManagerImpl] - Adding registered service http://**
+2017-07-25 18:17:04,207 INFO [org.jasig.cas.services.DefaultServicesManagerImpl] - Loaded 1 services.
+2017-07-25 18:19:04,201 INFO [org.jasig.cas.services.DefaultServicesManagerImpl] - Reloading registered services.
+2017-07-25 18:19:04,207 DEBUG [org.jasig.cas.services.DefaultServicesManagerImpl] - Adding registered service http://**
+2017-07-25 18:19:04,208 INFO [org.jasig.cas.services.DefaultServicesManagerImpl] - Loaded 1 services.
+2017-07-25 18:20:50,615 DEBUG [org.jasig.cas.CentralAuthenticationServiceImpl] - Removing ticket [TGT-5-Wd5vd9pcnVeiUemzxSQcLPSia7AHl5uVGLqVqYr1K0hRExYYxf-cas01.example.org] from registry.
+2017-07-25 18:20:50,615 INFO [com.lingchaomin.auth.cas.registry.RedisTicketRegistry] - get ticket:TGT-5-Wd5vd9pcnVeiUemzxSQcLPSia7AHl5uVGLqVqYr1K0hRExYYxf-cas01.example.org
+2017-07-25 18:20:50,615 INFO [com.lingchaomin.auth.cas.registry.RedisTicketRegistry] - ticketId:TGT-5-Wd5vd9pcnVeiUemzxSQcLPSia7AHl5uVGLqVqYr1K0hRExYYxf-cas01.example.org
+2017-07-25 18:20:50,929 DEBUG [org.jasig.cas.CentralAuthenticationServiceImpl] - TicketGrantingTicket [TGT-5-Wd5vd9pcnVeiUemzxSQcLPSia7AHl5uVGLqVqYr1K0hRExYYxf-cas01.example.org] cannot be found in the ticket registry.
+2017-07-25 18:20:50,929 INFO [com.lingchaomin.auth.cas.registry.RedisTicketRegistry] - get ticket:TGT-5-Wd5vd9pcnVeiUemzxSQcLPSia7AHl5uVGLqVqYr1K0hRExYYxf-cas01.example.org
+2017-07-25 18:20:50,929 INFO [com.lingchaomin.auth.cas.registry.RedisTicketRegistry] - ticketId:TGT-5-Wd5vd9pcnVeiUemzxSQcLPSia7AHl5uVGLqVqYr1K0hRExYYxf-cas01.example.org
+2017-07-25 18:20:50,957 DEBUG [org.jasig.cas.web.support.CookieRetrievingCookieGenerator] - Removed cookie with name [CASTGC]
+2017-07-25 18:20:50,957 DEBUG [org.jasig.cas.web.support.CookieRetrievingCookieGenerator] - Removed cookie with name [CASPRIVACY]
+2017-07-25 18:20:51,381 DEBUG [org.jasig.cas.web.support.CasArgumentExtractor] - Extractor generated service for: http://localhost:8081/cas
+2017-07-25 18:20:51,381 DEBUG [org.jasig.cas.web.flow.InitialFlowSetupAction] - Placing service in FlowScope: http://localhost:8081/cas
+2017-07-25 18:20:51,381 DEBUG [org.jasig.cas.web.flow.InitialFlowSetupAction] - Placing service in FlowScope: http://localhost:8081/cas
+2017-07-25 18:20:51,382 DEBUG [org.jasig.cas.support.pac4j.web.flow.ClientAction] - clientName : null
+2017-07-25 18:20:51,382 DEBUG [org.jasig.cas.support.pac4j.web.flow.ClientAction] - QQClientUrl -> https://graph.qq.com/oauth2.0/authorize?client_id=123456&redirect_uri=http%3A%2F%2Fwww.example.com%2Fqqlogin%3Fclient_name%3DQQClient&response_type=code&state=qqlogin
+2017-07-25 18:20:51,382 DEBUG [org.jasig.cas.web.flow.GenerateLoginTicketAction] - Generated login ticket LT-8-ybVbfhYHfuerTy9hDXGdnUjvy3DoxJ-cas01.example.org
+2017-07-25 18:20:51,382 DEBUG [org.jasig.cas.web.flow.GenerateLoginTicketAction] - Generated login ticket LT-8-ybVbfhYHfuerTy9hDXGdnUjvy3DoxJ-cas01.example.org
+2017-07-25 18:20:51,384 DEBUG [org.jasig.cas.web.support.CasArgumentExtractor] - Extractor generated service for: http://localhost:8081/cas
+2017-07-25 18:21:04,198 INFO [org.jasig.cas.services.DefaultServicesManagerImpl] - Reloading registered services.
+2017-07-25 18:21:04,198 DEBUG [org.jasig.cas.services.DefaultServicesManagerImpl] - Adding registered service http://**
+2017-07-25 18:21:04,199 INFO [org.jasig.cas.services.DefaultServicesManagerImpl] - Loaded 1 services.
+2017-07-25 18:21:04,728 INFO [com.lingchaomin.auth.cas.authentication.YBQueryDatabaseAuthenticationHandler] - 密码验证:d4600ba095b4a9829d9247b96e969510,d4600ba095b4a9829d9247b96e969510
+2017-07-25 18:21:04,728 INFO [org.jasig.cas.authentication.PolicyBasedAuthenticationManager] - YBQueryDatabaseAuthenticationHandler successfully authenticated 18814887649+password
+2017-07-25 18:21:04,728 DEBUG [org.jasig.cas.authentication.principal.PersonDirectoryPrincipalResolver] - Attempting to resolve a principal...
+2017-07-25 18:21:04,728 DEBUG [org.jasig.cas.authentication.principal.PersonDirectoryPrincipalResolver] - Creating SimplePrincipal for [18814887649]
+2017-07-25 18:21:04,728 DEBUG [org.jasig.cas.authentication.PolicyBasedAuthenticationManager] - org.jasig.cas.authentication.principal.PersonDirectoryPrincipalResolver@379327bd resolved 18814887649 from 18814887649+password
+2017-07-25 18:21:04,728 INFO [org.jasig.cas.authentication.PolicyBasedAuthenticationManager] - Authenticated 18814887649 with credentials [18814887649+password].
+2017-07-25 18:21:04,728 DEBUG [org.jasig.cas.authentication.PolicyBasedAuthenticationManager] - Attribute map for 18814887649: {username=测试username, email=test@163.com, userid=18814887649}
+2017-07-25 18:21:04,729 INFO [com.lingchaomin.auth.cas.registry.RedisTicketRegistry] - adding ticket:TGT-6-hYTAZS5DrWdbw4Hg3J2CnuJObAMxxEV0bdKKpCm1klq6Q4yKEt-cas01.example.org to redis success~~~~~~~~~
+2017-07-25 18:21:04,915 DEBUG [org.jasig.cas.web.support.CookieRetrievingCookieGenerator] - Removed cookie with name [CASPRIVACY]
+2017-07-25 18:21:04,915 INFO [com.lingchaomin.auth.cas.registry.RedisTicketRegistry] - get ticket:TGT-6-hYTAZS5DrWdbw4Hg3J2CnuJObAMxxEV0bdKKpCm1klq6Q4yKEt-cas01.example.org
+2017-07-25 18:21:04,915 INFO [com.lingchaomin.auth.cas.registry.RedisTicketRegistry] - ticketId:TGT-6-hYTAZS5DrWdbw4Hg3J2CnuJObAMxxEV0bdKKpCm1klq6Q4yKEt-cas01.example.org
+2017-07-25 18:21:04,973 INFO [com.lingchaomin.auth.cas.registry.RedisTicketRegistry] - getRawTicket:TGT-6-hYTAZS5DrWdbw4Hg3J2CnuJObAMxxEV0bdKKpCm1klq6Q4yKEt-cas01.example.org
+2017-07-25 18:21:04,973 DEBUG [org.jasig.cas.web.support.CookieRetrievingCookieGenerator] - Added cookie with name [CASTGC] and value [TGT-6-hYTAZS5DrWdbw4Hg3J2CnuJObAMxxEV0bdKKpCm1klq6Q4yKEt-cas01.example.org]
+2017-07-25 18:21:04,974 INFO [com.lingchaomin.auth.cas.registry.RedisTicketRegistry] - get ticket:TGT-6-hYTAZS5DrWdbw4Hg3J2CnuJObAMxxEV0bdKKpCm1klq6Q4yKEt-cas01.example.org
+2017-07-25 18:21:04,974 INFO [com.lingchaomin.auth.cas.registry.RedisTicketRegistry] - ticketId:TGT-6-hYTAZS5DrWdbw4Hg3J2CnuJObAMxxEV0bdKKpCm1klq6Q4yKEt-cas01.example.org
+2017-07-25 18:21:05,049 INFO [com.lingchaomin.auth.cas.registry.RedisTicketRegistry] - getRawTicket:TGT-6-hYTAZS5DrWdbw4Hg3J2CnuJObAMxxEV0bdKKpCm1klq6Q4yKEt-cas01.example.org
+2017-07-25 18:21:05,049 DEBUG [org.jasig.cas.CentralAuthenticationServiceImpl] - Generated service ticket id [ST-5-jDmn5HRcfQB0rH1OrR3Y-cas01.example.org] for ticket granting ticket [TGT-6-hYTAZS5DrWdbw4Hg3J2CnuJObAMxxEV0bdKKpCm1klq6Q4yKEt-cas01.example.org]
+2017-07-25 18:21:05,050 INFO [com.lingchaomin.auth.cas.registry.RedisTicketRegistry] - adding ticket:TGT-6-hYTAZS5DrWdbw4Hg3J2CnuJObAMxxEV0bdKKpCm1klq6Q4yKEt-cas01.example.org to redis success~~~~~~~~~
+2017-07-25 18:21:05,138 INFO [com.lingchaomin.auth.cas.registry.RedisTicketRegistry] - adding ticket:ST-5-jDmn5HRcfQB0rH1OrR3Y-cas01.example.org to redis success~~~~~~~~~
+2017-07-25 18:21:05,223 INFO [org.jasig.cas.CentralAuthenticationServiceImpl] - Granted service ticket [ST-5-jDmn5HRcfQB0rH1OrR3Y-cas01.example.org] for service [http://localhost:8081/cas] for user [18814887649]
+2017-07-25 18:21:05,224 INFO [com.lingchaomin.auth.cas.registry.RedisTicketRegistry] - get ticket:TGT-6-hYTAZS5DrWdbw4Hg3J2CnuJObAMxxEV0bdKKpCm1klq6Q4yKEt-cas01.example.org
+2017-07-25 18:21:05,224 INFO [com.lingchaomin.auth.cas.registry.RedisTicketRegistry] - ticketId:TGT-6-hYTAZS5DrWdbw4Hg3J2CnuJObAMxxEV0bdKKpCm1klq6Q4yKEt-cas01.example.org
+2017-07-25 18:21:05,282 INFO [com.lingchaomin.auth.cas.registry.RedisTicketRegistry] - getRawTicket:TGT-6-hYTAZS5DrWdbw4Hg3J2CnuJObAMxxEV0bdKKpCm1klq6Q4yKEt-cas01.example.org
+2017-07-25 18:21:05,284 DEBUG [org.jasig.cas.web.flow.TerminateWebSessionListener] - Terminate web session 1nrdp2ytvyohx1npz5ubtxr37k in 2 seconds
+2017-07-25 18:21:05,284 DEBUG [org.jasig.cas.web.flow.TerminateWebSessionListener] - Terminate web session 1nrdp2ytvyohx1npz5ubtxr37k in 2 seconds
+2017-07-25 18:21:05,990 DEBUG [org.jasig.cas.web.support.CasArgumentExtractor] - Extractor generated service for: http://localhost:8081/cas
+2017-07-25 18:21:05,990 INFO [com.lingchaomin.auth.cas.registry.RedisTicketRegistry] - get ticket:ST-5-jDmn5HRcfQB0rH1OrR3Y-cas01.example.org
+2017-07-25 18:21:05,990 INFO [com.lingchaomin.auth.cas.registry.RedisTicketRegistry] - ticketId:ST-5-jDmn5HRcfQB0rH1OrR3Y-cas01.example.org
+2017-07-25 18:21:06,049 INFO [com.lingchaomin.auth.cas.registry.RedisTicketRegistry] - getRawTicket:ST-5-jDmn5HRcfQB0rH1OrR3Y-cas01.example.org
+2017-07-25 18:21:06,050 INFO [com.lingchaomin.auth.cas.registry.RedisTicketRegistry] - adding ticket:ST-5-jDmn5HRcfQB0rH1OrR3Y-cas01.example.org to redis success~~~~~~~~~
+2017-07-25 18:21:06,146 DEBUG [org.jasig.cas.CentralAuthenticationServiceImpl] - Principal id to return for service [HTTP] is [18814887649]. The default principal id is [18814887649].
+2017-07-25 18:21:06,175 INFO [com.lingchaomin.auth.cas.registry.RedisTicketRegistry] - get ticket:ST-5-jDmn5HRcfQB0rH1OrR3Y-cas01.example.org
+2017-07-25 18:21:06,175 INFO [com.lingchaomin.auth.cas.registry.RedisTicketRegistry] - ticketId:ST-5-jDmn5HRcfQB0rH1OrR3Y-cas01.example.org
+2017-07-25 18:21:06,205 DEBUG [org.jasig.cas.web.ServiceValidateController] - Successfully validated service ticket ST-5-jDmn5HRcfQB0rH1OrR3Y-cas01.example.org for service [http://localhost:8081/cas]
+2017-07-25 18:23:04,201 INFO [org.jasig.cas.services.DefaultServicesManagerImpl] - Reloading registered services.
+2017-07-25 18:23:04,207 DEBUG [org.jasig.cas.services.DefaultServicesManagerImpl] - Adding registered service http://**
+2017-07-25 18:23:04,207 INFO [org.jasig.cas.services.DefaultServicesManagerImpl] - Loaded 1 services.
+2017-07-25 18:25:04,201 INFO [org.jasig.cas.services.DefaultServicesManagerImpl] - Reloading registered services.
+2017-07-25 18:25:04,207 DEBUG [org.jasig.cas.services.DefaultServicesManagerImpl] - Adding registered service http://**
+2017-07-25 18:25:04,207 INFO [org.jasig.cas.services.DefaultServicesManagerImpl] - Loaded 1 services.

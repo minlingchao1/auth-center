@@ -58,14 +58,10 @@
     </bean>
 
 
-    <!-- 会话DAO -->
-    <!--<bean id="sessionDAO" class="org.apache.shiro.session.mgt.eis.EnterpriseCacheSessionDAO">-->
-        <!--<property name="activeSessionsCacheName" value="com.yunbeitech.auth.shiro-activeSessionCache"/>-->
-        <!--<property name="sessionIdGenerator" ref="sessionIdGenerator"/>-->
-    <!--</bean>-->
+
 
     <bean id="sessionDAO" class="com.lingchaomin.auth.cas.shiro.common.session.AuthServerSessionDao">
-        <property name="activeSessionsCacheName" value="com.yunbeitech.auth.shiro-activeSessionCache"/>
+        <property name="activeSessionsCacheName" value="com.lingchaomin.auth.shiro-activeSessionCache"/>
         <property name="sessionIdGenerator" ref="sessionIdGenerator"/>
         <property name="redisManager" ref="redisManager"/>
         <property name="cacheManager" ref="cacheManager"/>
