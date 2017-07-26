@@ -3384,3 +3384,12 @@ Caused by: org.pac4j.core.exception.TechnicalException: key cannot be blank
 2017-07-26 17:25:55,315 INFO [org.jasig.cas.services.DefaultServicesManagerImpl] - Reloading registered services.
 2017-07-26 17:25:55,315 DEBUG [org.jasig.cas.services.DefaultServicesManagerImpl] - Adding registered service http://**
 2017-07-26 17:25:55,315 INFO [org.jasig.cas.services.DefaultServicesManagerImpl] - Loaded 1 services.
+2017-07-26 17:27:55,315 INFO [org.jasig.cas.services.DefaultServicesManagerImpl] - Reloading registered services.
+2017-07-26 17:27:55,321 DEBUG [org.jasig.cas.services.DefaultServicesManagerImpl] - Adding registered service http://**
+2017-07-26 17:27:55,321 INFO [org.jasig.cas.services.DefaultServicesManagerImpl] - Loaded 1 services.
+2017-07-26 17:29:55,317 INFO [org.jasig.cas.services.DefaultServicesManagerImpl] - Reloading registered services.
+2017-07-26 17:29:55,323 DEBUG [org.jasig.cas.services.DefaultServicesManagerImpl] - Adding registered service http://**
+2017-07-26 17:29:55,323 INFO [org.jasig.cas.services.DefaultServicesManagerImpl] - Loaded 1 services.
+2017-07-26 17:31:55,314 INFO [org.jasig.cas.services.DefaultServicesManagerImpl] - Reloading registered services.
+2017-07-26 17:31:55,315 DEBUG [org.jasig.cas.services.DefaultServicesManagerImpl] - Adding registered service http://**
+2017-07-26 17:31:55,315 INFO [org.jasig.cas.services.DefaultServicesManagerImpl] - Loaded 1 services.
