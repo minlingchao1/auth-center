@@ -15,6 +15,7 @@
         <module>auth-server-web</module>
         <module>auth-server-core</module>
         <module>auth-server-common</module>
+        <module>../auth-client-demo</module>
     </modules>
 
 

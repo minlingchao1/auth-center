@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:mvc="http://www.springframework.org/schema/mvc"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc.xsd
+       http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop.xsd">
+
+    <context:property-placeholder location="classpath*:*.properties"/>
+
+    <!--扫描ctrl-->
+    <mvc:annotation-driven/>
+
+    <context:component-scan base-package="com.lingchaomin.auth.client.demo"/>
+
+    <aop:aspectj-autoproxy proxy-target-class="true"/>
+
+
+    <!--静态资源配置-->
+    <mvc:resources mapping="/js/**" location="/WEB-INF/resources/js/">
+        <mvc:cache-control max-age="3600" cache-public="true"/>
+    </mvc:resources>
+
+    <mvc:resources mapping="/css/**" location="/WEB-INF/resources/css/">
+        <mvc:cache-control max-age="3600" cache-public="true"/>
+    </mvc:resources>
+
+    <mvc:resources mapping="/fonts/**" location="/WEB-INF/resources/fonts/"/>
+
+    <mvc:resources mapping="/images/**" location="/WEB-INF/resources/images/"/>
+
+    <mvc:resources mapping="/themes/**" location="/WEB-INF/resources/themes/"/>
+
+    <mvc:resources mapping="/view/**" location="/WEB-INF/resources/view/">
+        <mvc:cache-control max-age="3600" cache-public="true"/>
+    </mvc:resources>
+
+    <import resource="classpath*:spring/mvc/spring-mvc-view-controller.xml"/>
+</beans>
